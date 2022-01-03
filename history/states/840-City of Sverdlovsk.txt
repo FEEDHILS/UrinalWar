@@ -1,0 +1,25 @@
+state={
+	id=840
+	name="STATE_840"
+        resources={
+		aluminium=32.000
+                steel=83.000
+	}
+
+        history={
+ 		owner = SOV
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = SOV
+                add_core_of = KOM
+        }
+	provinces={
+		1821 10133 12567 
+	}
+	manpower=1493564
+	buildings_max_level_factor=1.000
+        state_category=large_city
+	local_supplies=0.000
+}

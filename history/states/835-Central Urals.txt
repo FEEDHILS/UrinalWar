@@ -1,0 +1,26 @@
+state={
+	id=835
+	name="STATE_835"
+         resources={
+		chromium=56.000
+                steel=294.000
+		aluminium=321.000
+	}
+         history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = SOV
+		add_core_of = KOM
+
+        }
+	provinces={
+		237 278 361 3280 4802 7824 10216 12659 
+	}
+	manpower=1975463
+	buildings_max_level_factor=1.000 
+        state_category=town
+	local_supplies=0.000
+}
