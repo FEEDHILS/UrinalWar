@@ -1,0 +1,543 @@
+focus_tree = {
+	id = Focus_URL
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = URL
+		}
+	}
+	default = no
+	focus = {
+		id = URL_power
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 10
+		x = 24
+		y = 0
+
+	}
+	focus = {
+		id = URL_battle
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 43
+		y = 6
+
+	}
+	focus = {
+		id = URL_management_reforms
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		prerequisite = {
+			focus = URL_power
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = URL_orcs_in_power
+		icon = GFX_focus_prc_remove_chiang_kai_shek
+		cost = 10
+		prerequisite = {
+			focus = URL_management_reforms
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = URL_put_orcs_manage_mining
+		icon = GFX_goal_support_fascism
+		cost = 10
+		prerequisite = {
+			focus = URL_orcs_in_power
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = URL_teach_orcs_write
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		prerequisite = {
+			focus = URL_put_orcs_manage_mining
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = URL_teach_orcs_duty
+		icon = GFX_goal_support_fascism
+		cost = 10
+		prerequisite = {
+			focus = URL_teach_orcs_write
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = URL_start_burocratic
+		icon = GFX_goal_support_fascism
+		cost = 10
+		prerequisite = {
+			focus = URL_teach_orcs_duty
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = URL_economy
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = URL_power
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = URL_force_orcs_to_work
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		prerequisite = {
+			focus = URL_economy
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = URL_work_production
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = URL_force_orcs_to_work
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = URL_expand_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = URL_force_orcs_to_work
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = URL_work_mines
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = URL_force_orcs_to_work
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = URL_mines_ore
+		icon = GFX_focus_generic_steel
+		cost = 10
+		prerequisite = {
+			focus = URL_work_mines
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = URL_orcs_consolidate_power
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		prerequisite = {
+			focus = URL_power
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = URL_orcs_propaganda
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = URL_orcs_consolidate_power
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = URL_orcs_movement
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		prerequisite = {
+			focus = URL_orcs_propaganda
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = URL_expand_west
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10
+		prerequisite = {
+			focus = URL_work_mines
+		}
+		prerequisite = {
+			focus = URL_power
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = URL_expand_central
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10
+		prerequisite = {
+			focus = URL_expand_west
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = URL_center_ours
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = URL_expand_central
+		}
+		mutually_exclusive = {
+			focus = URL_center_under_resistance
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = URL_push_orcs_center
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = {
+			focus = URL_center_ours
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = URL_center_under_resistance
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		prerequisite = {
+			focus = URL_expand_central
+		}
+		mutually_exclusive = {
+			focus = URL_center_ours
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = URL_regroup
+		icon = GFX_goal_generic_cavalry
+		cost = 10
+		prerequisite = {
+			focus = URL_center_under_resistance
+		}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = URL_propaganda_lost
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = URL_center_under_resistance
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = URL_go_and_take
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10
+		prerequisite = {
+			focus = URL_propaganda_lost
+		}
+		prerequisite = {
+			focus = URL_regroup
+		}
+		x = 27
+		y = 8
+
+	}
+	focus = {
+		id = URL_army
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+		cost = 10
+		prerequisite = {
+			focus = URL_power
+		}
+		x = 30
+		y = 1
+
+	}
+	focus = {
+		id = URL_orcs_mobilization_begun
+		icon = GFX_focus_generic_little_entente
+		cost = 10
+		prerequisite = {
+			focus = URL_army
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = URL_orcs_mobilization_continue
+		icon = GFX_focus_generic_manpower
+		cost = 10
+		prerequisite = {
+			focus = URL_orcs_mobilization_begun
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = URL_orcs_teach_tactics
+		icon = GFX_focus_generic_military_academy
+		cost = 10
+		prerequisite = {
+			focus = URL_army
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = URL_orcs_genshtab
+		icon = GFX_focus_generic_military_mission
+		cost = 10
+		prerequisite = {
+			focus = URL_orcs_teach_tactics
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = URL_upgrade_equipment
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = URL_army
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = URL_orcs_finish_army
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 10
+		prerequisite = {
+			focus = URL_orcs_genshtab
+		}
+		prerequisite = {
+			focus = URL_orcs_mobilization_continue
+		}
+		prerequisite = {
+			focus = URL_upgrade_equipment
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = URL_upgrade_equipment_2
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = URL_upgrade_equipment
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = URL_create_special_unit
+		icon = GFX_focus_generic_japanese_imperial_glory
+		cost = 10
+		prerequisite = {
+			focus = URL_army
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = URL_win
+		icon = GFX_goal_generic_military_deal
+		cost = 10
+		prerequisite = {
+			focus = URL_battle
+		}
+		x = 43
+		y = 7
+
+	}
+	focus = {
+		id = URL_expand_mines
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = URL_win
+		}
+		x = 41
+		y = 8
+
+	}
+	focus = {
+		id = URL_expand_steel_mines
+		icon = GFX_focus_generic_steel
+		cost = 10
+		prerequisite = {
+			focus = URL_expand_mines
+		}
+		x = 37
+		y = 9
+
+	}
+	focus = {
+		id = URL_expand_aluminium_mines
+		icon = GFX_focus_generic_aluminum
+		cost = 10
+		prerequisite = {
+			focus = URL_expand_mines
+		}
+		x = 39
+		y = 9
+
+	}
+	focus = {
+		id = URL_expand_tungusten_mines
+		icon = GFX_focus_generic_tungsten
+		cost = 10
+		prerequisite = {
+			focus = URL_expand_mines
+		}
+		x = 41
+		y = 9
+
+	}
+	focus = {
+		id = URL_king_orcs
+		icon = GFX_focus_hun_elect_a_king
+		cost = 10
+		prerequisite = {
+			focus = URL_win
+		}
+		x = 45
+		y = 8
+
+	}
+	focus = {
+		id = URL_free_orcs
+		icon = GFX_focus_generic_little_entente
+		cost = 10
+		prerequisite = {
+			focus = URL_king_orcs
+		}
+		x = 45
+		y = 9
+
+	}
+	focus = {
+		id = URL_expand_production
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = URL_work_production
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = URL_better_production
+		icon = GFX_goal_generic_production
+		cost = 10
+		prerequisite = {
+			focus = URL_expand_roads
+		}
+		prerequisite = {
+			focus = URL_expand_production
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = URL_expand_guardians
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		prerequisite = {
+			focus = URL_center_ours
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = URL_expand_army
+		icon = GFX_focus_generic_army_tanks2
+		cost = 10
+		prerequisite = {
+			focus = URL_free_orcs
+		}
+		x = 45
+		y = 10
+
+	}
+	focus = {
+		id = URL_new_division_2
+		icon = GFX_goal_rhineland
+		cost = 10
+		prerequisite = {
+			focus = URL_free_orcs
+		}
+		x = 47
+		y = 10
+
+	}
+	focus = {
+		id = URL_deal_with_repressor
+		icon = GFX_goal_demand_sudetenland
+		cost = 10
+		prerequisite = {
+			focus = URL_king_orcs
+		}
+		x = 49
+		y = 9
+
+	}
+}

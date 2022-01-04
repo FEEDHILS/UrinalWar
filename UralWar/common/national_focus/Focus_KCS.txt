@@ -1,0 +1,711 @@
+focus_tree = {
+	id = CUM_TREE
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KCS
+		}
+	}
+	default = no
+	focus = {
+		id = KCS_power_of_vozhd
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10
+		x = 9
+		y = 0
+
+	}
+	focus = {
+		id = KCS_foreign_politics
+		icon = GFX_goal_support_fourth_int
+		cost = 10
+		x = 23
+		y = 0
+
+	}
+	focus = {
+		id = KCS_embrace_planned_economy
+		icon = GFX_goal_support_communism
+		cost = 10
+		x = 35
+		y = 0
+
+	}
+	focus = {
+		id = KCS_army
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 10
+		x = 51
+		y = 0
+
+	}
+	focus = {
+		id = KCS_ideas_of_USSR
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 10
+		prerequisite = {
+			focus = KCS_power_of_vozhd
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = KCS_people
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = KCS_ideas_of_USSR
+		}
+		mutually_exclusive = {
+			focus = KCS_deer
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = KCS_fill_apparat
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		prerequisite = {
+			focus = KCS_people
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = KCS_surrounded_by_people
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		prerequisite = {
+			focus = KCS_people
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = KCS_make_new_friends
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = KCS_surrounded_by_people
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = KCS_deer
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		prerequisite = {
+			focus = KCS_ideas_of_USSR
+		}
+		mutually_exclusive = {
+			focus = KCS_people
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = KCS_aldan_constitution
+		icon = GFX_goal_support_communism
+		cost = 10
+		prerequisite = {
+			focus = KCS_deer
+			focus = KCS_people
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = KCS_heroism
+		icon = GFX_goal_generic_cavalry
+		cost = 10
+		prerequisite = {
+			focus = KCS_aldan_constitution
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = KCS_share_peoples_rights
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		prerequisite = {
+			focus = KCS_heroism
+		}
+		mutually_exclusive = {
+			focus = KCS_share_no_rights
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = KCS_share_no_rights
+		icon = GFX_goal_support_communism
+		cost = 10
+		prerequisite = {
+			focus = KCS_heroism
+		}
+		mutually_exclusive = {
+			focus = KCS_share_right_deers
+			focus = KCS_share_peoples_rights
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = KCS_share_right_deers
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = KCS_heroism
+		}
+		mutually_exclusive = {
+			focus = KCS_share_no_rights
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = KCS_surrounded_by_deers
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		prerequisite = {
+			focus = KCS_deer
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = KCS_never_come_out
+		icon = GFX_focus_mex_arrest_general_cedillo
+		cost = 10
+		prerequisite = {
+			focus = KCS_surrounded_by_deers
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = KCS_punish_people_out
+		icon = GFX_focus_SOV_the_last_purge
+		cost = 10
+		prerequisite = {
+			focus = KCS_deer
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = KCS_embrace_deers
+		icon = GFX_focus_SOV_stalins_cult_of_personality
+		cost = 10
+		prerequisite = {
+			focus = KCS_punish_people_out
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = KCS_bulding_cumminsm_in_cumchatka
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 10
+		prerequisite = {
+			focus = KCS_embrace_deers
+		}
+		prerequisite = {
+			focus = KCS_never_come_out
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = KCS_no_politics
+		icon = GFX_focus_SOV_socialism_in_one_country
+		cost = 10
+		prerequisite = {
+			focus = KCS_foreign_politics
+		}
+		mutually_exclusive = {
+			focus = KCS_watch_outside_country
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = KCS_watch_outside_country
+		icon = GFX_goal_generic_trade
+		cost = 10
+		prerequisite = {
+			focus = KCS_foreign_politics
+		}
+		mutually_exclusive = {
+			focus = KCS_no_politics
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = KCS_estabilish_USA
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 10
+		prerequisite = {
+			focus = KCS_watch_outside_country
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = KCS_invite_USA_invest
+		icon = GFX_focus_mex_privatisation
+		cost = 10
+		prerequisite = {
+			focus = KCS_estabilish_USA
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = KCS_open_ports_for_USA
+		icon = GFX_focus_SOV_reinforce_eastern_naval_bases
+		cost = 10
+		prerequisite = {
+			focus = KCS_invite_USA_invest
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = KCS_estabilish_PRC
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		cost = 10
+		prerequisite = {
+			focus = KCS_watch_outside_country
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = KCS_cooperation_with_PRC
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		prerequisite = {
+			focus = KCS_estabilish_PRC
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = KCS_send_help_PRC
+		icon = GFX_focus_attack_japan
+		cost = 10
+		prerequisite = {
+			focus = KCS_cooperation_with_PRC
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = KCS_alliance_with_PRC
+		icon = GFX_focus_generic_join_comintern
+		cost = 10
+		prerequisite = {
+			focus = KCS_send_help_PRC
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = KCS_estabilish_FRA
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 10
+		prerequisite = {
+			focus = KCS_watch_outside_country
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = KCS_FRA_communist
+		icon = GFX_focus_spr_unify_the_london_bureau
+		cost = 10
+		prerequisite = {
+			focus = KCS_estabilish_FRA
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = KCS_FRA_invest
+		icon = GFX_focus_generic_steel
+		cost = 10
+		prerequisite = {
+			focus = KCS_FRA_communist
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = KCS_privileges_for_farmers
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10
+		prerequisite = {
+			focus = KCS_embrace_planned_economy
+		}
+		x = 33
+		y = 1
+
+	}
+	focus = {
+		id = KCS_embrace_collectivization
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 10
+		prerequisite = {
+			focus = KCS_privileges_for_farmers
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = KCS_sell_farmers_production
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		prerequisite = {
+			focus = KCS_embrace_collectivization
+		}
+		x = 31
+		y = 3
+
+	}
+	focus = {
+		id = KCS_force_deer_to_work
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		prerequisite = {
+			focus = KCS_embrace_collectivization
+		}
+		x = 33
+		y = 3
+
+	}
+	focus = {
+		id = KCS_first_five_year_plan
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		prerequisite = {
+			focus = KCS_embrace_planned_economy
+		}
+		x = 37
+		y = 1
+
+	}
+	focus = {
+		id = KCS_improve_light_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = KCS_first_five_year_plan
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = KCS_improve_light_industry_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = KCS_improve_light_industry
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = KCS_improve_light_industry_3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = KCS_improve_light_industry_2
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = KCS_improve_infrastructure
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = KCS_first_five_year_plan
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = KCS_first_railroad
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = KCS_first_five_year_plan
+		}
+		x = 42
+		y = 2
+
+	}
+	focus = {
+		id = KCS_improve_heavy_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = KCS_first_five_year_plan
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = KCS_improve_heavy_industry_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = KCS_first_five_year_plan
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = KCS_improve_heavy_industry_3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = KCS_improve_heavy_industry
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = KCS_finish_first_five_year_plan
+		icon = GFX_goal_support_communism
+		cost = 10
+		prerequisite = {
+			focus = KCS_improve_light_industry_3
+		}
+		prerequisite = {
+			focus = KCS_improve_heavy_industry_3
+		}
+		prerequisite = {
+			focus = KCS_improve_infrastructure
+		}
+		prerequisite = {
+			focus = KCS_first_railroad
+		}
+		prerequisite = {
+			focus = KCS_force_deer_to_work
+		}
+		x = 37
+		y = 5
+
+	}
+	focus = {
+		id = KCS_improve_infrastructure_2
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = KCS_first_five_year_plan
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = KCS_allow_deer_to_duty
+		icon = GFX_goal_support_communism
+		cost = 10
+		prerequisite = {
+			focus = KCS_army
+		}
+		x = 49
+		y = 1
+
+	}
+	focus = {
+		id = KCS_found_a_new_army
+		icon = GFX_focus_SOV_mobilization_plan
+		cost = 10
+		prerequisite = {
+			focus = KCS_army
+		}
+		x = 51
+		y = 1
+
+	}
+	focus = {
+		id = KCS_found_new_tank_battalion
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = KCS_found_a_new_army
+		}
+		prerequisite = {
+			focus = KCS_allow_deer_to_duty
+		}
+		x = 50
+		y = 2
+
+	}
+	focus = {
+		id = KCS_easier_tanks_creation
+		icon = GFX_focus_SOV_organize_wreckers
+		cost = 10
+		prerequisite = {
+			focus = KCS_found_new_tank_battalion
+		}
+		x = 50
+		y = 3
+
+	}
+	focus = {
+		id = KCS_new_generalitet
+		icon = GFX_focus_generic_military_academy
+		cost = 10
+		prerequisite = {
+			focus = KCS_army
+		}
+		x = 53
+		y = 1
+
+	}
+	focus = {
+		id = KCS_found_new_divisions
+		icon = GFX_focus_generic_manpower
+		cost = 10
+		prerequisite = {
+			focus = KCS_new_generalitet
+		}
+		prerequisite = {
+			focus = KCS_found_a_new_army
+		}
+		x = 52
+		y = 2
+
+	}
+	focus = {
+		id = KCS_share_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		prerequisite = {
+			focus = KCS_found_new_divisions
+		}
+		x = 52
+		y = 3
+
+	}
+	focus = {
+		id = KCS_finish_new_army
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		cost = 10
+		prerequisite = {
+			focus = KCS_share_artillery
+		}
+		prerequisite = {
+			focus = KCS_easier_tanks_creation
+		}
+		x = 51
+		y = 4
+
+	}
+	focus = {
+		id = KCS_improve_burecrauts
+		icon = GFX_focus_SOV_the_supreme_soviet
+		cost = 10
+		prerequisite = {
+			focus = KCS_fill_apparat
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = KCS_start_building_cummunism
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
+		cost = 10
+		prerequisite = {
+			focus = KCS_make_new_friends
+		}
+		prerequisite = {
+			focus = KCS_improve_burecrauts
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = KCS_propaganda_collectivization
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = KCS_aldan_constitution
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = KCS_glory_cumchatkas_scientist
+		icon = GFX_focus_generic_socialist_science
+		cost = 10
+		prerequisite = {
+			focus = KCS_share_right_deers
+			focus = KCS_share_no_rights
+			focus = KCS_share_peoples_rights
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = KCS_creat_shtrafbat
+		icon = GFX_focus_SOV_penal_battalions
+		cost = 10
+		prerequisite = {
+			focus = KCS_army
+		}
+		x = 57
+		y = 1
+
+	}
+}

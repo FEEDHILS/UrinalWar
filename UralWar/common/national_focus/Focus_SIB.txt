@@ -1,0 +1,794 @@
+focus_tree = {
+	id = Focus_SIB
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SIB
+		}
+	}
+	default = no
+	focus = {
+		id = SIB_start_recovery
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10
+		x = 26
+		y = 0
+
+	}
+	focus = {
+		id = SIB_its_a_real_democracy
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = {
+			focus = SIB_start_recovery
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = SIB_fill_senate_with_one_people
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = {
+			focus = SIB_its_a_real_democracy
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = SIB_write_constitution_self
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = {
+			focus = SIB_fill_senate_with_one_people
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = SIB_guarantee_rights
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = {
+			focus = SIB_write_constitution_self
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = SIB_proclaim_as_president
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = {
+			focus = SIB_guarantee_rights
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = SIB_industry
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		prerequisite = {
+			focus = SIB_start_recovery
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = SIB_reopen_fabrics
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = SIB_industry
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = SIB_force_people
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		prerequisite = {
+			focus = SIB_reopen_fabrics
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = SIB_low_salary
+		icon = GFX_focus_mex_privatisation
+		cost = 10
+		prerequisite = {
+			focus = SIB_reopen_fabrics
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = SIB_low_working_conditions
+		icon = GFX_focus_generic_industry_1
+		cost = 10
+		prerequisite = {
+			focus = SIB_reopen_fabrics
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = SIB_facilitate_fabrics_creature
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		prerequisite = {
+			focus = SIB_low_working_conditions
+		}
+		prerequisite = {
+			focus = SIB_force_people
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = SIB_work_with_left
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = SIB_industry
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = SIB_less_iron_use
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = SIB_work_with_left
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = SIB_reorganize_iron_receipts
+		icon = GFX_focus_SOV_merge_plants
+		cost = 10
+		prerequisite = {
+			focus = SIB_less_iron_use
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = SIB_build_new_military
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = SIB_reorganize_iron_receipts
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = SIB_rebuild_industry_finish
+		icon = GFX_focus_generic_tank_production
+		cost = 10
+		prerequisite = {
+			focus = SIB_facilitate_fabrics_creature
+		}
+		prerequisite = {
+			focus = SIB_build_new_military
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = SIB_fortificate_sverdlovsk
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		prerequisite = {
+			focus = SIB_start_recovery
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = SIB_create_new_mines
+		icon = GFX_focus_generic_steel
+		cost = 10
+		prerequisite = {
+			focus = SIB_work_with_left
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = SIB_propaganda_campaing
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = SIB_start_recovery
+		}
+		x = 26
+		y = 1
+
+	}
+	focus = {
+		id = SIB_rewrite_history
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = SIB_propaganda_campaing
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = SIB_cult_of_personality
+		icon = GFX_focus_SOV_father_of_nations
+		cost = 10
+		prerequisite = {
+			focus = SIB_rewrite_history
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = SIB_ask_for_revansh
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10
+		prerequisite = {
+			focus = SIB_cult_of_personality
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = SIB_clear_rubble
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = SIB_start_recovery
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = SIB_army_observe
+		icon = GFX_focus_generic_license_production
+		cost = 10
+		prerequisite = {
+			focus = SIB_start_recovery
+		}
+		x = 33
+		y = 1
+
+	}
+	focus = {
+		id = SIB_rebuild_air
+		icon = GFX_goal_generic_air_fighter
+		cost = 10
+		prerequisite = {
+			focus = SIB_army_observe
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = SIB_rebuild_air_fabrics
+		icon = GFX_goal_generic_air_production
+		cost = 10
+		prerequisite = {
+			focus = SIB_rebuild_air
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = SIB_new_air_doctrine
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10
+		prerequisite = {
+			focus = SIB_rebuild_air
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = SIB_rebuild_army
+		icon = GFX_focus_SOV_mobilization_plan
+		cost = 10
+		prerequisite = {
+			focus = SIB_army_observe
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = SIB_create_stormtroopers
+		icon = GFX_focus_generic_manpower
+		cost = 10
+		prerequisite = {
+			focus = SIB_rebuild_army
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = SIB_create_tank_brigade
+		icon = GFX_focus_NZL_bob_semple_tank
+		cost = 10
+		prerequisite = {
+			focus = SIB_rebuild_army
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = SIB_create_guardians
+		icon = GFX_focus_generic_little_entente
+		cost = 10
+		prerequisite = {
+			focus = SIB_rebuild_army
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = SIB_create_mountainers
+		icon = GFX_goal_generic_special_forces
+		cost = 10
+		prerequisite = {
+			focus = SIB_rebuild_army
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = SIB_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+		prerequisite = {
+			focus = SIB_rebuild_army
+		}
+		x = 37
+		y = 4
+
+	}
+	focus = {
+		id = SIB_ready_for_revansh
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		prerequisite = {
+			focus = SIB_create_mountainers
+		}
+		prerequisite = {
+			focus = SIB_doctrine
+		}
+		prerequisite = {
+			focus = SIB_create_tank_brigade
+		}
+		prerequisite = {
+			focus = SIB_create_guardians
+		}
+		prerequisite = {
+			focus = SIB_create_stormtroopers
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = SIB_take_what_ours
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = SIB_ready_for_revansh
+		}
+		prerequisite = {
+			focus = SIB_ask_for_revansh
+		}
+		prerequisite = {
+			focus = SIB_rebuild_industry_finish
+		}
+		prerequisite = {
+			focus = SIB_proclaim_as_president
+		}
+		prerequisite = {
+			focus = SIB_clear_rubble
+		}
+		x = 29
+		y = 9
+
+	}
+	focus = {
+		id = SIB_win
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		cost = 10
+		prerequisite = {
+			focus = SIB_take_what_ours
+		}
+		mutually_exclusive = {
+			focus = SIB_lose
+		}
+		x = 27
+		y = 10
+
+	}
+	focus = {
+		id = SIB_deal_with_the_traitors
+		icon = GFX_focus_SOV_penal_battalions
+		cost = 10
+		prerequisite = {
+			focus = SIB_win
+		}
+		x = 25
+		y = 11
+
+	}
+	focus = {
+		id = SIB_lose
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 10
+		prerequisite = {
+			focus = SIB_take_what_ours
+		}
+		mutually_exclusive = {
+			focus = SIB_win
+		}
+		x = 31
+		y = 10
+
+	}
+	focus = {
+		id = SIB_foreign_politics
+		icon = GFX_goal_generic_trade
+		cost = 10
+		prerequisite = {
+			focus = SIB_start_recovery
+		}
+		x = 40
+		y = 1
+
+	}
+	focus = {
+		id = SIB_everything_okay
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		prerequisite = {
+			focus = SIB_foreign_politics
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = SIB_rebuild_relationship
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10
+		prerequisite = {
+			focus = SIB_everything_okay
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = SIB_build_new_relationship
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 10
+		prerequisite = {
+			focus = SIB_rebuild_relationship
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = SIB_our_own_path
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		prerequisite = {
+			focus = SIB_build_new_relationship
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = SIB_join_allies
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = SIB_rebuild_relationship
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = SIB_join_axis
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10
+		prerequisite = {
+			focus = SIB_build_new_relationship
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = SIB_proclaim_as_russian_heir
+		icon = GFX_focus_SOV_the_true_tsars
+		cost = 10
+		prerequisite = {
+			focus = SIB_foreign_politics
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = SIB_deal_with_corporates
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10
+		prerequisite = {
+			focus = SIB_proclaim_as_russian_heir
+		}
+		x = 46
+		y = 3
+
+	}
+	focus = {
+		id = SIB_make_a_deal
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = SIB_deal_with_corporates
+		}
+		mutually_exclusive = {
+			focus = SIB_no_deals
+		}
+		x = 45
+		y = 4
+
+	}
+	focus = {
+		id = SIB_work_with_corps
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = SIB_make_a_deal
+		}
+		x = 45
+		y = 5
+
+	}
+	focus = {
+		id = SIB_far_east_territories
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = SIB_work_with_corps
+		}
+		x = 45
+		y = 6
+
+	}
+	focus = {
+		id = SIB_no_deals
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		prerequisite = {
+			focus = SIB_deal_with_corporates
+		}
+		mutually_exclusive = {
+			focus = SIB_make_a_deal
+		}
+		x = 47
+		y = 4
+
+	}
+	focus = {
+		id = SIB_take_corp_resoursec
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10
+		prerequisite = {
+			focus = SIB_no_deals
+		}
+		x = 47
+		y = 5
+
+	}
+	focus = {
+		id = SIB_seize_the_territories
+		icon = GFX_focus_POL_prussia_line
+		cost = 10
+		prerequisite = {
+			focus = SIB_take_corp_resoursec
+		}
+		x = 47
+		y = 6
+
+	}
+	focus = {
+		id = SIB_integrate_far_east
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		prerequisite = {
+			focus = SIB_seize_the_territories
+			focus = SIB_far_east_territories
+		}
+		x = 46
+		y = 7
+
+	}
+	focus = {
+		id = SIB_deal_with_cumchatka
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 10
+		prerequisite = {
+			focus = SIB_proclaim_as_russian_heir
+		}
+		x = 52
+		y = 3
+
+	}
+	focus = {
+		id = SIB_crush_the_ussr
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10
+		prerequisite = {
+			focus = SIB_deal_with_cumchatka
+		}
+		x = 52
+		y = 4
+
+	}
+	focus = {
+		id = SIB_integrate_cumchatka_lands
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		cost = 10
+		prerequisite = {
+			focus = SIB_crush_the_ussr
+		}
+		x = 52
+		y = 5
+
+	}
+	focus = {
+		id = SIB_last_lose
+		icon = GFX_focus_rom_abdicate
+		cost = 10
+		prerequisite = {
+			focus = SIB_lose
+		}
+		x = 31
+		y = 11
+
+	}
+	focus = {
+		id = SIB_rebuild_mines
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		prerequisite = {
+			focus = SIB_win
+		}
+		x = 29
+		y = 12
+
+	}
+	focus = {
+		id = SIB_visit_mines_personaly
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = SIB_rebuild_mines
+		}
+		x = 32
+		y = 13
+
+	}
+	focus = {
+		id = SIB_again_fill_mines
+		icon = GFX_focus_yug_pan_slavic_congress
+		cost = 10
+		prerequisite = {
+			focus = SIB_win
+		}
+		x = 25
+		y = 12
+
+	}
+	focus = {
+		id = SIB_officialy_reopen_mines
+		icon = GFX_focus_generic_steel
+		cost = 10
+		prerequisite = {
+			focus = SIB_rebuild_mines
+		}
+		prerequisite = {
+			focus = SIB_again_fill_mines
+		}
+		x = 27
+		y = 13
+
+	}
+	focus = {
+		id = SIB_building_new_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = SIB_officialy_reopen_mines
+		}
+		x = 26
+		y = 14
+
+	}
+	focus = {
+		id = SIB_new_iron_for_army
+		icon = GFX_goal_generic_build_tank
+		cost = 10
+		prerequisite = {
+			focus = SIB_officialy_reopen_mines
+		}
+		x = 28
+		y = 14
+
+	}
+	focus = {
+		id = SIB_new_army
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+		cost = 10
+		prerequisite = {
+			focus = SIB_new_iron_for_army
+		}
+		prerequisite = {
+			focus = SIB_building_new_factories
+		}
+		x = 27
+		y = 15
+
+	}
+	focus = {
+		id = SIB_march_on_white_wizard
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		prerequisite = {
+			focus = SIB_new_army
+		}
+		x = 27
+		y = 16
+
+	}
+}

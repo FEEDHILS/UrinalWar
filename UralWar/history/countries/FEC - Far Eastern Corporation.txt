@@ -14,7 +14,7 @@ set_technology = {
 	basic_train = 1
 }
 set_war_support = 0.1
-set_stability = 0.7
+set_stability = 0.6
 
 
 1939.1.1 = {
@@ -72,5 +72,18 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	neutrality = 83
+	democratic = 7
+	fascism = 10
+}
+
+create_country_leader = {
+	name = "Corporate's Assembly"
+	desc = "A meeting of several large corporations that determine the future path of the country's development."
+	picture = "Assembly.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		economist editor
+	}
 }
