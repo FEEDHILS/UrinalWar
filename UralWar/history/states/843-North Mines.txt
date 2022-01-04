@@ -1,13 +1,11 @@
-
 state={
-	id=835
-	name="STATE_835"
+	id=843
+	name="STATE_843"
 	resources={
-		chromium=56.000
-		#steel=294.000
+		#chromium=56.000
+		steel=294.000
 		#aluminium=321.000
 	}
-
 	history={
 		owner = WAS
 		buildings = {
@@ -17,12 +15,11 @@ state={
 		add_core_of = WAS
 
 	}
-
 	provinces={
-		 10216 278
+		4802 7824 12659 
 	}
-	manpower=100252
+	manpower=250123
+	state_category = rural
 	buildings_max_level_factor=1.000
-	state_category=town
 	local_supplies=0.000
 }

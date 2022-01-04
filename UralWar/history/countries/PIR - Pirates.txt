@@ -13,8 +13,8 @@ set_technology = {
 	early_fighter = 1
 	basic_train = 1
 }
-set_war_support = 0.2
-set_stability = 0.65
+set_war_support = 0.45
+set_stability = 0.4
 
 
 1939.1.1 = {
@@ -66,23 +66,23 @@ set_stability = 0.65
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	fascism = 72
+	communism = 28
 }
 
 create_country_leader = {
-	name = "Divanich"
-	desc = "Divanich_DESC"
-	picture = "Divanich.dds"
+	name = "John Silver"
+	desc = ""
+	picture = "Silver.dds"
 	expire = "1965.1.1"
-	ideology = anarchism
+	ideology = fascism_ideology
 	traits = {
-		popular_figurehead
-		army_infantry_1
+		red_suffragette
 	}
 }

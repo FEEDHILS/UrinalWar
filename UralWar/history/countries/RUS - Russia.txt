@@ -74,3 +74,14 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
+
+create_country_leader = {
+	name = "Svetozar"
+	desc = "Svetozar_DESC"
+	picture = "Svetozar.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		princess_of_terror
+	}
+}

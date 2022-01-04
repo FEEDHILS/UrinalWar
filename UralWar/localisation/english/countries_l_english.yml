@@ -23,6 +23,12 @@
  CRF:0 "Crimean Fort"
  CRF_DEF:0 "Crimean Fort"
  CRF_ADJ:0 "Crimea"
+ WAS:0 "Wasteland"
+ WAS_DEF:0 "Wasteland"
+ WAS_ADJ:0 "Wasteland"
+ PIR:0 "Pirates"
+ PIR_DEF:0 "Pirates"
+ PIR_ADJ:0 "Pirates"
  
 
 

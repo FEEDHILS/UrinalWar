@@ -13,8 +13,8 @@ set_technology = {
 	early_fighter = 1
 	basic_train = 1
 }
-set_war_support = 0.2
-set_stability = 0.65
+set_war_support = 0.1
+set_stability = 0.1
 
 
 1939.1.1 = {
@@ -65,6 +65,11 @@ set_stability = 0.65
 	}
 }
 
+add_ideas = { undisturbed_isolation
+				disarmed_nation
+				closed_economy
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.6.3"
@@ -76,13 +81,12 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Divanich"
-	desc = "Divanich_DESC"
-	picture = "Divanich.dds"
+	name = "Nature"
+	desc = ""
+	picture = "Nature.dds"
 	expire = "1965.1.1"
 	ideology = anarchism
 	traits = {
-		popular_figurehead
-		army_infantry_1
+
 	}
 }

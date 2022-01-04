@@ -74,3 +74,15 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
+
+create_country_leader = {
+	name = "Taras Bulba"
+	desc = "Taras_DESC"
+	picture = "Taras.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		army_cavalry_3
+		mobile_warfare_expert
+	}
+}

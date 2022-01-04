@@ -8,8 +8,8 @@ URL = {
 
 #Ural Ressistance
 URR = { 
-	color = rgb { 48 1 30 }
-	color_ui = rgb { 48 1 30 }
+	color = rgb { 150 3 94 }
+	color_ui = rgb { 150 3 94 }
 }
 
 #Kamchatka's Communist
@@ -20,15 +20,15 @@ KCS = {
 
 #Far Eastern Corp
 FEC = { 
-	color = rgb { 7 2 13 }
-	color_ui = rgb { 7 2 13 }
+	color = rgb { 231 187 65 }
+	color_ui = rgb { 231 187 65 }
 }
 
 #Siberian Republic
 SIB = { 
-	color = rgb { 67 170 139 }
-	color_ui = rgb { 67 170 139 }
-}
+	color = rgb { 78 203 53 } 
+	color_ui = rgb { 78 203 53 } 
+	}
 
 #Russia
 RUS = { 
@@ -44,8 +44,13 @@ CTB = {
 
 #Crimean Fort
 CRF = { 
-	color = rgb { 0 56 68 }
-	color_ui = rgb { 0 56 68 }
+	color = rgb { 164 3 31 }
+	color_ui = rgb { 164 3 31 }
+}
+
+PIR = { 
+	color = rgb { 150 112 91 }
+	color_ui = rgb { 150 112 91 }
 }
 
 

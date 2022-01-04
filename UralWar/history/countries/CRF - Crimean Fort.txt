@@ -76,3 +76,14 @@ set_popularities = {
 	democratic = 50
 	fascism = 15
 }
+
+create_country_leader = {
+	name = "Cap. Smolett"
+	desc = ""
+	picture = "Smolett.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		hawk
+	}
+}
