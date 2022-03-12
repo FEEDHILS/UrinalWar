@@ -1,0 +1,340 @@
+ideas = {
+
+	country = {
+			
+			
+			new_rules = {
+						
+			allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               fascism_drift = 0.1
+			}
+		}
+		
+		
+		old_rules = {
+			
+			allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               democratic_drift = 0.1
+			   
+			}
+		}
+		
+		
+		cossacks = {
+			
+			allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               political_power_gain = 0.15
+			   
+			}
+		}
+		
+		
+		war_propaganda_1 = {
+			
+			allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			   conscription = 0.01
+			}
+		}
+		
+		
+		germany_loan = {
+			
+			allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			   consumer_goods_factor = -0.05
+	           
+            }	
+		}
+		
+		
+		new_government_f = {
+			
+			allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			   political_power_gain = 0.15
+	           fascism_drift = 0.1
+			   conscription = 0.01
+			   war_support_weekly = 0.02
+            }	
+		}
+
+
+	      duma = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			   political_power_factor = 0.05
+	           democratic_drift = 0.15
+            }	
+		  
+		  }
+		  
+		  
+	      constitution = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			   monthly_population = 0.5
+			   stability_weekly = 0.01
+			   consumer_goods_factor = 0.02
+			   non_core_manpower = 0.1
+			   political_power_factor = 0.1
+	           democratic_drift = 0.2
+            }	
+		  
+		  }
+		  
+		  free_rights = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			   monthly_population = 0.5			   
+			   non_core_manpower = 0.1
+            }	
+		  
+		  }
+		  
+		  constitution_ukr = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			   monthly_population = 0.8
+			   stability_weekly = 0.01
+			   consumer_goods_factor = 0.05
+			   non_core_manpower = 0.15
+			   political_power_factor = 0.2
+	           democratic_drift = 0.25
+            }	
+		  
+		  }
+		  
+		  army_development = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {			 
+            command_power_gain = 0.1
+            }	
+		  
+		  }
+		  
+		  
+		  army_development_share = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {			 
+            command_power_gain = 0.1
+			conscription = 0.01			
+            }	
+		  
+		  }	  
+		  	  
+		  army_development_cavalry = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {			 
+            cavalry_attack_factor = 0.05
+            cavalry_defence_factor = 0.05			
+            }	
+		  
+		  }
+		  	  
+		  army_development_pehota = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {			            
+            army_infantry_attack_factor = 0.05
+            army_infantry_defence_factor = 0.05			
+            }	
+		  
+		  }
+		  		  
+		  army_development_genshtab = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {			 
+            command_power_gain = 0.2
+			conscription = 0.01
+            army_attack_factor = 0.05			
+            army_defence_factor = 0.05
+			army_leader_cost_factor = -0.3
+			army_leader_start_planning_level = 1
+            }	
+		  
+		  }
+		  				
+		  easier_assembly = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				CAS_equipment = {
+                    build_cost_ic = -0.1 instant = yes
+                } 
+                tac_bomber_equipment = {
+                   build_cost_ic = -0.1 instant = yes
+                }
+			}	
+		  
+		  }
+		  
+		  development_plan = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {			 
+            consumer_goods_factor = 0.05
+			production_speed_buildings_factor = -0.2
+			stability_factor = -0.1
+			civilian_factory_use = 2
+            }	
+		  
+		  }
+		  		  
+		  development_plan_finish = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {			            
+			production_speed_buildings_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+			production_factory_max_efficiency_factor = 0.1
+			industrial_capacity_factory = 0.1
+            }	
+		  
+		  }
+		  
+		  coal_mines = {
+		     allowed = {
+				tag = CTB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {			            
+			  consumer_goods_factor = -0.05
+            }	
+		  
+		  }
+
+	 }
+}

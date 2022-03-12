@@ -1,0 +1,171 @@
+ideas = {
+
+	country = {
+	
+		URR_reforms_managment = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               political_power_factor = -0.2
+			}
+		}
+
+		URR_everyone_obeys = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               drift_defence_factor = 1
+               stability_factor = -0.1			   
+			}
+		}
+
+		URR_fascist = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                fascism_drift = 0.1		   
+			}
+		}
+
+		URR_democratic = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                democratic_drift = 0.1		   
+			}
+		}
+
+		URR_economu = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                consumer_goods_factor = -0.1		
+                industrial_capacity_factory = 0.2				
+			}
+		}
+
+		URR_optimize_idea = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+			      infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		URR_expand = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			   generate_wargoal_tension = -0.75
+			   justify_war_goal_time = -0.5
+			
+			}
+		}	
+
+		URR_army = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			   army_core_attack_factor = 0.1
+			   army_core_defence_factor = 0.1
+			   dig_in_speed_factor = 0.2
+			}
+		}
+
+		URR_army_conscription = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			  conscription = 0.01
+			}
+		}
+
+		URR_prussian_army = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			  army_infantry_attack_factor = 0.15
+			  army_infantry_defence_factor = 0.1
+			  army_core_attack_factor = 0.1
+			  army_core_defence_factor = 0.1
+			  dig_in_speed_factor = 0.2
+			  war_support_factor = 0.1
+			}
+		}
+    }
+}

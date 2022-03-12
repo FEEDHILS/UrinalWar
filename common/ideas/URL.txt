@@ -1,0 +1,184 @@
+ideas = {
+
+	country = {
+	
+		URL_reforms_managment = {
+						
+			allowed = {
+				tag = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               political_power_factor = -0.2
+			}
+		}
+
+		URL_orcs_mining = {
+						
+			allowed = {
+				tag = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               local_resources_factor = 0.1
+			}
+		}
+
+		URL_burecrats = {
+		
+			allowed = {
+				TAG = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			modifier = {
+				political_power_factor = 0.1
+			    political_advisor_cost_factor = -0.25
+			}
+		}
+
+		URL_economy = {
+		
+			allowed = {
+				TAG = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		URL_economy_orcs = {
+		
+			allowed = {
+				TAG = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = -0.1
+			}
+		}
+
+		URL_better_production = {
+		
+			allowed = {
+				TAG = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}	
+		
+		URL_consolidate_power = {
+		
+			allowed = {
+				TAG = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			modifier = {
+			   drift_defence_factor = 0.5
+			   fascism_drift = 0.1
+			}
+			
+		}
+
+		URL_army = {
+		
+			allowed = {
+				TAG = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			modifier = {
+			   army_defence_factor = -0.1
+			   army_org_factor = -0.25
+			   army_org_regain = -0.25
+			}
+			
+		}
+
+		URL_army_finish = {
+		
+			allowed = {
+				TAG = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			modifier = {
+               army_attack_factor = 0.15
+			   army_defence_factor = 0.05
+			}	
+		}
+
+		URL_army_mobilization = {
+		
+			allowed = {
+				TAG = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			modifier = {
+                conscription = 0.02
+			}
+		}
+
+		URL_army_mobilization_2 = {
+		
+			allowed = {
+				TAG = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			modifier = {
+                conscription = 0.04
+			}
+			
+		}
+    }
+}

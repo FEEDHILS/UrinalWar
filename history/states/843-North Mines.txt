@@ -1,0 +1,25 @@
+state={
+	id=843
+	name="STATE_843"
+	resources={
+		#chromium=56.000
+		steel=294.000
+		#aluminium=321.000
+	}
+	history={
+		owner = WAS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = WAS
+
+	}
+	provinces={
+		4802 7824 12659 
+	}
+	manpower=250123
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,16 @@
+###########################
+#### Far Eastern Corp. ####
+###########################
+
+military_contracts_category = { 
+	
+	icon = category_usa_intervention_mandate
+	
+	picture = GFX_decision_cat_picture_generic_border_conflicts
+	
+	allowed = { original_tag = FEC }
+	
+	visible = { has_completed_focus = FEC_1_mercenaries } # Должны открываться при выполнении соответствующего fuck-уса.
+	
+	visible_when_empty = yes
+}

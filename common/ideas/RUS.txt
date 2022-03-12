@@ -1,0 +1,243 @@
+ideas = {
+
+	country = {
+	
+		RUS_resources = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               local_resources_factor = 0.1
+			}
+		}
+		
+		RUS_stabilize = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               political_power_gain = -0.3
+			   political_advisor_cost_factor = 0.25
+			   stability_factor = -0.4			   
+			}
+		}
+		
+		RUS_foreign_ministers = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                opinion_gain_monthly_factor = -0.25		   
+			}
+		}
+		
+		RUS_establish_trade = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                trade_opinion_factor = 0.2   
+			}
+		}
+	     
+		RUS_investition_allies = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                consumer_goods_factor = -0.05
+			}
+			
+		}
+		
+		RUS_investition_axis = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                production_factory_start_efficiency_factor = 0.1
+			}
+		}
+
+        RUS_export = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                consumer_goods_factor = -0.03
+				min_export = 0.1
+			}
+			
+		}	
+
+        RUS_wash_brains = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				compliance_growth = 0.25
+			}
+			
+		}	
+
+		RUS_communist = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				communism_drift = 0.1
+			}
+			
+		}
+		
+		RUS_prom_investiments = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                consumer_goods_factor = 0.15
+				civilian_factory_use = 3
+				production_speed_buildings_factor = 0.15
+			}
+			
+		}
+
+		RUS_economic_boom = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_start_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.2
+				global_building_slots = 0.2
+			}			
+		}
+
+		RUS_economic_boom_expand = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.2
+				global_building_slots = 0.2
+				min_export = 0.15
+				industrial_factory_donations = 4
+			}		
+		}
+
+		RUS_witch_army = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {               	
+            army_attack_factor = 0.1
+			army_defence_factor = 0.1
+			army_speed_factor = 0.15
+			army_org_factor = 0.2
+            army_org_regain = 0.1			
+			}
+			
+		}
+
+		RUS_easier_submarine = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			
+		}
+    }
+}

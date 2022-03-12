@@ -1,0 +1,41 @@
+characters={
+
+	Orc_DabDab = {
+		advisor = {	
+			slot = high_command
+			ledger = army
+				allowed = {
+					original_tag = URL
+				}
+				avaible = {
+				    has_completed_focus = URL_orcs_genshtab
+				}
+				traits = {
+					the_director
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		
+	Orc_Vladimir = {
+		advisor = {		
+			slot = political_advisor
+			    allowed = {
+				    original_tag = URL
+				}
+			    avaible = {
+			        has_completed_focus = URL_orcs_in_power
+			    }	
+			    traits = {
+				    political_dancer
+				}
+			    cost = 150
+			    ai_will_do = {
+			        factor = 1.000
+				}
+	        }	
+		}   
+    }
+}

@@ -1,0 +1,2424 @@
+focus_tree = {
+	id = RUS
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+	focus = {
+		id = RUS_leave_home
+		icon = GFX_focus_prc_infiltration
+		cost = 10,00
+		x = 35
+		y = 0
+		
+		completion_reward = {
+		    add_stability = -0.05
+		}
+
+	}
+	focus = {
+		id = RUS_destroy_communism
+		icon = GFX_goal_generic_war_with_comintern
+		available = {
+		    NOT = { country_exists = SIB }
+		}
+		cost = 10,00
+		x = 32
+		y = 7
+		
+		completion_reward = {
+		    create_wargoal = {
+                type = puppet_wargoal_focus
+                target = KCS
+            }
+		}
+
+	}
+	focus = {
+		id = RUS_resources
+		icon = GFX_goal_generic_construction2
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_prom_bussines
+		}
+		x = 46
+		y = 2
+		
+		completion_reward = {
+		    add_ideas = RUS_resources
+		}
+
+	}
+	focus = {
+		id = RUS_new_railroad
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_prom_bussines
+		}
+		x = 44
+		y = 2
+		
+		completion_reward = {
+		    build_railway = {
+                level = 4                       
+                path = { 6380 3259 344 9256 3323 6122 85 }
+       
+            }
+		}
+	}
+	focus = {
+		id = RUS_enable_orakyl
+		icon = GFX_focus_generic_concessions
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_leave_home
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = RUS_translation
+		icon = GFX_goal_generic_propaganda
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_enable_orakyl
+		}
+		x = 6
+		y = 2
+		
+		completion_reward = {
+		    add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = RUS_try_to_stabilize
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_translation
+		}
+		x = 6
+		y = 3
+		
+		completion_reward = {
+		    add_ideas = RUS_stabilize
+		}
+
+	}
+	focus = {
+		id = RUS_set_king
+		icon = GFX_focus_hun_elect_a_king
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_try_to_stabilize
+		}
+		mutually_exclusive = {
+			focus = RUS_elect_president
+			focus = RUS_take_power
+		}
+		x = 2
+		y = 4
+		
+		completion_reward = {
+		set_politics = {
+	            ruling_party = fascism
+                elections_allowed = no
+                last_election = "1935.12.17"
+                election_frequency = 48
+                }
+				add_popularity = {
+			    ideology = fascism
+				popularity = 0.56
+			}
+     	}
+	}	
+	focus = {
+		id = RUS_elect_president
+		icon = GFX_goal_support_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_try_to_stabilize
+		}
+		mutually_exclusive = {
+			focus = RUS_take_power
+			focus = RUS_set_king
+		}
+		x = 6
+		y = 4
+		
+		completion_reward = {
+		set_politics = {
+	            ruling_party = democratic
+                elections_allowed = yes
+                last_election = "1934.12.17"
+                election_frequency = 48
+                }
+				add_popularity = {
+			    ideology = democratic
+				popularity = 0.23
+			}
+     	}
+
+	}
+	focus = {
+		id = RUS_deal_with_d
+		icon = GFX_goal_generic_major_alliance
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_elect_president
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = RUS_deal_with_f_d
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_deal_with_d
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = RUS_take_power
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_try_to_stabilize
+		}
+		mutually_exclusive = {
+			focus = RUS_elect_president
+			focus = RUS_set_king
+		}
+		x = 10
+		y = 4
+		
+		completion_reward = {
+		    add_popularity = {
+			    ideology = neutrality
+				popularity = 0.34
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_finish_with_traitors
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_take_power
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = RUS_rule_by_one
+		icon = GFX_focus_generic_military_dictatorship
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_finish_with_traitors
+		}
+		x = 10
+		y = 6
+		
+		completion_reward = {
+		    add_country_leader_trait = dictator
+		}
+
+	}
+	focus = {
+		id = RUS_foreig_policy
+		icon = GFX_goal_generic_position_armies
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_leave_home
+		}
+		x = 17
+		y = 1
+		
+		completion_reward = {
+		    add_ideas = RUS_foreign_ministers
+		}
+
+	}
+	focus = {
+		id = RUS_send_holograms
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_foreig_policy
+		}
+		x = 17
+		y = 2
+		
+		completion_reward = {
+		    add_political_power = -200
+		}
+
+	}
+	focus = {
+		id = RUS_send_GER
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_send_holograms
+		}
+		x = 15
+		y = 3
+		
+		completion_reward = {
+		    add_opinion_modifier = {
+                 target = GER
+                 modifier = RUS_axis			   
+		    }
+		}
+
+	}
+	focus = {
+		id = RUS_estabilish_trade
+		icon = GFX_goal_generic_trade
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_send_holograms
+		}
+		x = 17
+		y = 3
+		
+		completion_reward = {
+		    add_ideas = RUS_establish_trade
+		}
+
+	}
+	focus = {
+		id = RUS_open_country
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_estabilish_trade
+		}
+		x = 17
+		y = 4
+		
+		completion_reward = {
+		    add_ideas = export_focus
+		}
+
+	}
+	focus = {
+		id = RUS_share_export
+		icon = GFX_focus_mex_privatisation
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_open_country
+		}
+		x = 17
+		y = 6
+		
+		completion_reward = {
+		    add_ideas = RUS_export
+		}
+
+	}
+	focus = {
+		id = RUS_send_ENG
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_send_holograms
+		}
+		x = 19
+		y = 3
+		
+		completion_reward = {
+		    add_opinion_modifier = {
+                 target = ENG
+                 modifier = RUS_allies			   
+		    }
+		}
+
+	}
+	focus = {
+		id = RUS_send_USA
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_send_ENG
+		}
+		x = 19
+		y = 4
+		
+		completion_reward = {
+		    add_opinion_modifier = {
+                 target = USA
+                 modifier = RUS_allies			   
+		    }
+		}
+
+
+	}
+	focus = {
+		id = RUS_join_allies
+		icon = GFX_focus_eng_the_sun_never_sets
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_send_USA
+		}
+		prerequisite = {
+			focus = RUS_open_country
+		}
+		mutually_exclusive = {
+			focus = RUS_join_axis
+		}
+		x = 21
+		y = 5
+		
+		completion_reward = {
+		   ENG = { 
+		     add_to_faction = RUS
+		   }
+		}
+
+	}
+	focus = {
+		id = RUS_investition_allies
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_join_allies
+		}
+		x = 21
+		y = 6
+		
+		completion_reward = {
+	        add_timed_idea = {
+			    idea = RUS_investition_allies
+                days = 180				
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_build_new_fabrics
+		icon = GFX_focus_generic_industry_2
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_investition_allies
+		}
+		prerequisite = {
+			focus = RUS_share_export
+		}
+		x = 19
+		y = 7
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_focus_on_rus
+		icon = GFX_focus_SOV_socialism_in_one_country
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_foreig_policy
+		}
+		x = 24
+		y = 2
+		
+		completion_reward = {
+		    add_war_support = 0.05
+		}
+
+	}
+	focus = {
+		id = RUS_russian_heir
+		icon = GFX_focus_generic_home_defense
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_focus_on_rus
+		}
+		x = 24
+		y = 3
+		
+		completion_reward = {
+		    add_stability = 0.02
+			add_war_support = 0.02
+		}
+
+	}
+	focus = {
+		id = RUS_take_mines
+		icon = GFX_goal_generic_political_pressure
+		available = {
+		    date > 1940.1.1
+		}
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_russian_heir
+		}
+		x = 27
+		y = 4
+		
+		completion_reward = {
+		    if = {
+              limit = {
+            country_exists = URL
+            }   
+            create_wargoal = {
+                type = puppet_wargoal_focus
+                target = URL
+            }
+            else = {
+			    limit = { country_exists = URR }
+            create_wargoal = {
+                type = puppet_wargoal_focus
+                target = URR
+            }
+	      }
+        }
+	  }
+	}
+	focus = {
+		id = RUS_destroy_republic
+		icon = GFX_goal_generic_territory_or_war
+		available = {
+		    NOT = { country_exists = URR }
+			NOT = { country_exists = URL }
+		}
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_take_mines
+		}
+		x = 26
+		y = 5
+		
+		completion_reward = {
+		    create_wargoal = {
+			    type = puppet_wargoal_focus
+				target = SIB
+		    }
+		}
+
+	}
+	focus = {
+		id = RUS_clean_brain
+		icon = GFX_goal_generic_propaganda
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_destroy_republic
+		}
+		x = 25
+		y = 6
+		
+		completion_reward = {
+		    add_ideas = RUS_wash_brains
+		}
+
+	}
+	focus = {
+		id = RUS_execute_president
+		icon = GFX_focus_mex_arrest_general_cedillo
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_destroy_republic
+		}
+		x = 27
+		y = 6
+		
+		completion_reward = {
+		    add_stability = 0.01
+		}
+
+	}
+	focus = {
+		id = RUS_siberia_back
+		icon = GFX_goal_generic_position_armies
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_execute_president
+		}
+		prerequisite = {
+			focus = RUS_clean_brain
+		}
+		x = 26
+		y = 7
+		
+		completion_reward = {
+		    add_state_core = 572
+			add_state_core = 582
+			add_state_core = 653
+			add_state_core = 840
+			add_state_core = 579
+			add_state_core = 850
+			add_state_core = 403
+			add_state_core = 571
+			add_state_core = 577
+			add_state_core = 578
+			add_state_core = 570
+			add_state_core = 824
+			add_state_core = 516
+			add_state_core = 576
+			add_state_core = 568
+			add_state_core = 567
+			add_state_core = 569
+			add_state_core = 40
+			add_state_core = 654
+		}
+
+	}
+	focus = {
+		id = RUS_clean_mines
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_take_mines
+		}
+		x = 29
+		y = 5
+		
+		completion_reward = {
+		    add_state_core = 843
+			add_state_core = 581
+			add_state_core = 836
+			add_state_core = 835
+			add_state_core = 837
+			add_state_core = 844
+			add_state_core = 573
+		}
+
+	}
+	focus = {
+		id = RUS_send_workers_in_mines
+		icon = GFX_goal_generic_construction2
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_clean_mines
+		}
+		x = 30
+		y = 6
+		
+		completion_reward = {
+		    add_resource = {
+                type = tungsten
+                amount = 38
+                state = 581
+            }
+			add_resource = {
+                type = aluminium
+                amount = 64
+                state = 573
+            }
+			add_resource = {
+                type = steel
+                amount = 64
+                state = 835
+            }
+			add_resource = {
+                type = steel
+                amount = 56
+                state = 844
+            }
+			add_resource = {
+                type = steel
+                amount = 173
+                state = 843
+            }
+		}
+
+	}
+	focus = {
+		id = RUS_own_path
+		icon = GFX_goal_anschluss
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_focus_on_rus
+		}
+		x = 31
+		y = 3
+		
+		completion_reward = {
+		    create_faction = holy_union
+		}
+
+	}
+	focus = {
+		id = RUS_invite_far_east
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_own_path
+		}
+		prerequisite = {
+			focus = RUS_russian_heir
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = RUS_integration_east
+		icon = GFX_goal_generic_major_alliance
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_russian_heir
+		}
+		prerequisite = {
+			focus = RUS_invite_far_east
+		}
+		prerequisite = {
+			focus = RUS_siberia_back
+		}
+		x = 27
+		y = 8
+		
+		completion_reward = {
+		    annex_country = {
+                target = FEC
+                transfer_troops = yes
+                }
+		}
+	}
+	focus = {
+		id = RUS_clean_kamchatka
+		icon = GFX_focus_RAJ_seek_help_from_soviet
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_destroy_communism
+		}
+		x = 32
+		y = 8
+		
+		completion_reward = {
+		    RAJ = 
+			{ add_timed_idea = {			
+			  idea = RUS_communist
+			  days = 260
+			    } 
+			}
+		}
+	}
+	focus = {
+		id = RUS_take_cossacks
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_russian_heir
+		}
+		mutually_exclusive = {
+			focus = RUS_invite_CTB
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = RUS_kill_hetman
+		icon = GFX_focus_rom_abdicate
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_take_cossacks
+		}
+		x = 33
+		y = 5
+		
+		completion_reward = {
+		    add_stability = -0.1
+		}
+
+	}
+	focus = {
+		id = RUS_integrate
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_kill_hetman
+		}
+		x = 33
+		y = 6
+		
+		completion_reward = {
+		    add_state_core = 221
+			add_state_core = 200
+			add_state_core = 227
+			add_state_core = 842
+			add_state_core = 228
+			add_state_core = 218
+		}
+
+	}
+	focus = {
+		id = RUS_send_colonist
+		icon = GFX_focus_SOV_reinforce_eastern_naval_bases
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_destroy_communism
+		}
+		x = 34
+		y = 8
+		
+		completion_reward = {
+		    219 = {
+			add_manpower = -314651
+			}
+			195 = {
+			add_manpower = -127293
+			}
+			224 = {
+			add_manpower = -295212
+			}
+			574 = {
+			add_manpower = 314651
+			}
+			575 = {
+			add_manpower = 127293
+			}
+			562 = {
+			add_manpower = 295212
+			}
+			add_state_core = 574
+			add_state_core = 575
+			add_state_core = 562
+			add_state_core = 644
+			add_state_core = 822
+			add_state_core = 637
+		}
+
+	}
+	focus = {
+		id = RUS_read_new_books
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_leave_home
+		}
+		x = 35
+		y = 1
+		
+		completion_reward = {
+		    add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = RUS_invite_CTB
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_own_path
+		}
+		mutually_exclusive = {
+			focus = RUS_take_cossacks
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = RUS_prom_bussines
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_leave_home
+		}
+		x = 46
+		y = 1
+		
+		completion_reward = {
+		    add_ideas = RUS_prom_investiments
+		}
+
+	}
+	focus = {
+		id = RUS_build_universitet
+		icon = GFX_focus_research2
+		available = {
+		    num_of_factories > 50
+		}
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_read_new_books
+		}
+		prerequisite = {
+			focus = RUS_prom_bussines
+		}
+		x = 38
+		y = 2
+		
+		completion_reward = {
+		add_research_slot = 1
+        }
+	}
+	focus = {
+		id = RUS_expand_prom
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_prom_bussines
+		}
+		x = 41
+		y = 2
+		
+		completion_reward = {
+		    add_stability = 0.02
+		}
+
+	}
+	focus = {
+		id = RUS_expand_fabrics
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_expand_prom
+		}
+		x = 40
+		y = 3
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_expand_fabrics_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_expand_fabrics
+		}
+		x = 40
+		y = 4
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_expand_fabrics_3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_expand_fabrics_2
+		}
+		x = 40
+		y = 5
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_expand_zavods
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_expand_prom
+		}
+		x = 42
+		y = 3
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_expand_zavods_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_expand_zavods
+		}
+		x = 42
+		y = 4
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_expand_zavods_3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_expand_zavods_2
+		}
+		x = 42
+		y = 5
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_more_fabrics
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_expand_zavods_3
+			focus = RUS_expand_fabrics_3
+		}
+		mutually_exclusive = {
+			focus = RUS_more_zavods
+		}
+		x = 40
+		y = 6
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_more_zavods
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_expand_zavods_3
+			focus = RUS_expand_fabrics_3
+		}
+		mutually_exclusive = {
+			focus = RUS_more_fabrics
+		}
+		x = 42
+		y = 6
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_finish_prom_share
+		icon = GFX_focus_generic_tank_production
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_more_fabrics
+			focus = RUS_more_zavods
+		}
+		x = 41
+		y = 7
+		
+		completion_reward = {
+		    remove_ideas = RUS_prom_investiments
+		}
+
+	}
+	focus = {
+		id = RUS_railroad_to_Baku
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_new_railroad
+		}
+		x = 44
+		y = 3
+		
+		completion_reward = {
+		    build_railway = {
+                level = 3                      
+                path = { 3529 498 3475 481 3413 11566 11724 3746 11693 11690 712 683 3682 6689 7554 3771 1450 4545 7495 7661 }      
+            }
+			add_resource = {
+			    type = steel
+				amount = 49
+				state = 821
+			}
+		}	
+	}
+	focus = {
+		id = RUS_mines_east
+		icon = GFX_goal_generic_construction2
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_resources
+		}
+		x = 46
+		y = 3
+		
+		completion_reward = {
+		add_resource = {
+			    type = steel
+				amount = 24
+				state = 246
+			}
+		add_resource = {
+			    type = chromium
+				amount = 36
+				state = 222
+			}
+		add_resource = {
+			    type = steel
+				amount = 56
+				state = 222
+		    }
+        }
+	}
+	focus = {
+		id = RUS_expand_oil_south
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_mines_east
+		}
+		prerequisite = {
+			focus = RUS_railroad_to_Baku
+		}
+		x = 46
+		y = 4
+		
+		completion_reward = {
+		    add_resource = {
+			    type = oil
+				amount = 120
+				state = 229
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_mines_west
+		icon = GFX_focus_generic_steel
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_resources
+		}
+		x = 48
+		y = 3
+		
+		completion_reward = {
+		    add_resource = {
+			    type = steel
+				amount = 52
+			    state = 249
+			}
+			add_resource = {
+			    type = steel
+				amount = 32
+			    state = 401
+			}	
+            add_resource = {
+			    type = tungsten
+				amount = 36
+			    state = 401
+			}
+            add_resource = {
+			    type = aluminium
+				amount = 64
+			    state = 400
+			}			
+		}
+
+	}
+	focus = {
+		id = RUS_build_road
+		icon = GFX_goal_generic_construction
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_prom_bussines
+		}
+		x = 50
+		y = 2
+		
+		completion_reward = {
+		    219 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+			246 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+		    }
+			263 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+		    }
+			244 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+		    }
+			208 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+		    }
+			195 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+		}	
+	}
+	focus = {
+		id = RUS_build_road_to_mines
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_build_road
+		}
+		x = 50
+		y = 3
+		
+		completion_reward = {
+		    652 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+		    }
+			399 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+		    }
+			398 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+		    }
+        }
+	}
+	focus = {
+		id = RUS_expand_mines_more
+		icon = GFX_focus_generic_tungsten
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_mines_west
+		}
+		prerequisite = {
+			focus = RUS_build_road_to_mines
+		}
+		x = 49
+		y = 4
+		
+		completion_reward = {
+		    add_resource = {
+			    type = steel
+				amount = 66
+			    state = 652
+			}
+			add_resource = {
+			    type = aluminium
+				amount = 43
+			    state = 398
+			}
+			add_resource = {
+			    type = chromium
+				amount = 70
+			    state = 399
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_build_more_roads
+		icon = GFX_goal_generic_army_motorized
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_build_road_to_mines
+		}
+		x = 51
+		y = 4
+		
+		completion_reward = {
+		    224 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+			242 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+			243 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+			205 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+			210 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+			223 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+		}
+
+	}
+	focus = {
+		id = RUS_new_prom
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_build_more_roads
+		}
+		prerequisite = {
+			focus = RUS_finish_prom_share
+		}
+		prerequisite = {
+			focus = RUS_expand_oil_south
+		}
+		prerequisite = {
+			focus = RUS_expand_mines_more
+		}
+		x = 46
+		y = 8
+		
+		completion_reward = {
+		    add_ideas = RUS_economic_boom
+		}
+
+	}
+	focus = {
+		id = RUS_army
+		icon = GFX_focus_generic_license_production
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_leave_home
+		}
+		x = 59
+		y = 1
+		
+		completion_reward = {
+		    army_experience = 25
+			air_experience = 25
+			navy_experience = 25
+		}
+
+	}
+	focus = {
+		id = RUS_air
+		icon = GFX_focus_generic_aircraft_production
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_army
+		}
+		x = 55
+		y = 2
+		
+		completion_reward = {
+				
+		}
+	}
+	focus = {
+		id = RUS_expand_airports
+		icon = GFX_goal_generic_build_airforce
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_air
+		}
+		prerequisite = {
+			focus = RUS_build_road
+		}
+		x = 53
+		y = 3
+		
+		completion_reward = {
+		    398 = {
+            add_building_construction = {
+			    type = air_base
+					level = 4
+					instant_build = yes
+				}			
+			}
+			651 = {
+            add_building_construction = {
+			    type = air_base
+					level = 5
+					instant_build = yes
+				}			
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_new_escadrons
+		icon = GFX_goal_generic_air_production
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_air
+		}
+		x = 55
+		y = 3
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doctrine
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_cas
+		icon = GFX_goal_generic_air_fighter
+		available = {
+        has_tech = CAS1
+		}
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_new_escadrons
+		}
+		x = 54
+		y = 4
+		
+		completion_reward = {
+		add_equipment_to_stockpile = {
+            type = cas_equipment_1
+            amount = 128
+            producer = GER
+            }
+        }
+	}
+	focus = {
+		id = RUS_fighters
+		icon = GFX_goal_generic_air_fighter2
+		available = {
+        has_tech = early_fighterh
+		}
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_new_escadrons
+		}
+		x = 56
+		y = 4
+		
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+            type = fighter_equipment_0
+            amount = 256
+            producer = GER
+            }
+		}
+
+	}
+	focus = {
+		id = RUS_bomber
+		icon = GFX_goal_generic_air_bomber
+		available = {
+        has_tech = tactical_bomber1
+		}
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_fighters
+		}
+		prerequisite = {
+			focus = RUS_cas
+		}
+		x = 55
+		y = 5
+		
+		completion_reward = {
+		add_equipment_to_stockpile = {
+            type = tac_bomber_equipment_0
+            amount = 64
+            producer = GER
+            }
+	    }
+	}
+	focus = {
+		id = RUS_ground
+		icon = GFX_focus_generic_combined_arms
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_army
+		}
+		x = 59
+		y = 2
+		
+		completion_reward = {		
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = RUS_infantry
+		icon = GFX_goal_generic_small_arms
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_ground
+		}
+		x = 58
+		y = 3
+		
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2				
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = RUS_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_infantry
+		}
+		x = 58
+		y = 4
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2				
+				category = artillery
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_motorized
+		icon = GFX_focus_SOV_the_road_of_life
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_ground
+		}
+		x = 60
+		y = 3
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = cmotorized_equipment_bonus
+				bonus = 1.0
+				uses = 2				
+				category = motorized_equipment
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_motorized
+		}
+		x = 60
+		y = 4
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = cat_light_armor_bonus
+				bonus = 1.0
+				uses = 2				
+				category = cat_light_armor
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_bewitch_army
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_tanks
+		}
+		prerequisite = {
+			focus = RUS_artillery
+		}
+		x = 59
+		y = 5
+		
+		completion_reward = {
+		    add_ideas = RUS_witch_army
+		}
+
+	}
+	focus = {
+		id = RUS_new_infantry
+		icon = GFX_focus_generic_manpower
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_bewitch_army
+		}
+		x = 58
+		y = 6
+
+	}
+	focus = {
+		id = RUS_deploy_tank_brigade
+		icon = GFX_focus_NZL_bob_semple_tank
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_bewitch_army
+		}
+		x = 60
+		y = 6
+
+	}
+	focus = {
+		id = RUS_guard
+		icon = GFX_focus_mex_soldaderas
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_army
+		}
+		x = 61
+		y = 2
+
+	}
+	focus = {
+		id = RUS_army_deploy
+		icon = GFX_focus_generic_little_entente
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_deploy_tank_brigade
+		}
+		prerequisite = {
+			focus = RUS_new_infantry
+		}
+		x = 59
+		y = 7
+
+	}
+	focus = {
+		id = RUS_give_knowledge
+		icon = GFX_focus_generic_military_academy
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_guard
+		}
+		prerequisite = {
+			focus = RUS_bewitch_army
+		}
+		x = 62
+		y = 6
+
+	}
+	focus = {
+		id = RUS_navy
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_army
+		}
+		x = 64
+		y = 2
+		
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = RUS_share_docks
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_navy
+		}
+		x = 63
+		y = 3
+		
+		completion_reward = {
+		    195 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_share_docks_2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_share_docks
+		}
+		x = 63
+		y = 4
+		
+		completion_reward = {
+		234 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+				}
+			}
+        }
+	}
+	focus = {
+		id = RUS_share_docks_3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_share_docks_2
+		}
+		x = 63
+		y = 5
+		
+		completion_reward = {
+		214 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+				}
+			}
+        }
+	}
+	focus = {
+		id = RUS_fleet_doctrine_3
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_navy
+		}
+		mutually_exclusive = {
+			focus = RUS_fleet_doctrine_2
+			focus = RUS_fleet_doctrine_1
+		}
+		x = 65
+		y = 3
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = cat_base_strike_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_base_strike
+			}
+		}
+	}
+	focus = {
+		id = RUS_new_destroyers
+		icon = GFX_focus_generic_destroyer
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_fleet_doctrine_3
+		}
+		x = 65
+		y = 4
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = destroyer
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_new_carriers
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_new_destroyers
+		}
+		x = 65
+		y = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = cv_tech_bonus
+				bonus = 1.0
+				uses = 2				
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = RUS_fleet_doctrine_2
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_navy
+		}
+		mutually_exclusive = {
+			focus = RUS_fleet_doctrine_1
+			focus = RUS_fleet_doctrine_3
+		}
+		x = 67
+		y = 3
+		
+		 completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = trade_interdiction_tree_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = trade_interdiction_tree
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_new_submarines
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_fleet_doctrine_2
+		}
+		x = 67
+		y = 4
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_tech_bonus
+				bonus = 1.0
+				uses = 2				
+				category = ss_tech
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_easier_submarine
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_new_submarines
+		}
+		x = 67
+		y = 5
+		
+		completion_reward = {
+		    add_ideas = RUS_easier_submarine
+		}
+
+	}
+	focus = {
+		id = RUS_deal_with_f
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_set_king
+		}
+		x = 2
+		y = 5
+
+	}
+	focus = {
+		id = RUS_estabilish_rus
+		icon = GFX_focus_SOV_my_brothers_keeper
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_stability
+		}
+		prerequisite = {
+			focus = RUS_integration_east
+		}
+		prerequisite = {
+			focus = RUS_send_colonist
+		}
+		prerequisite = {
+			focus = RUS_siberia_back
+		}
+		prerequisite = {
+			focus = RUS_new_prom
+		}
+		prerequisite = {
+			focus = RUS_army_finish
+		}
+		x = 35
+		y = 10
+
+	}
+	focus = {
+		id = RUS_deal_with_c
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_deal_with_f_d
+			focus = RUS_deal_with_d_f
+		}
+		x = 4
+		y = 7
+
+	}
+	focus = {
+		id = RUS_deal_with_d_f
+		icon = GFX_goal_generic_military_deal
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_deal_with_f
+		}
+		x = 2
+		y = 6
+
+	}
+	focus = {
+		id = RUS_send_JAP
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_send_GER
+		}
+		x = 15
+		y = 4
+		
+		completion_reward = {
+		    add_opinion_modifier = {
+                 target = JAP
+                 modifier = RUS_axis			   
+		    }
+		}
+
+	}
+	focus = {
+		id = RUS_join_axis
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_send_JAP
+		}
+		prerequisite = {
+			focus = RUS_open_country
+		}
+		mutually_exclusive = {
+			focus = RUS_join_allies
+		}
+		x = 13
+		y = 5
+		
+		completion_reward = {
+		   GER = { 
+		     add_to_faction = RUS
+		   }
+		}
+
+	}
+	focus = {
+		id = RUS_investition_axis
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_join_axis
+		}
+		x = 13
+		y = 6
+		
+		completion_reward = {
+	        add_timed_idea = {
+			    idea = RUS_investition_axis
+                days = 180				
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_build_new_zavods
+		icon = GFX_focus_generic_tank_production
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_investition_axis
+		}
+		prerequisite = {
+			focus = RUS_share_export
+		}
+		x = 15
+		y = 7
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_expand_economic_boom
+		icon = GFX_goal_generic_consumer_goods
+		available = {
+		has_idea = RUS_economic_boom
+		}
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_build_new_fabrics
+			focus = RUS_build_new_zavods
+		}
+		prerequisite = {
+			focus = RUS_share_export
+		}
+		x = 17
+		y = 8
+		
+		completion_reward = {
+		    remove_ideas = RUS_export
+			swap_ideas = {
+			    remove_idea = RUS_economic_boom
+				add_idea = RUS_economic_boom_expand
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_stability
+		icon = GFX_focus_SOV_third_rome
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_deal_with_c
+			focus = RUS_rule_by_one
+		}
+		x = 7
+		y = 8
+		
+		completion_reward = {
+		    remove_ideas = RUS_stabilize
+		}
+
+	}
+	focus = {
+		id = RUS_new_cruisers
+		icon = GFX_focus_generic_cruiser2
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_fleet_doctrine_1
+		}
+		x = 69
+		y = 4
+		
+		completion_reward = {
+		    add_tech_bonus = {
+				name = ca_tech_bonus
+				bonus = 1.0
+				uses = 1				
+				category = ca_tech
+
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_new_battleship
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_new_cruisers
+		}
+		x = 69
+		y = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = bb_tech_bonus
+				bonus = 1.0
+				uses = 2				
+				category = bb_tech
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_fleet_doctrine_1
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_navy
+		}
+		mutually_exclusive = {
+			focus = RUS_fleet_doctrine_2
+			focus = RUS_fleet_doctrine_3
+		}
+		x = 69
+		y = 3
+
+        completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = fleet_in_being_tree_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = {
+		id = RUS_finish_fleet
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_new_carriers
+			focus = RUS_easier_submarine
+			focus = RUS_new_battleship
+		}
+		x = 66
+		y = 6
+		
+		completion_reward = {
+		    navy_experience = 50
+		}
+
+	}
+	focus = {
+		id = RUS_army_finish
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		cost = 10,00
+		prerequisite = {
+			focus = RUS_finish_fleet
+		}
+		prerequisite = {
+			focus = RUS_bomber
+		}
+		prerequisite = {
+			focus = RUS_army_deploy
+		}
+		x = 61
+		y = 8
+
+	}
+}

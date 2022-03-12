@@ -1,0 +1,396 @@
+ideas = {
+
+	country = {
+			
+			FEC_political_war = {
+			
+			allowed = {
+				tag = FEC
+				tag = KCS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               stability_factor = -0.15
+			   political_power_gain = -0.5			  
+			}
+		}			
+			
+			corp_2 = {
+						
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               fascism_drift = 0.1
+			}
+		}
+		
+		
+		corp_1 = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               democratic_drift = 0.1
+			   
+			}
+		}
+		
+		corp_1_share_power = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               political_power_gain = 0.1
+			   
+			}
+		}
+		
+		corp_1_other_corp = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               	consumer_goods_factor = -0.05	   
+			}
+		}
+		
+		corp_1_light_prom = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               industrial_capacity_factory = 0.1
+			   production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		corp_1_resources_corp = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               	local_resources_factor = 0.10	   
+			}
+		}
+		
+		corp_1_share_finish = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               political_power_gain = 0.15
+			   local_resources_factor = 0.10
+			   industrial_capacity_factory = 0.1
+			   production_speed_buildings_factor = 0.1
+			   consumer_goods_factor = -0.05	
+			}
+		}
+		
+		corp_1_president = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               political_power_gain = 0.1
+			   democratic_drift = 0.1
+			   stability_factor = 0.1
+			   
+			}
+		}
+		
+		corp_2_raid_corp = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               consumer_goods_factor = -0.05
+			   
+			}
+		}
+		
+		corp_2_heavy = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               industrial_capacity_factory = 0.15
+			   production_factory_max_efficiency_factor = 0.1
+			   production_factory_efficiency_gain_factor = 0.1
+			   
+			}
+		}
+	
+		corp_2_dictatorship = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               political_power_gain = 0.5
+			   fascism_drift = 0.1
+               drift_defence_factor = 0.25		   
+			   war_support_weekly = 0.01
+			}
+		}
+		
+		FEC_MID = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               opinion_gain_monthly_factor = 0.25
+			}
+		}
+
+		FEC_open_country = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               min_export = 0.2
+			}
+		}
+
+		FEC_investition_allies = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               consumer_goods_factor = -0.05
+			   
+			}
+		}
+
+		FEC_investition_axis = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               consumer_goods_factor = -0.05
+			   industrial_capacity_factory = 0.1
+			}
+		}
+
+		FEC_joint_development = {
+			
+			allowed = {
+				tag = FEC
+				tag = KCS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               consumer_goods_factor = -0.05   
+			}
+		}
+
+		FEC_army_BTS = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               max_command_power = 50 
+			}
+		}
+
+		FEC_army_own = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               max_command_power = 50 
+			   command_power_gain = 0.2
+			   land_reinforce_rate = 0.05
+			   army_leader_cost_factor = -0.1
+			}
+		}
+	
+		FEC_generals = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               army_leader_start_attack_level = 1
+               army_leader_start_defense_level = 1
+			   army_leader_start_logistics_level = 1 
+               army_leader_start_planning_level = 1
+			}
+		}
+
+		FEC_enlist = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               conscription = 0.01
+			}
+		}
+	 
+		FEC_enlist_2 = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               conscription = 0.02
+			}
+		}
+
+		FEC_draft = {
+			
+			allowed = {
+				tag = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+              license_purchase_cost_factor = -0.15
+			}
+		}
+
+		FEC_deal = {
+			
+			allowed = {
+				TAG = FEC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+               consumer_goods_factor = -0.1
+			}
+		}		
+	 }
+}

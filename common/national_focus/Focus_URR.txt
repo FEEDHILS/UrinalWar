@@ -1,0 +1,984 @@
+focus_tree = {
+	id = Focus_URR
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = URR
+		}
+	}
+	default = no
+	focus = {
+		id = URR_estabilish_power
+		icon = GFX_focus_generic_military_dictatorship
+		cost = 10
+		x = 25
+		y = 0
+		
+		completion_reward = {
+		    add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = URR_battle
+		icon = GFX_goal_generic_major_war
+		available = {
+		    has_war_with = URL
+		}
+		bypass = {
+		   has_war_with = URL
+		}
+		cost = 0
+		x = 37
+		y = 9
+
+	}
+	focus = {
+		id = URR_managment_reforms
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		prerequisite = {
+			focus = URR_estabilish_power
+		}
+		x = 6
+		y = 1
+		
+		completion_reward = {
+		    add_ideas = URR_reforms_managment
+		}
+
+	}
+	focus = {
+		id = URR_enpower_friends
+		icon = GFX_goal_support_fascism
+		cost = 10
+		prerequisite = {
+			focus = URR_managment_reforms
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = URR_everyone_obeys
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		cost = 10
+		prerequisite = {
+			focus = URR_enpower_friends
+		}
+		x = 6
+		y = 3
+		
+		completion_reward = {
+		    add_ideas = URR_everyone_obeys
+		}
+
+	}
+	focus = {
+		id = URR_power_of_one
+		icon = GFX_goal_support_fascism
+		cost = 10
+		prerequisite = {
+			focus = URR_everyone_obeys
+		}
+		mutually_exclusive = {
+			focus = URR_share_power
+		}
+		x = 5
+		y = 4
+		
+		completion_reward = {
+		    add_ideas = URR_fascist
+		}
+
+	}
+	focus = {
+		id = URR_share_power
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = {
+			focus = URR_everyone_obeys
+		}
+		mutually_exclusive = {
+			focus = URR_power_of_one
+		}
+		x = 7
+		y = 4
+		
+		completion_reward = {
+		    add_ideas = URR_democratic
+		}
+
+	}
+	focus = {
+		id = URR_finish_politican
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = URR_share_power
+			focus = URR_power_of_one
+		}
+		x = 6
+		y = 5
+		
+		completion_reward = {
+		    remove_ideas = URR_reforms_managment
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+
+	}
+	focus = {
+		id = URR_economy
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = {
+			focus = URR_estabilish_power
+		}
+		x = 12
+		y = 1
+		
+		completion_reward = {
+		    add_ideas = URR_economu
+		}
+
+	}
+	focus = {
+		id = URR_improve_rifles_workshop
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = URR_economy
+		}
+		x = 11
+		y = 2
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = URR_expand_ore_mines
+		icon = GFX_focus_generic_steel
+		cost = 10
+		prerequisite = {
+			focus = URR_economy
+		}
+		x = 14
+		y = 2
+		
+		completion_reward = {
+		    add_resource = {
+                type = steel
+                amount = 128
+                state = 836
+                }
+		}
+
+	}
+	focus = {
+		id = URR_improve_rifles_workshop_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = URR_improve_rifles_workshop
+		}
+		prerequisite = {
+			focus = URR_expand_ore_mines
+		}
+		x = 13
+		y = 3
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = URR_create_support_workshop
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = URR_improve_rifles_workshop_2
+		}
+		x = 13
+		y = 4
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = URR_optimize
+		icon = GFX_focus_SOV_organize_wreckers
+		cost = 10
+		prerequisite = {
+			focus = URR_create_support_workshop
+		}
+		x = 13
+		y = 5
+		
+		completion_reward = {
+		    add_ideas = URR_optimize_idea
+		}
+
+	}
+	focus = {
+		id = URR_expand_other_mines
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = URR_expand_ore_mines
+		}
+		x = 16
+		y = 3
+		
+		completion_reward = {
+		    add_resource = {
+                type = tungsten
+                amount = 64
+                state = 836
+                }
+				add_resource = {
+                type = aluminium
+                amount = 36
+                state = 836
+                }
+		}
+
+	}
+	focus = {
+		id = URR_approve_extension
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		prerequisite = {
+			focus = URR_estabilish_power
+		}
+		x = 20
+		y = 2
+		
+		completion_reward = {
+		    add_ideas = URR_expand
+		}
+
+	}
+	focus = {
+		id = URR_go_north
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10
+		prerequisite = {
+			focus = URR_approve_extension
+		}
+		prerequisite = {
+			focus = URR_expand_other_mines
+		}
+		x = 18
+		y = 4
+		
+		completion_reward = {
+		    add_state_core = 843
+			transfer_state = 843
+		}
+
+	}
+	focus = {
+		id = URR_propaganda_campaing
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = URR_estabilish_power
+		}
+		x = 25
+		y = 2
+		
+		completion_reward = {
+		    add_political_power = -75
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = URR_propaganda_campaing_2
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = URR_propaganda_campaing
+		}
+		x = 25
+		y = 3
+		
+		completion_reward = {
+		    add_political_power = -50
+			add_war_support = 0.1
+		}
+
+	}
+	focus = {
+		id = URR_propaganda_campaing_3
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = URR_propaganda_campaing_2
+		}
+		x = 25
+		y = 4
+		
+		completion_reward = {
+		    add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = URR_propaganda_campaing_4
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = URR_propaganda_campaing_3
+		}
+		x = 22
+		y = 5
+		
+		completion_reward = {
+		    add_manpower = 10000
+		}
+
+	}
+	focus = {
+		id = URR_seize_central_mines
+		icon = GFX_goal_demand_sudetenland
+		available = {
+			WAS = { owns_state = 835 }
+			date > 1938.01.01
+		}
+		bypass = {
+				WAS = {
+					NOT = { owns_state = 835 }
+				}
+			}	
+		cost = 10
+		prerequisite = {
+			focus = URR_propaganda_campaing_4
+		}
+		prerequisite = {
+			focus = URR_go_north
+		}
+		x = 20
+		y = 6
+		
+		completion_reward = {
+		    add_state_core = 835
+			transfer_state = 835
+		}
+
+	}
+	focus = {
+		id = URR_mines_ours
+		icon = GFX_goal_generic_defence
+		available = {
+		  owns_state = 835
+		}
+		cost = 1
+		prerequisite = {
+			focus = URR_seize_central_mines
+		}
+		mutually_exclusive = {
+			focus = URR_mines_under_gondon
+		}
+		x = 18
+		y = 7
+		
+		completion_reward = {
+		    add_stability = 0.05
+			add_war_support = 0.15
+		}
+
+	}
+	focus = {
+		id = URR_expand_resourses
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		prerequisite = {
+			focus = URR_mines_ours
+		}
+		x = 16
+		y = 8
+		
+		completion_reward = {
+		    add_resource = {
+			type = steel 
+            amount = 346
+            state = 835				 
+			}
+		    add_resource = {
+			type = tungsten
+            amount = 128
+            state = 835				 
+			}
+			add_resource = {
+			type = aluminium
+            amount = 212
+            state = 835				 
+			}
+			add_resource = {
+			type = chromium
+            amount = 82
+            state = 835				 
+			}
+		}
+
+	}
+	focus = {
+		id = URR_army
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = URR_estabilish_power
+		}
+		x = 31
+		y = 1
+		
+		completion_reward = {
+		    add_ideas = URR_army
+		}
+
+	}
+	focus = {
+		id = URR_create_new_division
+		icon = GFX_focus_SOV_mobilization_plan
+		cost = 10
+		prerequisite = {
+			focus = URR_army
+		}
+		x = 29
+		y = 2
+		
+		completion_reward = {
+		    add_manpower = 12000
+		}
+
+	}
+	focus = {
+		id = URR_continue_army_expired
+		icon = GFX_focus_generic_little_entente
+		cost = 10
+		prerequisite = {
+			focus = URR_create_new_division
+		}
+		x = 29
+		y = 3
+		
+		completion_reward = {
+		    add_ideas = URR_army_conscription
+		}
+
+	}
+	focus = {
+		id = URR_rebuild_generalitet
+		icon = GFX_focus_generic_military_mission
+		cost = 10
+		prerequisite = {
+			focus = URR_army
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = URR_new_tacticks
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+		prerequisite = {
+			focus = URR_rebuild_generalitet
+		}
+		x = 31
+		y = 3
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = URR_prussian_glory
+		icon = GFX_focus_ger_revive_kaiserreich
+		cost = 10
+		prerequisite = {
+			focus = URR_new_tacticks
+		}
+		prerequisite = {
+			focus = URR_continue_army_expired
+		}
+		x = 30
+		y = 4
+		
+		completion_reward = {
+		    swap_ideas = {
+			remove_idea = URR_army
+		    add_idea = URR_prussian_army
+			}
+		}
+
+	}
+	focus = {
+		id = URR_wins
+		icon = GFX_goal_generic_military_deal
+		available = {
+        NOT = { country_exists = URL } 
+		}
+		cost = 1
+		prerequisite = {
+			focus = URR_battle
+		}
+		x = 37
+		y = 10
+
+	}
+	focus = {
+		id = URR_integration_south_mines
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = URR_wins
+		}
+		x = 34
+		y = 11
+
+	}
+	focus = {
+		id = URR_expand_mines
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		prerequisite = {
+			focus = URR_integration_south_mines
+		}
+		x = 34
+		y = 12
+
+	}
+	focus = {
+		id = URR_expand_aluminium_mines
+		icon = GFX_focus_generic_aluminum
+		cost = 10
+		prerequisite = {
+			focus = URR_expand_mines
+		}
+		x = 32
+		y = 13
+
+	}
+	focus = {
+		id = URR_expand_tungusten_mines
+		icon = GFX_focus_generic_tungsten
+		cost = 10
+		prerequisite = {
+			focus = URR_expand_mines
+		}
+		x = 34
+		y = 13
+
+	}
+	focus = {
+		id = URR_create_special_unit
+		icon = GFX_focus_mex_soldaderas
+		cost = 10
+		prerequisite = {
+			focus = URR_army
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = URR_celebrate_victory
+		icon = GFX_focus_generic_military_dictatorship
+		cost = 10
+		prerequisite = {
+			focus = URR_wins
+		}
+		x = 40
+		y = 11
+
+	}
+	focus = {
+		id = URR_proclaim_king
+		icon = GFX_focus_hun_elect_a_king
+		cost = 10
+		prerequisite = {
+			focus = URR_celebrate_victory
+		}
+		x = 40
+		y = 12
+
+	}
+	focus = {
+		id = URR_const_mon
+		icon = GFX_focus_rom_handle_king
+		cost = 10
+		prerequisite = {
+			focus = URR_proclaim_king
+		}
+		mutually_exclusive = {
+			focus = URR_absolut_mon
+		}
+		x = 39
+		y = 13
+
+	}
+	focus = {
+		id = URR_write_constitution
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		prerequisite = {
+			focus = URR_const_mon
+		}
+		x = 39
+		y = 14
+
+	}
+	focus = {
+		id = URR_absolut_mon
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10
+		prerequisite = {
+			focus = URR_proclaim_king
+		}
+		mutually_exclusive = {
+			focus = URR_const_mon
+		}
+		x = 41
+		y = 13
+
+	}
+	focus = {
+		id = URR_crush_democrats
+		icon = GFX_focus_SAF_colonialist_crusade
+		cost = 10
+		prerequisite = {
+			focus = URR_absolut_mon
+		}
+		x = 41
+		y = 14
+
+	}
+	focus = {
+		id = URR_proclaim_kingdom
+		icon = GFX_focus_generic_monarchy_2
+		cost = 10
+		prerequisite = {
+			focus = URR_crush_democrats
+			focus = URR_write_constitution
+		}
+		x = 40
+		y = 15
+
+	}
+	focus = {
+		id = URR_go_outside
+		icon = GFX_goal_generic_trade
+		cost = 10
+		prerequisite = {
+			focus = URR_proclaim_king
+		}
+		x = 44
+		y = 13
+
+	}
+	focus = {
+		id = URR_estabilish_sib
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = URR_go_outside
+		}
+		x = 44
+		y = 14
+
+	}
+	focus = {
+		id = URR_deal_sib
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = URR_estabilish_sib
+		}
+		x = 44
+		y = 15
+
+	}
+	focus = {
+		id = URR_estabilish_allies
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10
+		prerequisite = {
+			focus = URR_go_outside
+		}
+		x = 46
+		y = 14
+
+	}
+	focus = {
+		id = URR_join_allies
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = {
+			focus = URR_estabilish_allies
+		}
+		x = 46
+		y = 15
+
+	}
+	focus = {
+		id = URR_mines_under_gondon
+		icon = GFX_goal_generic_more_territorial_claims
+		available = {
+		    NOT = { owns_state = 835 }
+		}
+		cost = 1
+		prerequisite = {
+			focus = URR_seize_central_mines
+		}
+		mutually_exclusive = {
+			focus = URR_mines_ours
+		}
+		x = 22
+		y = 7
+		
+		completion_reward = {
+		    add_stability = -0.15
+			add_war_support = -0.15
+		}
+
+	}
+	focus = {
+		id = URR_fortificate_mine
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		prerequisite = {
+			focus = URR_mines_ours
+		}
+		x = 18
+		y = 8
+		
+		 completion_reward = {
+		 
+		835 = {
+		    add_building_construction = {
+				type = bunker
+				level = 3
+				province = 10216
+			    instant_build = yes
+			    }
+					
+		   } 
+		}	
+	}
+	focus = {
+		id = URR_deploy_new_division
+		icon = GFX_focus_generic_manpower
+		cost = 10
+		prerequisite = {
+			focus = URR_mines_under_gondon
+		}
+		prerequisite = {
+			focus = URR_mines_ours
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = URR_reorganize
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = URR_mines_under_gondon
+		}
+		x = 22
+		y = 8
+		
+		completion_reward = {
+		    add_war_support = 0.1	
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		
+
+	}
+	focus = {
+		id = URR_refreshing_generalitet
+		icon = GFX_focus_generic_military_academy
+		cost = 10
+		prerequisite = {
+			focus = URR_mines_under_gondon
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = URR_ready_for_battle
+		icon = GFX_goal_generic_small_arms
+		available = {
+		    date > 1938.10.1
+		}
+		cost = 10
+		prerequisite = {
+			focus = URR_reorganize
+			focus = URR_fortificate_mine
+			focus = URR_deploy_new_division
+		}
+		x = 20
+		y = 9
+		
+		completion_reward = {
+		    create_wargoal = {
+                type = puppet_wargoal_focus
+                target = URL
+            }
+		}
+
+	}
+	focus = {
+		id = URR_expand_steel_mines
+		icon = GFX_focus_generic_steel
+		cost = 10
+		prerequisite = {
+			focus = URR_expand_mines
+		}
+		x = 30
+		y = 13
+
+	}
+	focus = {
+		id = URR_estabilish_axis
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 10
+		prerequisite = {
+			focus = URR_go_outside
+		}
+		x = 48
+		y = 14
+
+	}
+	focus = {
+		id = URR_join_axis
+		icon = GFX_goal_support_fascism
+		cost = 10
+		prerequisite = {
+			focus = URR_estabilish_axis
+		}
+		x = 48
+		y = 15
+
+	}
+	focus = {
+		id = URR_join_to_sib
+		icon = GFX_focus_cze_german_puppet
+		cost = 10
+		prerequisite = {
+			focus = URR_deal_sib
+		}
+		x = 44
+		y = 16
+
+	}
+}

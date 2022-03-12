@@ -1,0 +1,24 @@
+state={
+	id=836
+	name="STATE_836"
+        resources={
+		aluminium=32.000
+                steel=83.000
+	}
+
+ history={
+		owner = URR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = URR
+        }
+	provinces={
+		4874 
+	}
+	manpower=512896
+	buildings_max_level_factor=1.000
+        state_category=city
+	local_supplies=0.000
+}
