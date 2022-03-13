@@ -1,0 +1,93 @@
+characters = {
+	SIB_Borislav_Masonov = {
+		name=SIB_Borislav_Masonov
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SIB_Borislav_Masonov
+			allowed={
+				original_tag = SIB
+			}
+			traits={
+				silent_workhorse,
+				Bred_And_Erunda_Admin
+			}
+		}	
+	}
+
+	SIB_Nikita_Khruschov = {
+		name=SIB_Nikita_Khruschov
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SIB_Nikita_Khruschov
+			allowed={
+				original_tag = SIB
+			}
+			traits={
+				liberal_journalist,
+				humble_appeaser
+			}
+		}	
+	}
+
+	SIB_Alfonso_Maxim = {
+		name=SIB_Alfonso_Maxim
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SIB_Alfonso_Maxim
+			allowed={
+				original_tag = SIB
+			}
+			traits={
+				peoples_commissar_of_finance,
+				financial_graduate,
+				femenist_ultranationalist
+			}
+		}	
+	}
+
+	SIB_Andrew_Potolot = {
+		name=SIB_Andrew_Potolot
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SIB_Andrew_Potolot
+			allowed={
+				original_tag = SIB
+			}
+			traits={
+				war_industrialist,
+				hawk
+			}
+		}	
+	}
+
+
+
+}

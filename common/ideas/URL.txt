@@ -2,6 +2,62 @@ ideas = {
 
 	country = {
 	
+	    URL_bad_managment = {
+						
+			allowed = {
+				tag = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               political_power_factor = -0.4
+			   stability_factor = -0.3
+			   monthly_population = 0.5
+			   stability_weekly = -0.01
+			   drift_defence_factor = -1
+			}
+		}
+		
+		URL_bad_managment_2 = {
+						
+			allowed = {
+				tag = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               political_power_factor = -0.2
+			   stability_factor = -0.25
+			   monthly_population = 0.4
+			   stability_weekly = -0.01
+			   drift_defence_factor = -0.75
+			}
+		}
+		
+		URL_bad_managment_3 = {
+						
+			allowed = {
+				tag = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               political_power_factor = -0.1
+			   stability_factor = -0.15
+			   monthly_population = 0.2
+			   drift_defence_factor = -0.75
+			}
+		}
+	
 		URL_reforms_managment = {
 						
 			allowed = {
@@ -179,6 +235,21 @@ ideas = {
                 conscription = 0.04
 			}
 			
+		}
+		
+		URL_orcs_mining_2 = {
+						
+			allowed = {
+				tag = URL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+               local_resources_factor = 0.2
+			}
 		}
     }
 }

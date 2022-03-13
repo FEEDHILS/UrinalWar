@@ -75,3 +75,25 @@ set_popularities = {
 	communism = 95
 	democratic = 5
 }
+
+add_ideas = { KCS_communism_dream }
+
+create_country_leader = {
+	name = "Lenin The Second"
+	desc = "LeninII_DESC"
+	picture = "Lenin.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		princess_of_terror
+		marxist_fundementalist
+	}
+}
+
+recruit_character = KCS_Pidor_Gryazni
+recruit_character = KCS_Anton_Logvinov
+recruit_character = KCS_Lavrenty_Beria
+recruit_character = KCS_Deer_1
+recruit_character = KCS_Deer_2
+recruit_character = KCS_Deer_3
+recruit_character = FEC_YOURMOM

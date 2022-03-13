@@ -678,7 +678,7 @@ focus_tree = {
 		y = 1
 		
 		completion_reward = {
-		   unlock_decision_category_tooltip = military_contracts_category
+			unlock_decision_category_tooltip = military_contracts_category 
 		}
 
 	}
@@ -707,6 +707,9 @@ focus_tree = {
 		x = 40
 		y = 3
 
+		completion_reward = {
+		    unlock_decision_tooltip = second_fleet_focus
+		}
 	}
 	focus = {
 		id = FEC_1_fleet_battleship
@@ -718,6 +721,9 @@ focus_tree = {
 		x = 40
 		y = 4
 
+		completion_reward = {
+		    unlock_decision_tooltip = third_fleet_focus
+		}
 	}
 	focus = {
 		id = FEC_1_army_open_contracts
@@ -807,6 +813,10 @@ focus_tree = {
 		x = 46
 		y = 3
 
+		completion_reward = {
+		    unlock_decision_tooltip = first_air_focus
+		}
+
 	}
 	focus = {
 		id = FEC_1_air_share_contract
@@ -818,6 +828,10 @@ focus_tree = {
 		x = 48
 		y = 3
 
+		completion_reward = {
+		    unlock_decision_tooltip = second_air_focus
+		}
+
 	}
 	focus = {
 		id = FEC_1_air_bomber
@@ -828,6 +842,10 @@ focus_tree = {
 		}
 		x = 49
 		y = 4
+
+		completion_reward = {
+		    unlock_decision_tooltip = third_air_focus
+		}
 
 	}
 	focus = {

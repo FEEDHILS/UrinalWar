@@ -63,7 +63,12 @@ focus_tree = {
 		    add_stability = 0.05
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = Orc_Vladimir
+			swap_ideas = {
+			    remove_idea = URL_bad_managment
+				add_idea = URL_bad_managment_2
+			}
 		}
+		
 
 	}
 	focus = {
@@ -90,11 +95,13 @@ focus_tree = {
 		}
 		x = 8
 		y = 4
-		
-		completion_reward = {
-		    add_ideas = URL_burecrats
-		}
-
+	    
+        completion_reward = {
+		swap_ideas = {
+			    remove_idea = URL_bad_managment_2
+				add_idea = URL_bad_managment_3
+			}	
+        }
 	}
 	focus = {
 		id = URL_teach_orcs_duty
@@ -105,6 +112,10 @@ focus_tree = {
 		}
 		x = 8
 		y = 5
+		
+        completion_reward = {
+		    add_ideas = URL_burecrats
+		}
 
 	}
 	focus = {
@@ -118,7 +129,8 @@ focus_tree = {
 		y = 6
 		
 		completion_reward = {
-		    remove_ideas =  URL_reforms_managment
+		    remove_ideas = URL_reforms_managment
+            remove_ideas = URL_bad_managment_3			
 		}
 
 	}
@@ -471,7 +483,7 @@ focus_tree = {
 		y = 1
 		
 		completion_reward = {
-		    add_ideas = URL_army
+		    army_experience = 10
 		}
 
 	}
@@ -539,6 +551,18 @@ focus_tree = {
 		}
 		x = 30
 		y = 3
+		
+		completion_reward = {
+		    create_corps_commander = {
+	           name = "Orc Oleg"           
+	           traits = { infantry_leader }
+	           skill = 1
+	           attack_skill = 2
+	           defense_skill = 1
+	           planning_skill = 1
+	           logistics_skill = 1
+            }
+		}
 
 	}
 	focus = {
@@ -613,17 +637,45 @@ focus_tree = {
 		}
 		x = 35
 		y = 2
-
+		
+		completion_reward = {
+		    division_template = {
+				name = "Special Unit"
+				priority = 2
+				division_names_group = Guard
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					artillery_brigade = { x = 1 y = 2 }
+				}
+		    }
+		   837 = {
+		        create_unit = {
+				division = "name = \"Strong orks\" division_template = \"Special Unit\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = URL			
+				}
+		   }
+        }
 	}
 	focus = {
 		id = URL_win
 		icon = GFX_goal_generic_military_deal
-		cost = 10
+		available = {
+		NOT = { country_exists = URR }
+		}
+		cost = 1
 		prerequisite = {
 			focus = URL_battle
 		}
 		x = 43
 		y = 7
+		
+		completion_reward = {
+		    add_war_support = 0.01
+		}
 
 	}
 	focus = {
@@ -635,6 +687,13 @@ focus_tree = {
 		}
 		x = 41
 		y = 8
+        
+		completion_reward = {
+		    swap_ideas = {
+			    remove_idea = URL_orcs_mining
+				add_idea = URL_orcs_mining_2
+			}
+		}
 
 	}
 	focus = {
@@ -646,7 +705,14 @@ focus_tree = {
 		}
 		x = 37
 		y = 9
-
+		
+		completion_reward = {
+		    add_resource = {
+			    type = steel
+				amount = 144
+				state= 836
+			}
+		}
 	}
 	focus = {
 		id = URL_expand_aluminium_mines
@@ -657,6 +723,14 @@ focus_tree = {
 		}
 		x = 39
 		y = 9
+		
+		completion_reward = {
+			add_resource = {
+			    type = aluminium
+				amount = 86
+				state= 843
+			}
+		}
 
 	}
 	focus = {
@@ -668,6 +742,14 @@ focus_tree = {
 		}
 		x = 41
 		y = 9
+		
+		completion_reward = {
+		    add_resource = {
+			    type = tungsten
+				amount = 86
+				state= 836
+			}
+		}
 
 	}
 	focus = {
@@ -690,6 +772,10 @@ focus_tree = {
 		}
 		x = 45
 		y = 9
+		
+		completion_reward = {
+		    add_stability = -0.1
+		}
 
 	}
 	focus = {
@@ -741,6 +827,19 @@ focus_tree = {
 		}
 		x = 22
 		y = 7
+		
+		completion_reward = {
+		   837 = {
+		        create_unit = {
+				division = "name = \"Strong orks\" division_template = \"Special Unit\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = URL			
+				}
+		        create_unit = {
+				division = "name = \"Strong orks\" division_template = \"Special Unit\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = URL			
+				}
+		   }
+        }
 
 	}
 	focus = {
@@ -752,6 +851,10 @@ focus_tree = {
 		}
 		x = 45
 		y = 10
+		
+		completion_reward = {
+		    add_manpower = 1000000
+		}
 
 	}
 	focus = {
@@ -763,7 +866,40 @@ focus_tree = {
 		}
 		x = 47
 		y = 10
-
+		
+		
+		completion_reward = {
+		    division_template = {
+				name = "New Infantry"
+				priority = 2
+				division_names_group = Infantry
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+                    infantry = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 2 }
+					artillery_brigade = { x = 2 y = 3 }
+				}
+				support = {
+				    artillery = { x = 0 y = 0 }
+				}
+		    }
+			
+		837 = {
+		        create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"New Infantry\" start_experience_factor = 0.2 start_equipment_factor = 1"
+				owner = URL			
+				}
+		        create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"New Infantry\" start_experience_factor = 0.2 start_equipment_factor = 1"
+				owner = URL			
+				}
+		   }   
+        }
 	}
 	focus = {
 		id = URL_deal_with_repressor
@@ -774,6 +910,10 @@ focus_tree = {
 		}
 		x = 49
 		y = 9
-
+		
+		completion_reward = {
+		    add_state_core = 836
+			add_state_core = 843
+		}
 	}
 }

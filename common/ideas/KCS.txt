@@ -2,6 +2,21 @@ ideas = {
 
 	country = {
 
+	    KCS_communism_dream = {
+		
+			allowed = {
+				TAG = KCS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+
 		KCS_ideas_USSR = {
 		
 			allowed = {
@@ -18,7 +33,7 @@ ideas = {
 				training_time_factor = -0.2
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-				surrender_limit = -0.5
+				surrender_limit = 0.25
 			}
 		}
 

@@ -1,0 +1,117 @@
+characters = {
+	FEC_Oleg_Assmanov={
+		name=FEC_Oleg_Assmanov
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = FEC_Oleg_Assmanov
+			allowed={
+				original_tag = FEC
+			}
+			traits={
+				economist,
+				technocrat
+			}
+		}		
+	}
+
+	FEC_Walter_White={
+		name=FEC_Walter_White
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FEC_Walter_White
+			allowed = {
+				original_tag = FEC
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+	}
+
+	FEC_Johny_Deep={
+		name=FEC_Johny_Deep
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FEC_Johny_Deep
+			allowed = {
+				original_tag = FEC
+			}
+			traits = {
+				industry_reformer 
+			}
+		}
+	}
+
+	FEC_Rubber_Corp={
+		name=FEC_Rubby_Dick
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FEC_Rubber_Corp
+			allowed = {
+				original_tag = FEC
+			}
+			on_add = {
+				add_resource = {
+					type = rubber
+					amount = 10
+					state = 408
+				} 
+			}
+			
+			on_remove = {
+				add_resource = {
+					type = rubber
+					amount = -10
+					state = 408
+				} 
+			}
+		}
+	}
+	
+	FEC_Alastor_fon_Pidor={
+		name=FEC_Alastor_fon_Pidor
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FEC_Alastor_fon_Pidor
+			allowed = {
+				original_tag = FEC
+			}
+			traits = {
+				quartermaster_general,
+				war_industrialist
+			}
+		}
+	}
+}
+

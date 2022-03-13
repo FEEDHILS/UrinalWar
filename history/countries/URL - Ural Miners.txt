@@ -68,6 +68,10 @@ recruit_character = Orc_Vladimir
 	}
 }
 
+add_ideas = { URL_bad_managment 
+              URL_army 
+			}
+
 set_politics = {
 	ruling_party = fascism
 	last_election = "1934.6.3"

@@ -1,0 +1,18 @@
+add_namespace = lore
+
+
+country_event = {
+	id = lore.1
+	
+	title = lore.t.1
+	desc = lore.d.1
+	
+	is_triggered_only = yes
+	
+	#picture = GFX_report_event_ace_promoted
+
+	option = {
+		name = lore.1.a
+	}
+
+}

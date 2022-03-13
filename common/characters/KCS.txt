@@ -1,3 +1,129 @@
-characters={
+characters = {
+	KCS_Pidor_Gryazni={
+		name=KCS_Pidor_Gryazni
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = KCS_Pidor_Gryazni
+			allowed = {
+				original_tag = KCS
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+	}
 	
+	KCS_Anton_Logvinov={
+		name=KCS_Anton_Logvinov
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = KCS_Anton_Logvinov
+			allowed = {
+				original_tag = KCS
+			}
+			traits = {
+				technocrat
+			}
+		}
+	}
+	
+	KCS_Lavrenty_Beria={
+		name=KCS_Lavrenty_Beria
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = KCS_Lavrenty_Beria
+			allowed = {
+				original_tag = KCS
+			}
+			traits = {
+				head_of_the_NKVD,
+				old_guard,
+				backroom_backstabber
+			}
+		}
+	}
+	
+	KCS_Deer_1={
+		name=KCS_Deer_Andrey
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = KCS_Deer_1
+			allowed = {
+				original_tag = KCS
+			}
+			traits = {
+				economist,
+				financial_expert,
+			}
+		}
+	}
+	
+	KCS_Deer_2={
+		name=KCS_Deer_Nikolai
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = KCS_Deer_2
+			allowed = {
+				original_tag = KCS
+			}
+			traits = {
+				education_reformer,
+				editor
+			}
+		}
+	}
+	
+	KCS_Deer_3={
+		name=KCS_Deer_Semen
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = KCS_Deer_3
+			allowed = {
+				original_tag = KCS
+			}
+			traits = {
+				appeaser,
+				smooth_talking_con_man
+			}
+		}
+	}
+
+
+
 }

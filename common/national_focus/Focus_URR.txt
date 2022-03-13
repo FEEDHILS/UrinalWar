@@ -571,6 +571,28 @@ focus_tree = {
 		}
 		x = 31
 		y = 2
+		
+		completion_reward = {
+		    create_corps_commander = {
+	           name = "Mikola Gornoval" 
+               traits = { brilliant_strategist }			   
+	           skill = 3
+	           attack_skill = 5
+	           defense_skill = 2
+	           planning_skill = 3
+	           logistics_skill = 4
+            }
+			 create_corps_commander = {
+	           name = "Vitaliy Tsal" 
+               traits = { war_hero media_personality harsh_leader }				   
+	           skill = 4
+	           attack_skill = 4
+	           defense_skill = 1
+	           planning_skill = 2
+	           logistics_skill = 1
+			   id = 1488
+            }
+		}
 
 	}
 	focus = {
@@ -681,7 +703,32 @@ focus_tree = {
 		}
 		x = 35
 		y = 2
-
+		
+		completion_reward = {
+		    division_template = {
+				name = "Special Unit"
+				priority = 2
+				division_names_group = Guard
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					artillery_brigade = { x = 1 y = 1 }
+					artillery_brigade = { x = 1 y = 2 }
+				}
+           support = {
+		   artillery = { x = 0 y = 0 }
+           engineer = { x = 0 y = 1 }		   
+	            }	
+		    }
+		   836 = {
+		        create_unit = {
+				division = "name = \"Spetsnaz\" division_template = \"Special Unit\" start_experience_factor = 0.3 start_equipment_factor = 1"
+				owner = URR			
+				}
+		   }
+        }
 	}
 	focus = {
 		id = URR_celebrate_victory
@@ -692,6 +739,11 @@ focus_tree = {
 		}
 		x = 40
 		y = 11
+		
+		completion_reward = {
+		    add_war_support = -0.1
+			add_stability = 0.01
+		}
 
 	}
 	focus = {
@@ -703,11 +755,18 @@ focus_tree = {
 		}
 		x = 40
 		y = 12
+		
+		completion_reward = {
+		    add_country_leader_trait = the_sacred_king
+		}
 
 	}
 	focus = {
 		id = URR_const_mon
 		icon = GFX_focus_rom_handle_king
+		available = {
+		    has_completed_focus = URR_share_power
+		}
 		cost = 10
 		prerequisite = {
 			focus = URR_proclaim_king
@@ -717,8 +776,16 @@ focus_tree = {
 		}
 		x = 39
 		y = 13
-
-	}
+		
+		completion_reward = {
+		    set_politics = {
+	            ruling_party = democratic
+                elections_allowed = yes
+                last_election = "1939.12.17"
+                election_frequency = 48
+                }
+		    }
+	    }
 	focus = {
 		id = URR_write_constitution
 		icon = GFX_focus_generic_treaty
@@ -728,11 +795,21 @@ focus_tree = {
 		}
 		x = 39
 		y = 14
-
+		
+		completion_reward = {
+		    add_popularity = {
+			    ideology = democratic
+				popularity = 0.24
+			}
+			add_ideas = URR_const
+		}
 	}
 	focus = {
 		id = URR_absolut_mon
 		icon = GFX_focus_rom_royal_dictatorship
+		available = {
+		    has_completed_focus = URR_power_of_one
+		}
 		cost = 10
 		prerequisite = {
 			focus = URR_proclaim_king
@@ -742,7 +819,15 @@ focus_tree = {
 		}
 		x = 41
 		y = 13
-
+		
+		completion_reward = {
+		    set_politics = {
+	            ruling_party = fascism
+                elections_allowed = no
+                last_election = "1939.12.17"
+                election_frequency = 48
+            }
+		}
 	}
 	focus = {
 		id = URR_crush_democrats
@@ -753,6 +838,14 @@ focus_tree = {
 		}
 		x = 41
 		y = 14
+		
+		completion_reward = {
+		    add_popularity = {
+			    ideology = fascism 
+				popularity = 0.6
+			}
+			add_stability = -0.2
+		}
 
 	}
 	focus = {
@@ -776,6 +869,10 @@ focus_tree = {
 		}
 		x = 44
 		y = 13
+		
+		completion_reward = {
+		    add_ideas = URR_outside
+		}
 
 	}
 	focus = {
@@ -787,6 +884,13 @@ focus_tree = {
 		}
 		x = 44
 		y = 14
+		
+		completion_reward = {
+		    add_opinion_modifier = {
+			    target = SIB
+				modifier = URR_sib
+			}
+		}
 
 	}
 	focus = {
@@ -798,6 +902,11 @@ focus_tree = {
 		}
 		x = 44
 		y = 15
+		
+		completion_reward = {
+		    SIB = { add_ideas = SIB_deal_URR }
+			add_ideas = URR_deal
+		}
 
 	}
 	focus = {
@@ -809,6 +918,13 @@ focus_tree = {
 		}
 		x = 46
 		y = 14
+		
+		completion_reward = {
+		    add_opinion_modifier = {
+			    target = ENG
+				modifier = URR_allies
+			}
+		}
 
 	}
 	focus = {
@@ -820,6 +936,12 @@ focus_tree = {
 		}
 		x = 46
 		y = 15
+		
+		completion_reward = {
+		   ENG = { 
+		     add_to_faction = URR
+		   }
+		}
 
 	}
 	focus = {
@@ -879,7 +1001,35 @@ focus_tree = {
 		}
 		x = 20
 		y = 8
-
+		
+		completion_reward = {
+		    division_template = {
+				name = "Podkrepa"
+				priority = 2
+				division_names_group = Reservs
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+           support = {
+           engineer = { x = 0 y = 1 }		   
+	            }	
+		    }
+			836 = {
+		        create_unit = {
+				division = "name = \"Newbie\" division_template = \"Podkrepa\" start_experience_factor = 0.2 start_equipment_factor = 1"
+				owner = URR				
+				}
+		        create_unit = {
+				division = "name = \"Bewbie\" division_template = \"Podkrepa\" start_experience_factor = 0.2 start_equipment_factor = 1"
+				owner = URR				
+				}
+		    }
+        }
 	}
 	focus = {
 		id = URR_reorganize
@@ -912,6 +1062,21 @@ focus_tree = {
 		}
 		x = 24
 		y = 8
+		
+		completion_reward = {
+		    create_corps_commander = {
+	           name = "Nikita Borov"           
+	           skill = 3
+	           attack_skill = 5
+	           defense_skill = 2
+	           planning_skill = 3
+	           logistics_skill = 4
+            }
+			every_unit_leader = {
+                limit = { has_id = 1488 }
+                demote_leader = yes
+            } 
+		}
 
 	}
 	focus = {
@@ -957,7 +1122,14 @@ focus_tree = {
 		}
 		x = 48
 		y = 14
-
+		
+		completion_reward = {
+		    add_opinion_modifier = {
+			    target = GER
+				modifier = URR_axis
+			}
+		}
+	
 	}
 	focus = {
 		id = URR_join_axis
@@ -968,6 +1140,12 @@ focus_tree = {
 		}
 		x = 48
 		y = 15
+		
+		completion_reward = {
+		   GER = { 
+		     add_to_faction = URR
+		   }
+		}
 
 	}
 	focus = {
@@ -979,6 +1157,10 @@ focus_tree = {
 		}
 		x = 44
 		y = 16
+		
+		completion_reward = {
+		    SIB = { puppet = URR } 
+		}
 
 	}
 }

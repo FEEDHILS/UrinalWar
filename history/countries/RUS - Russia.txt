@@ -65,6 +65,11 @@ set_stability = 0.2
 	}
 }
 
+add_ideas = {  RUS_situation
+               closed_economy 
+			   RUS_economic_zastoy
+			   }
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.6.3"

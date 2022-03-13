@@ -16,9 +16,7 @@ focus_tree = {
 		y = 0
 		
 		completion_reward = {
-		    add_ideas = SIB_depression
-			add_ideas = SIB_politican
-			add_ideas = SIB_army
+		    add_political_power = -100
 		}
 
 	}
@@ -568,6 +566,39 @@ focus_tree = {
 		}
 		x = 36
 		y = 3
+		
+		completion_reward = {
+		    division_template = {
+				name = "Guard"
+				priority = 2
+				division_names_group = Guard
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+					artillery_brigade = { x = 2 y = 2 }
+				}
+           support = {
+		   artillery = { x = 0 y = 0 }
+           engineer = { x = 0 y = 1 }		   
+	            }	
+		    }
+			840 = {
+		        create_unit = {
+				division = "name = \"Guardians\" division_template = \"Guard\" start_experience_factor = 0.6 start_equipment_factor = 1"
+				owner = SIB				
+				}
+		        create_unit = {
+				division = "name = \"Guardians\" division_template = \"Guard\" start_experience_factor = 0.6 start_equipment_factor = 1"
+				owner = SIB				
+				}
+		    }
+		}
 
 	}
 	focus = {
@@ -579,6 +610,29 @@ focus_tree = {
 		}
 		x = 38
 		y = 3
+		
+		completion_reward = {
+		    division_template = {
+				name = "Mountainers"
+				priority = 2
+				division_names_group = Mountainers
+				regiments = {
+					mountaineers = { x = 0 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }
+					mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+				}
+		    }			
+			572 = {
+		        create_unit = {
+				division = "name = \"Mountainers\" division_template = \"Mountainers\" start_experience_factor = 0.6 start_equipment_factor = 1"
+				owner = SIB				
+				}
+		    }
+		}
 
 	}
 	focus = {
@@ -790,6 +844,10 @@ focus_tree = {
 	focus = {
 		id = SIB_our_own_path
 		icon = GFX_goal_generic_demand_territory
+		available = {
+		NOT = { has_completed_focus = SIB_join_allies }
+		NOT = { has_completed_focus = SIB_join_axis }
+		}
 		cost = 10
 		prerequisite = {
 			focus = SIB_build_new_relationship
@@ -805,6 +863,10 @@ focus_tree = {
 	focus = {
 		id = SIB_join_allies
 		icon = GFX_goal_generic_improve_relations
+		available = {
+		NOT = { has_completed_focus = SIB_our_own_path }
+		NOT = { has_completed_focus = SIB_join_axis }
+		}
 		cost = 10
 		prerequisite = {
 			focus = SIB_rebuild_relationship
@@ -822,6 +884,10 @@ focus_tree = {
 	focus = {
 		id = SIB_join_axis
 		icon = GFX_goal_molotov_ribbentrop_pact
+		available = {
+		NOT = { has_completed_focus = SIB_our_own_path }
+		NOT = { has_completed_focus = SIB_join_allies }
+		}
 		cost = 10
 		prerequisite = {
 			focus = SIB_build_new_relationship

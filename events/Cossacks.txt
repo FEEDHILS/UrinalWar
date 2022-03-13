@@ -1,0 +1,64 @@
+add_namespace = cossacks
+
+
+country_event = {
+	id = cossacks.1
+	title = cossacks.1.t # Cossacks Ultimatum
+	desc = cossacks.1.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_generic_battle
+
+	option = {
+		name = cossacks.1.a # Annexing Ukrain
+		ai_chance = { factor = 50 }
+		
+		CTB = {
+			annex_country = {
+				target = UKR
+				transfer_troops = no
+			}
+		}
+	}
+	
+	option = {
+		name = cossacks.1.b # Gives wargoal on ukrain
+		ai_chance = { factor = 50 }
+		
+		CTB = { 
+			create_wargoal = { 
+				type = annex_everything
+				target = UKR
+			}
+		}
+	}
+}
+
+country_event = {
+	id = cossacks.2
+	title = cossacks.2.t # Ukrain Unification
+	desc = cossacks.2.d
+	
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_generic_conference
+
+	option = {
+		name = cossacks.2.a # Unificate
+		ai_chance = { factor = 70 }
+		
+		CTB = {
+			complete_national_focus = ukraine_yes
+		}
+	}
+	
+	option = {
+		name = cossacks.2.b # Dont really want to
+		ai_chance = { factor = 30 }
+		
+		CTB = {
+			complete_national_focus = ukraine_no
+		}
+	}
+}

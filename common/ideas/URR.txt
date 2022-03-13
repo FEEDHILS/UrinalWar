@@ -167,5 +167,50 @@ ideas = {
 			  war_support_factor = 0.1
 			}
 		}
+		
+		URR_const = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			  stability_factor = 0.05
+			}
+		}
+		
+		URR_outside = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			 opinion_gain_monthly_factor = -0.1	
+			}
+		}
+		
+		URR_deal = {
+						
+			allowed = {
+				tag = URR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			    consumer_goods_factor = -0.1
+			}
+		}
     }
 }

@@ -74,3 +74,14 @@ set_politics = {
 set_popularities = {
 	democratic = 100
 }
+
+add_ideas = {  SIB_politican
+			   SIB_depression
+			   SIB_army
+}
+
+recruit_character = SIB_Borislav_Masonov
+recruit_character = SIB_Nikita_Khruschov
+recruit_character = SIB_Alfonso_Maxim
+recruit_character = SIB_Andrew_Potolot
+recruit_character = FEC_YOURMOM

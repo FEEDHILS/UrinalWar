@@ -9,7 +9,7 @@
 military_contracts_category = { 
 	
 	hire_manpower = { 
-		visible = { has_country_flag = { flag = "contract_state" value = 0 } } 
+		visible = { check_variable = { contract_state = 0 } } 
 		
 		cost = 50
 		remove_effect = { add_manpower = 32320 }
@@ -20,51 +20,43 @@ military_contracts_category = {
 	
 	# Контракты дающие доступ к пехотным приколам
 	land_contracts = { 
-		visible = { has_country_flag = { flag = "contract_state" value = 0 } }
-		
+		visible = { check_variable = { contract_state = 0 } } 
+		available = { has_completed_focus = FEC_1_army_open_contracts }
+
 		complete_effect = { 
-			set_country_flag = { 
-				flag = "contract_state" 
-				value = 1 
-			}
+			set_variable = { contract_state = 1 }
 			custom_effect_tooltip = "Go to Land forces contracts"
 		}
 	}
 	
 	# Морские приколы
 	navy_contracts = { 
-		visible = { has_country_flag = { flag = "contract_state" value = 0 } }
+		visible = { check_variable = { contract_state = 0 } }
+		available = { has_completed_focus = FEC_1_fleet_open_contract }
 		
 		complete_effect = { 
-			set_country_flag = { 
-				flag = "contract_state" 
-				value = 2 
-			} 
+			set_variable = { contract_state = 2 } 
 			custom_effect_tooltip = "Go to Navy forces contracts"
 		}
 	}
 	
 	# Воздушные приколы
 	air_contracts = { 
-		visible = { has_country_flag = { flag = "contract_state" value = 0 } }
+		visible = { check_variable = { contract_state = 0 } }
+		available = { has_completed_focus = FEC_1_air_open_contract }
 		
 		complete_effect = { 
-			set_country_flag = { 
-				flag = "contract_state" 
-				value = 3 
-			}
+			set_variable = { contract_state = 3 }
 			custom_effect_tooltip = "Go to Air forces contracts"
 		}
 	}
 	
 	# Опция, для показа под-категорий
 	quit_to_contracts = { 
-		visible = { has_country_flag = { flag = "contract_state" value > 0 } }
+		visible = { check_variable = { contract_state > 0 } }
 		
 		complete_effect = { 
-			set_country_flag = { 
-				flag = "contract_state" value = 0 
-			}
+			set_variable = { contract_state = 0 }
 			custom_effect_tooltip = "Go back to sub-categories"
 		}
 		#days_re_enable = 2
@@ -77,11 +69,11 @@ military_contracts_category = {
 	# Создание 20-ки пехоты
 	first_land_focus = { 
 	
-		visible = { has_country_flag = { flag = "contract_state" value = 1 } } # Подкатегория пехотных прикольчикоф.
+		visible = { check_variable = { contract_state = 1 } } # Подкатегория пехотных прикольчикоф.
 		
 		cost = 100
-		days_remove = 2
-		days_re_enable = 2
+		days_remove = 10
+		days_re_enable = 180
 	
 		allowed = { always = yes } # Должен быть активен по прожатию второго фокуса и не более 3 раз.
 		
@@ -127,10 +119,10 @@ military_contracts_category = {
 	
 	# Создание 20-ки Ветеранов
 	second_land_focus = { 
-		visible = { has_country_flag = { flag = "contract_state" value = 1 } } # Подкатегория пехотных прикольчикоф.
-		
+		visible = { check_variable = { contract_state = 1 } } # Подкатегория пехотных прикольчикоф.
+		available = { has_completed_focus = FEC_1_attract_veterans}
 		cost = 100
-		days_remove = 2
+		days_remove = 15
 		fire_only_once = yes
 	
 		allowed = { always = yes } # Активация по прожатии фокуса
@@ -177,8 +169,9 @@ military_contracts_category = {
 	
 	# Создание Танковой дивки
 	third_land_focus = { 
-		visible = { has_country_flag = { flag = "contract_state" value = 1 } } # Подкатегория пехотных прикольчикоф.
-		
+		visible = { check_variable = { contract_state = 1 } } # Подкатегория пехотных прикольчикоф.
+		available = { has_completed_focus = FEC_1_buy_tanks}
+
 		cost = 100
 		days_remove = 2
 		fire_only_once = yes
@@ -225,8 +218,9 @@ military_contracts_category = {
 	
 	# Создание крутышей 7 на 2
 	fouth_land_focus = { 
-		visible = { has_country_flag = { flag = "contract_state" value = 1 } } # Подкатегория пехотных прикольчикоф.
-		
+		visible = { check_variable = { contract_state = 1 } } # Подкатегория пехотных прикольчикоф.
+		available = { has_completed_focus = FEC_1_army_contract_2}
+
 		cost = 100
 		days_remove = 2
 		fire_only_once = yes
@@ -275,6 +269,206 @@ military_contracts_category = {
 			add_to_variable = { var = shitfromass2 value = 1 }
 		}
 	}
+
+	# КОНЕЦ
 	
+	
+	# РЕШЕНИЯ ИЗ ПОДКАТЕГОРИИ АВИАЦИИ
+	first_air_focus = {
+		visible = { check_variable = { contract_state = 3 } }
+		available = { 
+			AND = { 
+				check_variable = { air_count1 < 3 }
+				has_completed_focus = FEC_1_air_fighters
+			}
+
+		}
+
+		cost = 75
+		days_re_enable = 180
+		days_remove = 10
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 100
+			}
+			add_to_variable = { air_count1 = 1 }
+		}
+	}
+
+	second_air_focus = {
+		visible = { check_variable = { contract_state = 3 } }
+
+		available = { 
+			AND = { 
+				check_variable = { air_count2 < 4 } 
+				has_completed_focus = FEC_1_air_share_contract
+			}
+		}
+
+		cost = 100
+		days_re_enable = 180
+		days_remove = 15
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = CAS_equipment
+				amount = 75
+			}
+			add_to_variable = { air_count2 = 1 }
+		}
+	}
+
+	third_air_focus = {
+		visible = { check_variable = { contract_state = 3 } }
+
+		available = { 
+			AND = { 
+				check_variable = { air_count3 < 3 } 
+				has_completed_focus = FEC_1_air_bomber
+			}
+		}
+
+		cost = 150
+		days_re_enable = 180
+		days_remove = 20
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment
+				amount = 50
+			}
+			add_to_variable = { air_count3 = 1 }
+		}
+	}
+
+	# КОНЕЦ
+	
+	#РЕШЕНИЯ ИЗ ПОДКАТЕГОРИИ ФЛОТА
+	first_fleet_focus = {
+		visible = { check_variable = { contract_state = 2 } }
+
+		available = { check_variable = { fleet_count1 < 3 } }
+
+		cost = 100
+		days_re_enable = 180
+		days_remove = 10
+
+		remove_effect = {
+			FEC = {
+
+				# 4 Эсминца и 2 Подлодки
+				create_ship = {
+					type = ship_hull_light_2
+					equipment_variant = "E/F/G/H Class"
+					creator = ENG
+					name = "Cumbeast"
+				}
+				create_ship = {
+					type = ship_hull_light_2
+					equipment_variant = "E/F/G/H Class"
+					creator = ENG
+					name = "Cumbeast"
+				}
+				create_ship = {
+					type = ship_hull_light_2
+					equipment_variant = "E/F/G/H Class"
+					creator = ENG
+					name = "Cumbeast"
+				}
+				create_ship = {
+					type = ship_hull_light_2
+					equipment_variant = "E/F/G/H Class"
+					creator = ENG
+					name = "Cumbeast"
+				}
+
+				create_ship = {
+					type = ship_hull_submarine_1
+					equipment_variant = "S Class"
+					creator = ENG
+					name = "Kingdom Cum"
+				}
+				create_ship = {
+					type = ship_hull_submarine_1
+					equipment_variant = "S Class"
+					creator = ENG
+					name = "Kingdom Cum"
+				}
+
+			}
+			add_to_variable = { fleet_count1 = 1 }
+		}
+	}
+
+	second_fleet_focus = {
+		visible = { check_variable = { contract_state = 2 } }
+
+		available = { 
+			AND = {
+				check_variable = { fleet_count2 < 2 }
+				has_completed_focus = FEC_1_fleet_cruiser 
+			}
+		}
+
+		cost = 200
+		days_re_enable = 180
+		days_remove = 10
+
+		remove_effect = {
+			FEC = {
+
+				# Легкий крейсер и Тяжелый крейсер
+				create_ship = {
+					type = ship_hull_cruiser_2
+					equipment_variant = "Leander Class"
+					creator = ENG
+					name = "Big Cock"
+				}
+
+				create_ship = {
+					type = ship_hull_cruiser_1
+					equipment_variant = "York Class"
+					creator = ENG
+					name = "But No Cum"
+				}
+
+			}
+			add_to_variable = { fleet_count2 = 1 }
+		}
+	}
+
+	third_fleet_focus = {
+		visible = { check_variable = { contract_state = 2 } }
+
+		available = {
+			AND = { 
+				check_variable = { fleet_count3 < 2 } 
+				has_completed_focus = FEC_1_fleet_battleship
+			}
+		}
+
+		cost = 200
+		days_re_enable = 360
+		days_remove = 10
+
+		remove_effect = {
+			FEC = {
+
+				# Линкор!
+				create_ship = {
+					type = ship_hull_heavy_1
+					equipment_variant = "Nelson Class"
+					creator = ENG
+					name = "Cool ass Ship(And pretty big btw)"
+				}
+
+			}
+			add_to_variable = { fleet_count3 = 1 }
+		}
+	}
+
+	# КОНЕЦ
 	
 }

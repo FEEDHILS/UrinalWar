@@ -77,6 +77,10 @@ set_popularities = {
 	fascism = 10
 }
 
+add_ideas = {   free_trade
+                FEC_political_war
+            } 
+
 create_country_leader = {
 	name = "Corporate's Assembly"
 	desc = "A meeting of several large corporations that determine the future path of the country's development."
@@ -87,3 +91,10 @@ create_country_leader = {
 		economist editor
 	}
 }
+
+recruit_character = FEC_Oleg_Assmanov
+recruit_character = FEC_Walter_White
+recruit_character = FEC_Johny_Deep
+recruit_character = FEC_Rubber_Corp
+recruit_character = FEC_Alastor_fon_Pidor
+recruit_character = FEC_YOURMOM

@@ -1,0 +1,95 @@
+add_namespace = fec
+
+
+country_event = {
+	id = fec.1
+	title = fec.1.t # Sakhalin Buying
+	desc = fec.1.d
+	
+	is_triggered_only = yes
+	
+	#picture = GFX_report_event_ace_promoted
+
+	option = {
+		name = fec.1.a # Japan is agree
+		ai_chance = { factor = 50 }
+		
+		FEC = {
+			transfer_state = 655
+			transfer_state = 537
+		}
+	}
+	
+	option = {
+		name = fec.1.b # Japan is disagree
+		ai_chance = { factor = 50 }
+		
+		#cumcock city i guess...
+		FEC = {
+			country_event = {
+				id = fec.2
+				days = 2
+				random_days = 1
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = fec.2
+	title = fec.2.t # Event that informating that japan is refusing
+	desc = fec.2.d
+	
+	is_triggered_only = yes
+	
+	#picture = GFX_report_event_ace_promoted
+
+	option = {
+		name = fec.2.a # Like "Damn it"
+		ai_chance = { factor = 90 }
+	}
+
+	#Maybe someday FEC will declare war in this events, but not today
+#	option = {
+#		name = fec.2.b # Fuck japan, declare war!!!
+#		ai_chance = { factor = 10 }
+#		starts declaring war agressivly!!!
+#	}
+}
+
+country_event = {
+	id = fec.3
+	title = fec.3.t # Transfer of Manchukuo
+	desc = fec.3.d
+	
+	is_triggered_only = yes
+	
+	#picture = GFX_report_event_ace_promoted
+
+	option = {
+		name = fec.3.a # Japan is agree
+		ai_chance = { factor = 25 }
+		
+		FEC = {
+			annex_country = {
+				target = MAN
+				transfer_troops = no
+			}
+		}
+	}
+	
+	option = {
+		name = fec.3.b # Japan is disagree
+		ai_chance = { factor = 75 }
+		
+		#cumcock city i guess...
+		FEC = {
+			country_event = {
+				id = fec.2
+				days = 2
+				random_days = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,94 @@
+
+#Lore title
+defined_text = {
+	name = GetLoreTitle
+	text = {
+		trigger = {
+			original_tag = FEC
+		}
+		localization_key = fec.lore.t.1
+	}
+	text = {
+		trigger = {
+			original_tag = SIB
+		}
+		localization_key = sib.lore.t.1
+	}
+	text = {
+		trigger = {
+			original_tag = URL
+		}
+		localization_key = url.lore.t.1
+	}
+	text = {
+		trigger = {
+			original_tag = URR
+		}
+		localization_key = urr.lore.t.1
+	}
+	text = {
+		trigger = {
+			original_tag = CTB
+		}
+		localization_key = ctb.lore.t.1
+	}
+	text = {
+		trigger = {
+			original_tag = KCS
+		}
+		localization_key = KCS.lore.t.1
+	}
+	
+	text = {
+	
+		localization_key = lore.t.1
+	
+	}
+}
+
+#Lore desc
+defined_text = {
+	name = GetLoreDesc
+	text = {
+		trigger = {
+			original_tag = FEC
+		}
+		localization_key = fec.lore.d.1
+	}
+	text = {
+		trigger = {
+			original_tag = SIB
+		}
+		localization_key = sib.lore.d.1
+	}
+	text = {
+		trigger = {
+			original_tag = URL
+		}
+		localization_key = url.lore.d.1
+	}
+	text = {
+		trigger = {
+			original_tag = URR
+		}
+		localization_key = urr.lore.d.1
+	}
+	text = {
+		trigger = {
+			original_tag = CTB
+		}
+		localization_key = ctb.lore.d.1
+	}
+	text = {
+		trigger = {
+			original_tag = KCS
+		}
+		localization_key = KCS.lore.d.1
+	}
+	
+	text = {
+	
+		localization_key = lore.d.1
+	
+	}
+}

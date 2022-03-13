@@ -247,6 +247,26 @@ ideas = {
 			modifier = {
                consumer_goods_factor = -0.1
 			}
+		}	
+
+        SIB_deal_URR = {
+		
+			allowed = {
+				TAG = SIB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
 		}		
     }
 }
