@@ -90,3 +90,14 @@ create_country_leader = {
 		princess_of_terror
 	}
 }
+
+
+recruit_character = RUS_Anton_Logvinov
+recruit_character = RUS_Book_One
+recruit_character = RUS_Book_Two
+recruit_character = RUS_War_Propaganda
+recruit_character = RUS_Zumgalbek
+recruit_character = RUS_ZhopaZhopaZhopa
+recruit_character = RUS_Sirgey_Stil
+recruit_character = RUS_Baldur_Thorarensen
+recruit_character = RUS_YOURMOM

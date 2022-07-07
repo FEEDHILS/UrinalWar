@@ -16,8 +16,10 @@ set_technology = {
 set_war_support = 0.45
 set_stability = 0.65
 
-recruit_character = Orc_DabDab
-recruit_character = Orc_Vladimir
+recruit_character = URL_Ork_DabDab
+recruit_character = URL_Orc_Vladimir
+recruit_character = URL_Orc_Danila
+recruit_character = URL_Orc_DaGun
 
 
 1939.1.1 = {
@@ -93,3 +95,4 @@ create_country_leader = {
 	traits = {
 		dictator
 	}
+}

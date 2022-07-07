@@ -1,6 +1,7 @@
 characters={
 
-	Orc_DabDab = {
+	URL_Ork_DabDab = {
+		name=URL_Ork_DabDab
 		advisor = {	
 			slot = high_command
 			ledger = army
@@ -18,10 +19,13 @@ characters={
 					factor = 1.000
 				}
 		}
-		
-	Orc_Vladimir = {
+	}
+
+	URL_Orc_Vladimir = {
+		name=URL_Orc_Vladimir
 		advisor = {		
 			slot = political_advisor
+			idea_token = URL_Orc_Vladimir
 			    allowed = {
 				    original_tag = URL
 				}
@@ -36,6 +40,65 @@ characters={
 			        factor = 1.000
 				}
 	        }	
-		}   
-    }
+	}
+
+	URL_Orc_Danila={
+		name=URL_Orc_Danila
+		
+#		portraits={
+#			army={
+#				small="GFX_idea_generic_political_advisor_europe_3"
+#			}
+#		}
+		
+		advisor={
+			avaible = {
+			    has_completed_focus = URL_orcs_in_power
+			}
+
+			slot = political_advisor
+			idea_token = URL_Orc_Danila
+
+			allowed={
+				original_tag = URL
+			}
+
+			traits={
+				industry_reformer
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	URL_Orc_DaGun={
+		name=URL_Orc_DaGun
+		
+#		portraits={
+#			army={
+#				small="GFX_idea_generic_political_advisor_europe_3"
+#			}
+#		}
+		
+		advisor={
+			avaible = {
+			    has_completed_focus = URL_orcs_in_power
+			}
+
+			slot = political_advisor
+			idea_token = URL_Orc_DaGun
+
+			allowed={
+				original_tag = URL
+			}
+			
+			traits={
+				war_industrialist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	} 
 }

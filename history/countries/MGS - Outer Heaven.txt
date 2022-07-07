@@ -1,6 +1,6 @@
 ﻿#capital = 8 DONT FORGET TO WRITE YOUR CAPITAL
 
-oob = "CRF_1936" 
+oob = "MGS" 
 
 # Starting tech
 set_technology = {
@@ -72,15 +72,14 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 35
-	democratic = 50
-	fascism = 15
+	neutrality = 90
+	democratic = 10
 	}
 	
 create_country_leader = {
-	name = "Cap. Smolett"
-	desc = ""
-	picture = "Smolett.dds"
+	name = "Big Boss"
+	desc = "Big Boss also know as Snake, §LNaked Snake§L or §YVenom Snake§Y - a legendary soldier of 20th Centuary. "
+	picture = "VenomSnake.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

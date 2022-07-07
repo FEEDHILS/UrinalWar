@@ -4,7 +4,7 @@ state={
 	name="STATE_137"
 
 	history={
-		owner = PIR
+		owner = MGS
 		victory_points = {
 			3686 20 
 		}
@@ -30,8 +30,7 @@ state={
 			}
 
 		}
-		add_core_of = SOV
-		add_core_of = PIR
+		add_core_of = MGS
 		1939.1.1 = {
 			buildings = {
 				dockyard = 2

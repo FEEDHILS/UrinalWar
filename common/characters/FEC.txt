@@ -18,6 +18,9 @@ characters = {
 				economist,
 				technocrat
 			}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}		
 	}
 
@@ -38,6 +41,9 @@ characters = {
 			traits = {
 				silent_workhorse 
 			}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
@@ -57,6 +63,9 @@ characters = {
 			}
 			traits = {
 				industry_reformer 
+			}
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 	}
@@ -90,6 +99,9 @@ characters = {
 					state = 408
 				} 
 			}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	
@@ -110,6 +122,9 @@ characters = {
 			traits = {
 				quartermaster_general,
 				war_industrialist
+			}
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 	}

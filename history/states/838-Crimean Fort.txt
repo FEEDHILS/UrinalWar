@@ -2,12 +2,12 @@ state={
 	id=838
 	name="STATE_838"
         history={
-		owner = CRF
+		owner = MGS
 		buildings = {
-			infrastructure = 3
+			infrastructure = 5
 
 		}
-		add_core_of = CRF
+		add_core_of = MGS
 		
         }
 	provinces={

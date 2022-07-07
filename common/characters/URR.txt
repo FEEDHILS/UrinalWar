@@ -1,0 +1,65 @@
+characters={
+
+	URR_Andrey_Gnidov = {
+		name=URR_Andrey_Gnidov
+		advisor = {		
+			slot = political_advisor
+			idea_token = URR_Andrey_Gnidov
+			    allowed = {
+				    original_tag = URR
+				}
+			    avaible = {
+			        has_completed_focus = URR_enpower_friends
+			    }	
+			    traits = {
+				    silent_workhorse
+				}
+			    cost = 150
+			    ai_will_do = {
+			        factor = 1.000
+				}
+	        }	
+	}
+
+	URR_Just_Semen = {
+		name=URR_Just_Semen
+		advisor = {		
+			slot = political_advisor
+			idea_token = URR_Just_Semen
+			    allowed = {
+				    original_tag = URR
+				}
+			    avaible = {
+			        has_completed_focus = URR_enpower_friends
+			    }	
+			    traits = {
+				    devoted_trotskyist
+				}
+			    cost = 150
+			    ai_will_do = {
+			        factor = 1.000
+				}
+	        }	
+	}
+
+	URR_Anton_Logvinov = {
+		name=URR_Anton_Logvinov
+		advisor = {		
+			slot = political_advisor
+			idea_token = URR_Anton_Logvinov
+			    allowed = {
+				    original_tag = URR
+				}
+			    avaible = {
+			        has_completed_focus = URR_enpower_friends
+			    }	
+			    traits = {
+				    strict_austerity_adherent
+				}
+			    cost = 150
+			    ai_will_do = {
+			        factor = 1.000
+				}
+	        }	
+	}
+}

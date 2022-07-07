@@ -75,6 +75,11 @@ set_popularities = {
 	neutrality = 100
 }
 
+recruit_character = URR_Andrey_Gnidov
+recruit_character = URR_Just_Semen
+recruit_character = URR_Anton_Logvinov
+
+
 create_country_leader = {
 	name = "Divanich"
 	desc = "Divanich_DESC"
