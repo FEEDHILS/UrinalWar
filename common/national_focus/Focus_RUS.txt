@@ -83,7 +83,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 1
-
+		completion_reward = {
+			unlock_decision_category_tooltip = oracle_category
+		}
 	}
 	focus = {
 		id = RUS_translation
@@ -2102,6 +2104,40 @@ focus_tree = {
 		}
 		x = 62
 		y = 6
+		
+		completion_reward = {
+		    #recruit_character = RUS_Oleg_Pogrom
+			#recruit_character = RUS_Georgiy_Pheromonov
+			#recruit_character = RUS_Kiril_Sochniy
+			
+			create_corps_commander = {
+				name = RUS_Oleg_Pogrom 
+				traits = { harsh_leader commando }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+            }
+			create_field_marshal = {
+				name = RUS_Georgiy_Pheromonov 
+				traits = { fast_planner offensive_doctrine }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 3
+            }
+			create_field_marshal = {
+				name = RUS_Kiril_Sochniy
+				traits = { thorough_planner defensive_doctrine inspirational_leader }
+				skill = 4
+				attack_skill = 1
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 3
+            }
+		}
 
 	}
 	focus = {
@@ -2591,6 +2627,26 @@ focus_tree = {
 		
 		completion_reward = {
 		    navy_experience = 50
+			
+			create_navy_leader = {
+               name = RUS_Iron_Anchor
+				traits = { old_guard gentlemanly ironside }
+				skill = 4
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 4
+				coordination_skill = 3
+            }
+			
+			create_navy_leader = {
+				name = RUS_Roma_Pron
+				traits = { bold career_officer seawolf  }
+				skill = 2
+				attack_skill = 4
+				defense_skill = 1
+				maneuvering_skill = 4
+				coordination_skill = 2
+            }
 		}
 
 	}

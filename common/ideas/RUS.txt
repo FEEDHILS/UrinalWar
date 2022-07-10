@@ -36,6 +36,67 @@ ideas = {
 				industrial_capacity_factory = -0.2
 			}			
 		}
+		
+		RUS_oracle_political = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                political_power_factor = 0.2
+			}			
+		}
+		
+		RUS_oracle_military= {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                war_support_weekly = 0.01
+				command_power_gain_mult = 0.15	
+			}			
+		}
+		
+		RUS_oracle_economic = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                production_speed_buildings_factor = 0.1
+			}			
+		}
+		
+		RUS_oracle_social = {
+						
+			allowed = {
+				tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                stability_weekly = 0.02
+			}			
+		}
 	
 		RUS_resources = {
 						

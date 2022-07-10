@@ -89,4 +89,50 @@ create_country_leader = {
 	traits = {
 		princess_of_terror
 	}
+<<<<<<< Updated upstream
 }
+=======
+}
+
+# Political Advisors
+recruit_character = RUS_Book_One
+recruit_character = RUS_Book_Two
+recruit_character = RUS_War_Propaganda
+recruit_character = RUS_Zumgalbek
+recruit_character = RUS_Ignacy_Mokiki
+recruit_character = RUS_Andrey_Mokiki
+
+#Theorists
+recruit_character = RUS_Anton_Logvinov
+recruit_character = RUS_Mary_Popins
+recruit_character = RUS_Stepa_Bondarchuk
+recruit_character = RUS_Stas_KakaiProsto
+recruit_character = RUS_Gandon_Logvmanov
+recruit_character = RUS_Mag_Nikita
+
+# High Military Command
+recruit_character = RUS_ZhopaZhopaZhopa
+recruit_character = RUS_Sirgey_Stil
+recruit_character = RUS_Baldur_Thorarensen
+recruit_character = RUS_Benedict_Cucumber
+recruit_character = RUS_Sergei_Shaiba
+recruit_character = RUS_Semen_Nigerov
+
+# Chief of Army
+recruit_character = RUS_Nikita_Kukichov
+recruit_character = RUS_Misha_Mihail
+recruit_character = RUS_Adilshan
+
+recruit_character = RUS_Pavlik_Fungamer
+recruit_character = RUS_Mitay
+
+recruit_character = RUS_Boris_Harchevnikov
+recruit_character = RUS_Roma
+
+# Generals
+recruit_character = RUS_John_Dalton
+recruit_character = RUS_Taifun
+
+
+recruit_character = RUS_YOURMOM
+>>>>>>> Stashed changes

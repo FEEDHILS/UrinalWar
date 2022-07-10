@@ -1,0 +1,16 @@
+ ###########################
+#### Russian Categories. ####
+###########################
+
+oracle_category = { 
+	
+	icon = category_usa_intervention_mandate
+	
+	picture = "gfx/interface/decisions/decision_cat_oracle.dds"
+	
+	allowed = { original_tag = RUS }
+	
+	visible = { has_completed_focus = RUS_enable_orakyl } # Должны открываться при выполнении соответствующего fuck-уса.
+	
+	visible_when_empty = yes
+}

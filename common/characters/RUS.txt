@@ -1,0 +1,622 @@
+characters={
+
+	# THEORIST
+	RUS_Anton_Logvinov = {
+
+		name=RUS_Anton_Logvinov
+
+		advisor = {		
+			slot = theorist
+			idea_token = RUS_Anton_Logvinov
+			ledger = military
+			    allowed = {
+				    original_tag = RUS
+				}
+
+			    traits = {
+				    mobile_warfare_expert
+				}
+			    cost = 150
+			    ai_will_do = {
+			        factor = 1.000
+				}
+	        }	
+	}
+
+	RUS_Mary_Popins = {
+
+		name=RUS_Mary_Popins
+
+		portraits={
+			army={
+				small="GFX_idea_generic_army_female_arab"
+			}
+		}
+
+		advisor = {		
+			slot = theorist
+			idea_token = RUS_Mary_Popins
+			ledger = military
+			    allowed = {
+				    original_tag = RUS
+				}
+
+			    traits = {
+				    air_warfare_theorist
+				}
+			    cost = 150
+			    ai_will_do = {
+			        factor = 1.000
+				}
+	        }	
+	}
+
+	RUS_Stepa_Bondarchuk = {
+
+		name= RUS_Stepa_Bondarchuk
+
+		advisor = {		
+			slot = theorist
+			idea_token = RUS_Stepa_Bondarchuk
+			ledger = military
+			    allowed = {
+				    original_tag = RUS
+				}
+
+			    traits = {
+				    grand_battle_plan_expert
+				}
+			    cost = 150
+			    ai_will_do = {
+			        factor = 1.000
+				}
+	        }	
+	}
+
+	RUS_Stas_KakaiProsto = {
+
+		name=RUS_Stas_KakaiProsto
+
+		portraits={
+			army={
+				small="GFX_idea_USA_generic_land_1"
+			}
+		}
+
+		advisor = {		
+			slot = theorist
+			idea_token = RUS_Stas_KakaiProsto
+			ledger = military
+			    allowed = {
+				    original_tag = RUS
+				}
+
+			    traits = {
+				    superior_firepower_expert
+				}
+			    cost = 150
+			    ai_will_do = {
+			        factor = 1.000
+				}
+	        }	
+	}
+
+	RUS_Gandon_Logvmanov = {
+
+		name=RUS_Gandon_Logvmanov
+
+		portraits={
+			army={
+				small="GFX_idea_USA_generic_land_1"
+			}
+		}
+
+		advisor = {		
+			slot = theorist
+			idea_token = RUS_Gandon_Logvmanov
+			ledger = military
+			    allowed = {
+				    original_tag = RUS
+				}
+	
+			    traits = {
+				    mass_assault_expert
+				}
+			    cost = 150
+			    ai_will_do = {
+			        factor = 1.000
+				}
+	        }	
+	}
+
+	RUS_Mag_Nikita = {
+
+		name=RUS_Mag_Nikita
+
+		advisor = {		
+			slot = theorist
+			idea_token = RUS_Mag_Nikita
+			ledger = civilian
+			    allowed = {
+				    original_tag = RUS
+				}
+				research_bonus = {
+					nuclear = 0.5
+				}
+			    traits = {
+				    nuclear_scientist
+				}
+			    cost = 150
+			    ai_will_do = {
+			        factor = 1.000
+				}
+	        }	
+	}
+	
+	
+	# POLITICAL ADVISORS
+	RUS_Book_One = {
+		name=RUS_Book_One
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RUS_book_advisor_1.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_Book_One
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				how_to_manage_country
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	RUS_Book_Two = {
+		name=RUS_Book_Two
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RUS_book_advisor_2.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_Book_Two
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				Necronomicon
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	RUS_War_Propaganda = {
+		name=RUS_War_Propaganda
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_War_Propaganda
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				war_preparator
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	RUS_Zumgalbek = {
+		name=RUS_Zumgalbek
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_Zumgalbek
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				economic_leader
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	RUS_Ignacy_Mokiki = {
+		name=RUS_Ignacy_Mokiki
+		
+		portraits={
+			army={
+				small="GFX_idea_asia_generic_warlord2"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_Ignacy_Mokiki
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				military_lover
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	RUS_Andrey_Mokiki = {
+		name=RUS_Andrey_Mokiki
+		
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_2"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_Andrey_Mokiki
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				industry_reformer
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	
+	
+	#ARMY HIGH COMMAND
+	
+	RUS_ZhopaZhopaZhopa = {
+		name=RUS_ZhopaZhopaZhopa
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = RUS_ZhopaZhopaZhopa
+			ledger = army
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				army_logistics_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	RUS_Sirgey_Stil = {
+		name=RUS_Sirgey_Stil
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = RUS_Sirgey_Stil
+			ledger = army
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				army_infantry_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	RUS_Baldur_Thorarensen = {
+		name=RUS_Baldur_Thorarensen
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = RUS_Baldur_Thorarensen
+			ledger = navy
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				navy_capital_ship_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	RUS_Benedict_Cucumber = {
+		name=RUS_Benedict_Cucumber
+		
+		advisor={
+			slot = high_command
+			idea_token = RUS_Benedict_Cucumber
+			ledger = army
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				army_armored_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	RUS_Sergei_Shaiba = {
+		name=RUS_Sergei_Shaiba
+		
+		advisor={
+			slot = high_command
+			idea_token = RUS_Sergei_Shaiba
+			ledger = air
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				air_tactical_bombing_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+
+	RUS_Semen_Nigerov = {
+		name= RUS_Semen_Nigerov
+
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_land_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = RUS_Semen_Nigerov
+			ledger = army
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				army_regrouping_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+
+
+	# ARMY CHIEFS
+
+	RUS_Nikita_Kukichov = {
+		name=RUS_Nikita_Kukichov
+		
+		advisor={
+			slot = army_chief
+			idea_token = RUS_Nikita_Kukichov
+			#ledger = army
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				army_chief_offensive_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	RUS_Misha_Mihail = {
+		name=RUS_Misha_Mihail
+		
+		advisor={
+			slot = army_chief
+			idea_token = RUS_Misha_Mihail
+			#ledger = army
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				army_chief_reform_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	RUS_Adilshan = {
+		name=RUS_Adilshan
+		
+		advisor={
+			slot = army_chief
+			idea_token = RUS_Adilshan
+			#ledger = army
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				army_chief_maneuver_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+
+	RUS_Pavlik_Fungamer = {
+		name=RUS_Pavlik_Fungamer
+		
+		advisor={
+			slot = air_chief
+			idea_token = RUS_Pavlik_Fungamer
+			#ledger = army
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				air_chief_reform_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	RUS_Mitay = {
+		name=RUS_Mitay
+		
+		advisor={
+			slot = air_chief
+			idea_token = RUS_Mitay
+			#ledger = army
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				air_chief_ground_support_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+
+	RUS_Boris_Harchevnikov = {
+		name=RUS_Boris_Harchevnikov
+		
+		advisor={
+			slot = navy_chief
+			idea_token = RUS_Boris_Harchevnikov
+			#ledger = army
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				navy_chief_decisive_battle_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	RUS_Roma = {
+		name=RUS_Roma_Pron
+		
+		advisor={
+			slot = navy_chief
+			idea_token = RUS_Roma
+			#ledger = army
+			allowed={
+				original_tag = RUS
+			}
+			traits={
+				navy_chief_commerce_raiding_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	
+	# GENERALS
+	RUS_John_Dalton = {
+		name=RUS_John_Dalton
+		
+		# Немецкий эмигрант, патриот Веймарской республики, не сумевший сдержать нацистскую напасть
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Hilter_M.dds"
+			}
+		}
+		
+		corps_commander = {
+            traits = { old_guard, trait_cautious, brilliant_strategist  }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+        }		
+	}
+	
+	RUS_Taifun = {
+		name=RUS_Taifun
+		
+		# Азиатский эмигрант, обидевшийся на весь мир и выбравший путь страдания и боли
+		portraits={
+			army={
+				large="gfx/leaders/RUS/Portrait_Taifun.dds"
+			}
+		}
+		
+		corps_commander = {
+            traits = { trait_cautious, brilliant_strategist, trait_reckless }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 1
+        }		
+	}
+}

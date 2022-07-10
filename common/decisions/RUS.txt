@@ -1,0 +1,91 @@
+# Решения для военных контрактов для FEC
+
+# флаг contract_state отвечает за показ отдельных решений
+# Если он равен 0 - показываются решения под-категорий
+# равен 1 - решения на пехотные приколы
+# равен 2 - решения на морские приколы
+# равен 3 - решения на воздушные приколы
+
+oracle_category = { 
+	
+	political_focus = { 
+		available = { check_variable = { kumalala = 0 } } 
+		
+		cost = 75
+		
+		complete_effect = {				
+			add_ideas = RUS_oracle_political
+			set_variable = { kumalala=1 }
+		}
+		
+	}
+	
+	military_focus = { 
+		available = { check_variable = { kumalala = 0 } }  
+		
+		cost = 75
+		
+		complete_effect = {		
+			add_ideas = RUS_oracle_military
+			set_variable = { kumalala=2 }
+		}
+	}
+	
+	economic_focus = { 
+		available = { check_variable = { kumalala = 0 } }  
+		
+		cost = 75
+		
+		complete_effect = {		
+			add_ideas = RUS_oracle_economic
+			set_variable = { kumalala=3 }
+		}
+	}
+	
+	social_focus = { 
+		available = { check_variable = { kumalala = 0 } }  
+		
+		cost = 75
+		
+		complete_effect = {		
+			add_ideas = RUS_oracle_social
+			set_variable = { kumalala=4 }
+		}
+	}
+	
+	
+	cancel_focus = {
+		visible = {
+			check_variable = { kumalala > 0 }
+		}
+	
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { kumalala = 1 }
+				}
+				remove_ideas = RUS_oracle_political
+			}
+			if = {
+				limit = {
+					check_variable = { kumalala = 2 }
+				}
+				remove_ideas = RUS_oracle_military
+			}
+			if = {
+				limit = {
+					check_variable = { kumalala = 3 }
+				}
+				remove_ideas = RUS_oracle_economic
+			}
+			if = {
+				limit = {
+					check_variable = { kumalala = 4 }
+				}
+				remove_ideas = RUS_oracle_social
+			}
+			
+			set_variable = { kumalala = 0 }
+		}
+	}
+}

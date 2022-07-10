@@ -32,3 +32,5 @@
  random_general_monarchy_tt:0 "A random [FROM.GetAdjective] general will gain secret monarchist sympathies."
  military_contracts_category:0 "Military Contracts"
  military_contracts_category_desc:0 "We cannot ensure our own security, we cannot put our people in such great danger. We should use more "civilized" ways: Mercenaries around the world will help us with this."
+ oracle_category:0 "Oracle."
+ oracle_category_desc:0 "Thanks to the Oracle, Svetozar can slightly change the very fabric of society, adjusting its interests to his needs and the needs of the country."
