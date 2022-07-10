@@ -22,7 +22,8 @@ focus_tree = {
 		y = 0
 		
 		completion_reward = {
-		    add_ideas = corp_1	
+		    add_ideas = corp_1
+            add_ideas = fec_1			
        }
 	}
 	focus = {
@@ -36,7 +37,8 @@ focus_tree = {
 		y = 0
 		
 		completion_reward = {
-		    add_ideas = corp_2	 
+		    add_ideas = corp_2
+            add_ideas = fec_2			
 		}
 	}
 	focus = {
@@ -165,6 +167,8 @@ focus_tree = {
 		
 		completion_reward = {
 		   add_political_power = 100
+		   remove_ideas = FEC_political_war
+		   add_country_leader_trait = cabinet_crisis
 		}
 
 	}
@@ -177,6 +181,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FEC_new_government_2
+		}
+		available = {
+		    has_completed_focus = FEC_enpower_corp_1
 		}
 		x = 9
 		y = 3
@@ -192,8 +199,10 @@ focus_tree = {
 			 ideology = democratic
              popularity = 0.47
 		  }
-		
-		}
+		   hidden_effect = {
+			 add_ideas = FEC_German_Tugrikov
+		    }
+		} 
 
 	}
 	focus = {
@@ -205,6 +214,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FEC_new_government_1
+		}
+		available = {
+		    has_completed_focus = FEC_enpower_corp_2
 		}
 		x = 13
 		y = 3
@@ -220,7 +232,9 @@ focus_tree = {
 			 ideology = fascism
              popularity = 0.32
 		  }
-		
+            hidden_effect = { 
+			 add_ideas = FEC_Konrad_Verner
+		    }
 		}
 
 	}
@@ -279,15 +293,18 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = FEC_Alastor_fon_Pidor	
+            add_ideas = fec_heavy_corp			
+		
 		}
-
 	}
 	focus = {
 		id = FEC_2_raid_corp
@@ -302,7 +319,7 @@ focus_tree = {
 		completion_reward = {
 		   add_timed_idea = {
 		     idea = corp_2_raid_corp
-		     days = 180	
+		     days = 180			 
 		   }
 		}
 
@@ -483,6 +500,10 @@ focus_tree = {
 		}
 		x = 18
 		y = 5
+		
+		completion_reward = {
+		    ENG = { give_guarantee = FEC }
+		}
 
 	}
 	focus = {
@@ -606,6 +627,10 @@ focus_tree = {
 		}
 		x = 26
 		y = 5
+		
+		completion_reward = {
+		    JAP = { give_guarantee = FEC }
+		}
 
 	}
 	focus = {
@@ -940,6 +965,8 @@ focus_tree = {
 			   remove_idea = FEC_army_BTS
 			   add_idea = FEC_army_own
 			}
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = FEC_Semen_McFly
 		}
 
 	}
@@ -955,8 +982,16 @@ focus_tree = {
 		
 		completion_reward = {
 		    add_ideas = FEC_generals
+			create_corps_commander = {
+	          name = "Anatoliy Anatoliy"
+	          traits = { skilled_staffer harsh_leader }
+	          skill = 2
+	          attack_skill = 3
+	          defense_skill = 1
+	          planning_skill = 2
+	          logistics_skill = 1
+              }
 		}
-
 	}
 	focus = {
 		id = FEC_2_new_tactics
@@ -1020,6 +1055,13 @@ focus_tree = {
 		}
 		x = 58
 		y = 4
+		
+		completion_reward = {
+			show_unit_leaders_tooltip = FEC_Deez_Nuts
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = FEC_Deez_Nuts
+			
+		}
 
 	}
 	focus = {
@@ -1031,7 +1073,11 @@ focus_tree = {
 		}
 		x = 60
 		y = 4
-
+		
+		completion_reward =  {
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = FEC_Bullet
+        }
 	}
 	focus = {
 		id = FEC_2_own_air
@@ -1045,6 +1091,8 @@ focus_tree = {
 		
 		completion_reward = {
 		    air_experience = 25
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = FEC_Big_Bobs
 		}
 
 	}
@@ -1142,6 +1190,9 @@ focus_tree = {
 		
 		completion_reward = {
 		    navy_experience  = 50
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = FEC_Georgiy_Zvyagincev
+			show_unit_leaders_tooltip = FEC_Georgiy_Zvyagincev
 		}
 
 	}
@@ -1210,6 +1261,8 @@ focus_tree = {
 				uses = 1				
 				category = ss_tech
 			}
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = FEC_Tebya_Ebet
 		}
 
 	}
@@ -1293,13 +1346,19 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		cost = 10
 		prerequisite = {
-			focus = FEC_1_share_power
+			focus = FEC_1_share_power 
 		}
 		x = 5
 		y = 5
 		
 		completion_reward = {
 		   add_ideas = corp_1_resources_corp
+		   custom_effect_tooltip = available_political_advisor
+		   show_ideas_tooltip = FEC_Rubber_Corp
+           custom_effect_tooltip = available_political_advisor
+		   show_ideas_tooltip = FEC_tungsten_Corp
+           custom_effect_tooltip = available_political_advisor
+		   show_ideas_tooltip = FEC_Oil_Corp		   
 		}
 
 	}
@@ -1359,6 +1418,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		    custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = FEC_Anton_Godvinov		
 		}
 
 	}
@@ -1441,7 +1502,8 @@ focus_tree = {
 		
 		completion_reward = {
 		   add_ideas = corp_1_other_corp
-		
+		   custom_effect_tooltip = available_political_advisor
+		   show_ideas_tooltip = FEC_Oleg_Assmanov
 		}
 
 	}
@@ -1469,7 +1531,12 @@ focus_tree = {
 		}
 		x = 26
 		y = 6
-
+		
+		completion_reward = {
+		JAP = {
+		country_event = fec.1
+		    }	
+		}
 	}
 	focus = {
 		id = FEC_2_ask_for_manch
@@ -1480,7 +1547,12 @@ focus_tree = {
 		}
 		x = 26
 		y = 7
-
+		
+		completion_reward = {
+		JAP = {
+		country_event = fec.3
+		    }
+		}
 	}
 	focus = {
 		id = FEC_2_fleet_expand_dockyards

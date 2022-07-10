@@ -14,7 +14,7 @@ focus_tree = {
 	focus = {
 		id = RUS_leave_home
 		icon = GFX_focus_prc_infiltration
-		cost = 10,00
+		cost = 10
 		x = 35
 		y = 0
 		
@@ -29,7 +29,7 @@ focus_tree = {
 		available = {
 		    NOT = { country_exists = SIB }
 		}
-		cost = 10,00
+		cost = 10
 		x = 32
 		y = 7
 		
@@ -44,7 +44,7 @@ focus_tree = {
 	focus = {
 		id = RUS_resources
 		icon = GFX_goal_generic_construction2
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_prom_bussines
 		}
@@ -59,7 +59,7 @@ focus_tree = {
 	focus = {
 		id = RUS_new_railroad
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_prom_bussines
 		}
@@ -77,7 +77,7 @@ focus_tree = {
 	focus = {
 		id = RUS_enable_orakyl
 		icon = GFX_focus_generic_concessions
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_leave_home
 		}
@@ -88,7 +88,7 @@ focus_tree = {
 	focus = {
 		id = RUS_translation
 		icon = GFX_goal_generic_propaganda
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_enable_orakyl
 		}
@@ -103,7 +103,7 @@ focus_tree = {
 	focus = {
 		id = RUS_try_to_stabilize
 		icon = GFX_goal_generic_neutrality_focus
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_translation
 		}
@@ -121,7 +121,7 @@ focus_tree = {
 	focus = {
 		id = RUS_set_king
 		icon = GFX_focus_hun_elect_a_king
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_try_to_stabilize
 		}
@@ -148,7 +148,7 @@ focus_tree = {
 	focus = {
 		id = RUS_elect_president
 		icon = GFX_goal_support_democracy
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_try_to_stabilize
 		}
@@ -176,7 +176,7 @@ focus_tree = {
 	focus = {
 		id = RUS_deal_with_d
 		icon = GFX_goal_generic_major_alliance
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_elect_president
 		}
@@ -187,7 +187,7 @@ focus_tree = {
 	focus = {
 		id = RUS_deal_with_f_d
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_deal_with_d
 		}
@@ -198,7 +198,7 @@ focus_tree = {
 	focus = {
 		id = RUS_take_power
 		icon = GFX_focus_generic_self_management
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_try_to_stabilize
 		}
@@ -220,7 +220,7 @@ focus_tree = {
 	focus = {
 		id = RUS_finish_with_traitors
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_take_power
 		}
@@ -231,7 +231,7 @@ focus_tree = {
 	focus = {
 		id = RUS_rule_by_one
 		icon = GFX_focus_generic_military_dictatorship
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_finish_with_traitors
 		}
@@ -246,7 +246,7 @@ focus_tree = {
 	focus = {
 		id = RUS_foreig_policy
 		icon = GFX_goal_generic_position_armies
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_leave_home
 		}
@@ -261,7 +261,7 @@ focus_tree = {
 	focus = {
 		id = RUS_send_holograms
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_foreig_policy
 		}
@@ -276,7 +276,7 @@ focus_tree = {
 	focus = {
 		id = RUS_send_GER
 		icon = GFX_focus_chi_mission_to_germany
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_send_holograms
 		}
@@ -294,7 +294,7 @@ focus_tree = {
 	focus = {
 		id = RUS_estabilish_trade
 		icon = GFX_goal_generic_trade
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_send_holograms
 		}
@@ -309,7 +309,7 @@ focus_tree = {
 	focus = {
 		id = RUS_open_country
 		icon = GFX_goal_generic_positive_trade_relations
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_estabilish_trade
 		}
@@ -324,7 +324,7 @@ focus_tree = {
 	focus = {
 		id = RUS_share_export
 		icon = GFX_focus_mex_privatisation
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_open_country
 		}
@@ -339,7 +339,7 @@ focus_tree = {
 	focus = {
 		id = RUS_send_ENG
 		icon = GFX_focus_chi_british_cooperation
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_send_holograms
 		}
@@ -357,7 +357,7 @@ focus_tree = {
 	focus = {
 		id = RUS_send_USA
 		icon = GFX_focus_chi_mission_to_the_us
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_send_ENG
 		}
@@ -376,7 +376,7 @@ focus_tree = {
 	focus = {
 		id = RUS_join_allies
 		icon = GFX_focus_eng_the_sun_never_sets
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_send_USA
 		}
@@ -399,7 +399,7 @@ focus_tree = {
 	focus = {
 		id = RUS_investition_allies
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_join_allies
 		}
@@ -417,7 +417,7 @@ focus_tree = {
 	focus = {
 		id = RUS_build_new_fabrics
 		icon = GFX_focus_generic_industry_2
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_investition_allies
 		}
@@ -464,7 +464,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_on_rus
 		icon = GFX_focus_SOV_socialism_in_one_country
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_foreig_policy
 		}
@@ -479,7 +479,7 @@ focus_tree = {
 	focus = {
 		id = RUS_russian_heir
 		icon = GFX_focus_generic_home_defense
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_focus_on_rus
 		}
@@ -498,7 +498,7 @@ focus_tree = {
 		available = {
 		    date > 1940.1.1
 		}
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_russian_heir
 		}
@@ -531,7 +531,7 @@ focus_tree = {
 		    NOT = { country_exists = URR }
 			NOT = { country_exists = URL }
 		}
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_take_mines
 		}
@@ -549,7 +549,7 @@ focus_tree = {
 	focus = {
 		id = RUS_clean_brain
 		icon = GFX_goal_generic_propaganda
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_destroy_republic
 		}
@@ -564,7 +564,7 @@ focus_tree = {
 	focus = {
 		id = RUS_execute_president
 		icon = GFX_focus_mex_arrest_general_cedillo
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_destroy_republic
 		}
@@ -579,7 +579,7 @@ focus_tree = {
 	focus = {
 		id = RUS_siberia_back
 		icon = GFX_goal_generic_position_armies
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_execute_president
 		}
@@ -615,7 +615,7 @@ focus_tree = {
 	focus = {
 		id = RUS_clean_mines
 		icon = GFX_goal_generic_occupy_start_war
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_take_mines
 		}
@@ -636,7 +636,7 @@ focus_tree = {
 	focus = {
 		id = RUS_send_workers_in_mines
 		icon = GFX_goal_generic_construction2
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_clean_mines
 		}
@@ -675,7 +675,7 @@ focus_tree = {
 	focus = {
 		id = RUS_own_path
 		icon = GFX_goal_anschluss
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_focus_on_rus
 		}
@@ -690,7 +690,7 @@ focus_tree = {
 	focus = {
 		id = RUS_invite_far_east
 		icon = GFX_focus_TUR_ratify_the_six_arrows
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_own_path
 		}
@@ -704,7 +704,7 @@ focus_tree = {
 	focus = {
 		id = RUS_integration_east
 		icon = GFX_goal_generic_major_alliance
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_russian_heir
 		}
@@ -727,7 +727,7 @@ focus_tree = {
 	focus = {
 		id = RUS_clean_kamchatka
 		icon = GFX_focus_RAJ_seek_help_from_soviet
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_destroy_communism
 		}
@@ -746,7 +746,7 @@ focus_tree = {
 	focus = {
 		id = RUS_take_cossacks
 		icon = GFX_goal_generic_major_war
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_russian_heir
 		}
@@ -760,7 +760,7 @@ focus_tree = {
 	focus = {
 		id = RUS_kill_hetman
 		icon = GFX_focus_rom_abdicate
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_take_cossacks
 		}
@@ -775,7 +775,7 @@ focus_tree = {
 	focus = {
 		id = RUS_integrate
 		icon = GFX_goal_generic_territory_or_war
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_kill_hetman
 		}
@@ -795,7 +795,7 @@ focus_tree = {
 	focus = {
 		id = RUS_send_colonist
 		icon = GFX_focus_SOV_reinforce_eastern_naval_bases
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_destroy_communism
 		}
@@ -833,7 +833,7 @@ focus_tree = {
 	focus = {
 		id = RUS_read_new_books
 		icon = GFX_focus_research
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_leave_home
 		}
@@ -848,7 +848,7 @@ focus_tree = {
 	focus = {
 		id = RUS_invite_CTB
 		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_own_path
 		}
@@ -862,7 +862,7 @@ focus_tree = {
 	focus = {
 		id = RUS_prom_bussines
 		icon = GFX_focus_generic_industry_3
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_leave_home
 		}
@@ -880,7 +880,7 @@ focus_tree = {
 		available = {
 		    num_of_factories > 50
 		}
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_read_new_books
 		}
@@ -897,7 +897,7 @@ focus_tree = {
 	focus = {
 		id = RUS_expand_prom
 		icon = GFX_goal_generic_construct_civilian
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_prom_bussines
 		}
@@ -913,7 +913,7 @@ focus_tree = {
 	focus = {
 		id = RUS_expand_fabrics
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_expand_prom
 		}
@@ -957,7 +957,7 @@ focus_tree = {
 	focus = {
 		id = RUS_expand_fabrics_2
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_expand_fabrics
 		}
@@ -1001,7 +1001,7 @@ focus_tree = {
 	focus = {
 		id = RUS_expand_fabrics_3
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_expand_fabrics_2
 		}
@@ -1045,7 +1045,7 @@ focus_tree = {
 	focus = {
 		id = RUS_expand_zavods
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_expand_prom
 		}
@@ -1089,7 +1089,7 @@ focus_tree = {
 	focus = {
 		id = RUS_expand_zavods_2
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_expand_zavods
 		}
@@ -1133,7 +1133,7 @@ focus_tree = {
 	focus = {
 		id = RUS_expand_zavods_3
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_expand_zavods_2
 		}
@@ -1177,7 +1177,7 @@ focus_tree = {
 	focus = {
 		id = RUS_more_fabrics
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_expand_zavods_3
 			focus = RUS_expand_fabrics_3
@@ -1225,7 +1225,7 @@ focus_tree = {
 	focus = {
 		id = RUS_more_zavods
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_expand_zavods_3
 			focus = RUS_expand_fabrics_3
@@ -1273,7 +1273,7 @@ focus_tree = {
 	focus = {
 		id = RUS_finish_prom_share
 		icon = GFX_focus_generic_tank_production
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_more_fabrics
 			focus = RUS_more_zavods
@@ -1289,7 +1289,7 @@ focus_tree = {
 	focus = {
 		id = RUS_railroad_to_Baku
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_new_railroad
 		}
@@ -1311,7 +1311,7 @@ focus_tree = {
 	focus = {
 		id = RUS_mines_east
 		icon = GFX_goal_generic_construction2
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_resources
 		}
@@ -1339,7 +1339,7 @@ focus_tree = {
 	focus = {
 		id = RUS_expand_oil_south
 		icon = GFX_goal_generic_oil_refinery
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_mines_east
 		}
@@ -1361,7 +1361,7 @@ focus_tree = {
 	focus = {
 		id = RUS_mines_west
 		icon = GFX_focus_generic_steel
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_resources
 		}
@@ -1395,7 +1395,7 @@ focus_tree = {
 	focus = {
 		id = RUS_build_road
 		icon = GFX_goal_generic_construction
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_prom_bussines
 		}
@@ -1450,7 +1450,7 @@ focus_tree = {
 	focus = {
 		id = RUS_build_road_to_mines
 		icon = GFX_goal_generic_construct_civilian
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_build_road
 		}
@@ -1484,7 +1484,7 @@ focus_tree = {
 	focus = {
 		id = RUS_expand_mines_more
 		icon = GFX_focus_generic_tungsten
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_mines_west
 		}
@@ -1516,7 +1516,7 @@ focus_tree = {
 	focus = {
 		id = RUS_build_more_roads
 		icon = GFX_goal_generic_army_motorized
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_build_road_to_mines
 		}
@@ -1572,7 +1572,7 @@ focus_tree = {
 	focus = {
 		id = RUS_new_prom
 		icon = GFX_focus_generic_industry_3
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_build_more_roads
 		}
@@ -1596,7 +1596,7 @@ focus_tree = {
 	focus = {
 		id = RUS_army
 		icon = GFX_focus_generic_license_production
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_leave_home
 		}
@@ -1613,7 +1613,7 @@ focus_tree = {
 	focus = {
 		id = RUS_air
 		icon = GFX_focus_generic_aircraft_production
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_army
 		}
@@ -1627,7 +1627,7 @@ focus_tree = {
 	focus = {
 		id = RUS_expand_airports
 		icon = GFX_goal_generic_build_airforce
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_air
 		}
@@ -1658,7 +1658,7 @@ focus_tree = {
 	focus = {
 		id = RUS_new_escadrons
 		icon = GFX_goal_generic_air_production
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_air
 		}
@@ -1681,7 +1681,7 @@ focus_tree = {
 		available = {
         has_tech = CAS1
 		}
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_new_escadrons
 		}
@@ -1700,9 +1700,9 @@ focus_tree = {
 		id = RUS_fighters
 		icon = GFX_goal_generic_air_fighter2
 		available = {
-        has_tech = early_fighterh
+        has_tech = early_fighter
 		}
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_new_escadrons
 		}
@@ -1724,7 +1724,7 @@ focus_tree = {
 		available = {
         has_tech = tactical_bomber1
 		}
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_fighters
 		}
@@ -1745,7 +1745,7 @@ focus_tree = {
 	focus = {
 		id = RUS_ground
 		icon = GFX_focus_generic_combined_arms
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_army
 		}
@@ -1764,7 +1764,7 @@ focus_tree = {
 	focus = {
 		id = RUS_infantry
 		icon = GFX_goal_generic_small_arms
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_ground
 		}
@@ -1784,7 +1784,7 @@ focus_tree = {
 	focus = {
 		id = RUS_artillery
 		icon = GFX_goal_generic_army_artillery2
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_infantry
 		}
@@ -1804,7 +1804,7 @@ focus_tree = {
 	focus = {
 		id = RUS_motorized
 		icon = GFX_focus_SOV_the_road_of_life
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_ground
 		}
@@ -1824,7 +1824,7 @@ focus_tree = {
 	focus = {
 		id = RUS_tanks
 		icon = GFX_goal_generic_army_tanks
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_motorized
 		}
@@ -1844,7 +1844,7 @@ focus_tree = {
 	focus = {
 		id = RUS_bewitch_army
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_tanks
 		}
@@ -1862,7 +1862,7 @@ focus_tree = {
 	focus = {
 		id = RUS_new_infantry
 		icon = GFX_focus_generic_manpower		
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_bewitch_army
 		}
@@ -1926,7 +1926,7 @@ focus_tree = {
 	focus = {
 		id = RUS_guard
 		icon = GFX_focus_mex_soldaderas
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_army
 		}
@@ -1971,7 +1971,7 @@ focus_tree = {
 	focus = {
 		id = RUS_army_deploy
 		icon = GFX_focus_generic_little_entente
-		cost = 10,00		
+		cost = 10		
 		prerequisite = {
 			focus = RUS_new_infantry
 		}
@@ -2093,7 +2093,7 @@ focus_tree = {
 	focus = {
 		id = RUS_give_knowledge
 		icon = GFX_focus_generic_military_academy
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_guard
 		}
@@ -2107,7 +2107,7 @@ focus_tree = {
 	focus = {
 		id = RUS_navy
 		icon = GFX_goal_generic_amphibious_assault
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_army
 		}
@@ -2122,7 +2122,7 @@ focus_tree = {
 	focus = {
 		id = RUS_share_docks
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_navy
 		}
@@ -2143,7 +2143,7 @@ focus_tree = {
 	focus = {
 		id = RUS_share_docks_2
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_share_docks
 		}
@@ -2164,7 +2164,7 @@ focus_tree = {
 	focus = {
 		id = RUS_share_docks_3
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_share_docks_2
 		}
@@ -2185,7 +2185,7 @@ focus_tree = {
 	focus = {
 		id = RUS_fleet_doctrine_3
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_navy
 		}
@@ -2208,7 +2208,7 @@ focus_tree = {
 	focus = {
 		id = RUS_new_destroyers
 		icon = GFX_focus_generic_destroyer
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_fleet_doctrine_3
 		}
@@ -2228,7 +2228,7 @@ focus_tree = {
 	focus = {
 		id = RUS_new_carriers
 		icon = GFX_goal_generic_navy_carrier
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_new_destroyers
 		}
@@ -2247,7 +2247,7 @@ focus_tree = {
 	focus = {
 		id = RUS_fleet_doctrine_2
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_navy
 		}
@@ -2271,7 +2271,7 @@ focus_tree = {
 	focus = {
 		id = RUS_new_submarines
 		icon = GFX_goal_generic_navy_submarine
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_fleet_doctrine_2
 		}
@@ -2291,7 +2291,7 @@ focus_tree = {
 	focus = {
 		id = RUS_easier_submarine
 		icon = GFX_goal_generic_navy_anti_submarine
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_new_submarines
 		}
@@ -2306,7 +2306,7 @@ focus_tree = {
 	focus = {
 		id = RUS_deal_with_f
 		icon = GFX_goal_molotov_ribbentrop_pact
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_set_king
 		}
@@ -2317,7 +2317,7 @@ focus_tree = {
 	focus = {
 		id = RUS_estabilish_rus
 		icon = GFX_focus_SOV_my_brothers_keeper
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_stability
 		}
@@ -2338,12 +2338,14 @@ focus_tree = {
 		}
 		x = 35
 		y = 10
+		
+		completion_reward = { set_cosmetic_tag = SUS }
 
 	}
 	focus = {
 		id = RUS_deal_with_c
 		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_deal_with_f_d
 			focus = RUS_deal_with_d_f
@@ -2355,7 +2357,7 @@ focus_tree = {
 	focus = {
 		id = RUS_deal_with_d_f
 		icon = GFX_goal_generic_military_deal
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_deal_with_f
 		}
@@ -2366,7 +2368,7 @@ focus_tree = {
 	focus = {
 		id = RUS_send_JAP
 		icon = GFX_focus_chi_collaboration_with_the_japanese
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_send_GER
 		}
@@ -2384,7 +2386,7 @@ focus_tree = {
 	focus = {
 		id = RUS_join_axis
 		icon = GFX_focus_ger_reichskommisariats
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_send_JAP
 		}
@@ -2407,7 +2409,7 @@ focus_tree = {
 	focus = {
 		id = RUS_investition_axis
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_join_axis
 		}
@@ -2425,7 +2427,7 @@ focus_tree = {
 	focus = {
 		id = RUS_build_new_zavods
 		icon = GFX_focus_generic_tank_production
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_investition_axis
 		}
@@ -2475,7 +2477,7 @@ focus_tree = {
 		available = {
 		has_idea = RUS_economic_boom
 		}
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_build_new_fabrics
 			focus = RUS_build_new_zavods
@@ -2498,7 +2500,7 @@ focus_tree = {
 	focus = {
 		id = RUS_stability
 		icon = GFX_focus_SOV_third_rome
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_deal_with_c
 			focus = RUS_rule_by_one
@@ -2514,7 +2516,7 @@ focus_tree = {
 	focus = {
 		id = RUS_new_cruisers
 		icon = GFX_focus_generic_cruiser2
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_fleet_doctrine_1
 		}
@@ -2535,7 +2537,7 @@ focus_tree = {
 	focus = {
 		id = RUS_new_battleship
 		icon = GFX_focus_generic_navy_battleship2
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_new_cruisers
 		}
@@ -2555,7 +2557,7 @@ focus_tree = {
 	focus = {
 		id = RUS_fleet_doctrine_1
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_navy
 		}
@@ -2578,7 +2580,7 @@ focus_tree = {
 	focus = {
 		id = RUS_finish_fleet
 		icon = GFX_goal_generic_navy_battleship
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_new_carriers
 			focus = RUS_easier_submarine
@@ -2595,7 +2597,7 @@ focus_tree = {
 	focus = {
 		id = RUS_army_finish
 		icon = GFX_focus_SOV_organization_centralization_discipline
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = RUS_finish_fleet
 		}

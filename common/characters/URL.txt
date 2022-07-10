@@ -1,104 +1,296 @@
 characters={
-
-	URL_Ork_DabDab = {
-		name=URL_Ork_DabDab
-		advisor = {	
-			slot = high_command
-			ledger = army
-				allowed = {
-					original_tag = URL
-				}
-				avaible = {
-				    has_completed_focus = URL_orcs_genshtab
-				}
-				traits = {
-					the_director
-				}
-				cost = 150
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-	}
-
-	URL_Orc_Vladimir = {
+    URL_Orc_Vladimir={
 		name=URL_Orc_Vladimir
-		advisor = {		
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
 			slot = political_advisor
 			idea_token = URL_Orc_Vladimir
-			    allowed = {
-				    original_tag = URL
-				}
-			    avaible = {
-			        has_completed_focus = URL_orcs_in_power
-			    }	
-			    traits = {
-				    political_dancer
-				}
-			    cost = 150
-			    ai_will_do = {
-			        factor = 1.000
-				}
-	        }	
-	}
-
-	URL_Orc_Danila={
-		name=URL_Orc_Danila
-		
-#		portraits={
-#			army={
-#				small="GFX_idea_generic_political_advisor_europe_3"
-#			}
-#		}
-		
-		advisor={
-			avaible = {
-			    has_completed_focus = URL_orcs_in_power
-			}
-
-			slot = political_advisor
-			idea_token = URL_Orc_Danila
-
 			allowed={
 				original_tag = URL
 			}
-
+			available = {
+			    has_completed_focus = URL_teach_orcs_duty 
+		    }
 			traits={
-				industry_reformer
-			}
-			ai_will_do = {
-				factor = 1.000
+				political_dancer
 			}
 		}		
-	}
-
-	URL_Orc_DaGun={
-		name=URL_Orc_DaGun
+	}	
+    URL_Orc_Dab_Dab={
+		name=URL_Dab_Dab
 		
-#		portraits={
-#			army={
-#				small="GFX_idea_generic_political_advisor_europe_3"
-#			}
-#		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
 		
 		advisor={
-			avaible = {
-			    has_completed_focus = URL_orcs_in_power
-			}
-
-			slot = political_advisor
-			idea_token = URL_Orc_DaGun
-
+			slot = high_command
+			idea_token = URL_Dab_Dab
 			allowed={
 				original_tag = URL
 			}
-			
+			available = {
+			    has_completed_focus = URL_orcs_genshtab
+		    }
 			traits={
-				war_industrialist
-			}
-			ai_will_do = {
-				factor = 1.000
+				the_director
 			}
 		}		
-	} 
-}
+	}
+    URL_Orc_Gibon={
+		name=URL_Gibon
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = URL_Gibon
+			allowed={
+				original_tag = URL
+			}
+			available = {
+			    has_completed_focus = URL_orcs_in_power 
+		    }
+			traits={
+				snuggler
+			}
+		}		
+	}
+    URL_Desmos={
+		name=URL_Desmos
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = URL_Desmos
+			allowed={
+				original_tag = URL
+			}
+			available = {
+			    has_completed_focus = URL_orcs_in_power 
+		    }
+			traits={
+				face_licker
+			}
+		}
+	}
+    URL_Gordon={
+		name=URL_Gordon
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = URL_Gordon
+			allowed={
+				original_tag = URL
+			}
+			available = {
+			    has_completed_focus = URL_economy				
+		    }
+			traits={
+				economic_organizer
+			}
+		}		
+	}
+     URL_Tihon={
+		name=URL_Tihon
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = URL_Tihon
+			allowed={
+				original_tag = URL
+			}
+			available = {
+			    has_completed_focus = URL_teach_orcs_write 
+		    }
+			traits={
+				nationalist_journalist
+			}
+		}		
+	}
+    URL_Ricardo={
+		name=URL_Ricardo
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = high_command
+			idea_token = URL_Ricardo
+			allowed={ 
+				original_tag = URL
+			}
+			available = {
+			    has_completed_focus = URL_orcs_teach_tactics 
+		    }
+			traits={
+					army_regrouping_2
+			}
+		}		
+	}
+    URL_Wilhelm={
+		name=URL_Wilhelm
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = high_command
+			idea_token = URL_Wilhelm
+			allowed={
+				original_tag = URL
+			}
+			traits={
+					army_commando_2
+			}
+		}		
+	}
+    URL_Brooklyn={
+		name=URL_Brooklyn
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = high_command
+			idea_token = URL_Brooklyn
+			allowed={
+				original_tag = URL
+			}
+            available = {
+			    has_completed_focus = URL_orcs_teach_tactics 
+		    }		
+			traits={
+					army_entrenchment_3
+			}
+		}		
+	}
+    URL_Boris={
+		name=URL_Boris
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = URL_Boris
+			allowed={
+				original_tag = URL
+			}
+			available = {
+			    has_completed_focus = URL_army
+		    }
+			traits={
+					army_chief_reform_2
+			}
+		}		
+	}
+	URL_Muchacho={
+		name=URL_Muchacho
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = high_command
+			idea_token = URL_Muchacho
+			allowed={
+				original_tag = URL
+			}
+            available = {
+			    has_completed_focus = URL_army
+		    }		
+			traits={
+					army_infantry_2
+			}
+		}		
+	}
+    URL_Orc_Morris={
+		name=URL_Orc_Morris
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = URL_Orc_Morris
+			allowed={
+				original_tag = URL
+			}
+			traits={
+					army_chief_offensive_2
+			}
+		}		
+	}
+    URL_Orc_Pogchamp={
+		name=URL_Orc_Pogchamp
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = URL_Orc_Pogchamp
+			allowed={
+				original_tag = URL
+			}
+			available = {
+			    has_completed_focus = URL_orcs_mobilization_begun
+		    }
+			traits={
+					army_chief_drill_2
+			}
+		}		
+	}	
+ }
+
