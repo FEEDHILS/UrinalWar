@@ -14,6 +14,9 @@ characters = {
 			allowed={
 				original_tag = SIB
 			}
+			visible = {
+			    has_completed_focus = SIB_fill_senate_with_loyal_peoples
+		    }
 			traits={
 				silent_workhorse,
 				Bred_And_Erunda_Admin
@@ -36,13 +39,16 @@ characters = {
 			allowed={
 				original_tag = SIB
 			}
+			visible = {
+			    has_completed_focus = SIB_guarantee_rights
+			}
 			traits={
 				liberal_journalist,
 				humble_appeaser
 			}
 		}	
 	}
-
+	
 	SIB_Alfonso_Maxim = {
 		name=SIB_Alfonso_Maxim
 		
@@ -58,6 +64,9 @@ characters = {
 			allowed={
 				original_tag = SIB
 			}
+			available = {
+			    has_completed_focus = SIB_low_salary
+		    }
 			traits={
 				peoples_commissar_of_finance,
 				financial_graduate,
@@ -65,7 +74,7 @@ characters = {
 			}
 		}	
 	}
-
+	
 	SIB_Andrew_Potolot = {
 		name=SIB_Andrew_Potolot
 		
@@ -81,13 +90,324 @@ characters = {
 			allowed={
 				original_tag = SIB
 			}
+			visible = {
+			    has_completed_focus = SIB_fill_senate_with_loyal_peoples
+		    }
 			traits={
 				war_industrialist,
 				hawk
 			}
 		}	
 	}
+    
+	SIB_Vasiliy_Cumenko={
+		name=SIB_Vasiliy_Cumenko
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = army_chief
+			idea_token = SIB_Vasiliy_Cumenko
+			allowed={
+				original_tag = SIB
+			}
+			available = {
+			    has_completed_focus = SIB_propaganda_campaing
+			}
+			traits={
+				army_regrouping_1
+			}
+		}		
+	}
 
+    SIB_Ivan_Minor={
+		name=SIB_Ivan_Minor
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = army_chief
+			idea_token = SIB_Ivan_Minor
+			allowed={
+				original_tag = SIB
+			}
+			available = {
+			    has_completed_focus = SIB_rebuild_army
+			}
+			traits={
+				army_chief_organizational_2
+			}
+		}		
+	}
+	SIB_Lavr_Korneplodov={
+		name=SIB_Lavr_Korneplodov
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = army_chief
+			idea_token = SIB_Lavr_Korneplodov
+			allowed={
+				original_tag = SIB
+			}	
+			traits={
+				army_chief_old_guard
+			}
+		}		
+	}
+	SIB_Petka_Leopoldovic={
+		name=SIB_Petka_Leopoldovic
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = air_chief
+			idea_token = SIB_Petka_Leopoldovic
+			allowed={
+				original_tag = SIB
+			}	
+			traits={
+				air_pilot_training_2
+			}
+		}		
+	}
+	SIB_Stepan_Kukuruzov={
+		name=SIB_Stepan_Kukuruzov
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = air_chief
+			idea_token = SIB_Stepan_Kukuruzov_1
+			allowed={
+				original_tag = SIB
+			}
+			traits={
+				air_close_air_support_1
+			}
+		}
+		    advisor={
+			slot = theorist
+			idea_token = SIB_Stepan_Kukuruzov_2
+			allowed={
+				original_tag = SIB
+			}
+            available = {
+			    has_completed_focus = SIB_new_air_doctrine
+			}						
+			traits={
+				close_air_support_proponent
+			}
+		}   	
+	}
+	SIB_Leha_Chelyaba={
+		name=SIB_Leha_Chelyaba
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = air_chief
+			idea_token = SIB_Leha_Chelyaba
+			allowed={
+				original_tag = SIB
+			}	
+			traits={
+				air_chief_all_weather_3
+			}
+		}		
+	}
+	SIB_Admiral_Zalupa={
+		name=SIB_Admiral_Zalupa
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = navy_chief
+			idea_token = SIB_Admiral_Zalupa
+			allowed={
+				original_tag = SIB
+			}	
+			traits={
+				navy_chief_decisive_battle_1
+			}
+		}		
+	}
+	SIB_Roma_QuandleDingle={
+		name=SIB_Roma_QuandleDingle
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = navy_chief
+			idea_token = SIB_Roma_Quandledingle
+			allowed={
+				original_tag = SIB
+			}	
+			traits={
+				navy_chief_commerce_raiding_2
+			}
+		}		
+	}
+	SIB_Gandon_Logvinov={
+		name=SIB_Gandon_Logvinov
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = navy_chief
+			idea_token = SIB_Gandon_Logvinov
+			allowed={
+				original_tag = SIB
+			}	
+			traits={
+				navy_chief_old_guard
+			}
+		}		
+	}
+	SIB_Nikolay_Palets={
+		name=SIB_Nikolay_Palets
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = high_command
+			idea_token = SIB_Nikolay_Palets
+			allowed={
+				original_tag = SIB
+			}
+			available = {
+			    has_completed_focus = SIB_create_guardians
+			}
+			traits={
+				army_infantry_1
+			}
+		}		
+	}
+	SIB_Evgeniy_Opengamer={
+		name=SIB_Evgeniy_Opengamer
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = high_command
+			idea_token = SIB_Evgeniy_Opengamer
+			allowed={
+				original_tag = SIB
+			}
+			available = {
+			    has_completed_focus = SIB_army_observe
+			}
+			traits={
+				army_chief_reform_2
+			}
+		}
 
+        advisor={
+			slot = theorist
+			idea_token = SIB_Evgeniy_Opengamer
+			allowed={
+				original_tag = SIB
+			}
+			available = {
+			    has_completed_focus = SIB_army_observe
+			}
+			traits={
+				military_theorist
+			}
+		}		
+	}
+	SIB_Dmitriy_Tupichok={
+		name=SIB_Dmitriy_Tupichok
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
 
+        corps_commander = {
+		traits = { Inflexible Strategist War Hero }
+        skill = 3
+        attack_skill = 1
+        defense_skill = 2
+        planning_skill = 3
+        logistics_skill = 2
+        Legacy_id = 1337	
+		}		
+		
+		advisor={
+			slot = high_command
+			idea_token = SIB_Dmitriy_Tupichok
+			allowed={
+				original_tag = SIB
+			}	
+			traits={
+				army_regrouping_3
+			}
+		}		
+	}
+	SIB_Genadiy_Popov={
+		name=SIB_Genadiy_Popov
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SIB_Genadiy_Popov
+			allowed={
+				original_tag = SIB
+			}	
+			traits={
+				army_logistics_1
+			}
+		}		
+	}
 }

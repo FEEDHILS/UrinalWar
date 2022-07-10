@@ -111,7 +111,8 @@ ideas = {
 			}
 
 			modifier = {
-               	local_resources_factor = 0.10	   
+               	local_resources_factor = 0.10
+                consumer_goods_factor = 0.1				
 			}
 		}
 		
@@ -179,9 +180,9 @@ ideas = {
 			}
 
 			modifier = {
-               industrial_capacity_factory = 0.15
-			   production_factory_max_efficiency_factor = 0.1
-			   production_factory_efficiency_gain_factor = 0.1
+               industrial_capacity_factory = 0.1
+			   production_factory_max_efficiency_factor = 0.05
+			   production_factory_efficiency_gain_factor = 0.05
 			   
 			}
 		}
@@ -395,4 +396,116 @@ ideas = {
 			}
 		}		
 	 }
+	 
+	industrial_concern = {
+	
+	    designer = yes
+		
+		fec_1 = {
+			
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = FEC
+			}
+			
+			allowed_to_remove = {
+			    always = no
+			}
+			
+			available = {
+				has_completed_focus = FEC_enpower_corp_1
+			}
+			
+			research_bonus = {
+				industry = 0.2
+				electronics = 0.1
+			}
+			
+			modifier = {
+               consumer_goods_factor = 0.05
+			   production_speed_industrial_complex_factor = 0.1
+			   production_speed_infrastructure_factor = 0.1
+			}
+			
+			traits = { industrial_concern }
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		fec_2 = {
+			
+			picture = generic_air_manufacturer_1
+
+			
+			allowed = {
+				original_tag = FEC
+			}
+			
+			allowed_to_remove = {
+			    always = no
+			}
+			
+			available = {
+				has_completed_focus = FEC_enpower_corp_2
+			}
+			
+			research_bonus = {
+				industry = 0.1
+				infantry_weapons = 0.1
+			}
+			
+			modifier = {
+               consumer_goods_factor = 0.05
+			   production_speed_arms_factory_factor = 0.1
+			   production_speed_naval_base_factor = 0.1
+			}
+			
+			traits = { industrial_concern }
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+    materiel_manufacturer = {
+	
+	    fec_heavy_corp = {
+		
+		    picture = generic_air_manufacturer_1
+
+			
+			allowed = {
+				original_tag = FEC
+			}
+			
+			allowed_to_remove = {
+			    always = no
+			}
+			
+			available = {
+				has_completed_focus = FEC_2_seize_heavy
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.1				
+				support_tech = 0.05
+				motorized_equipment = 0.05
+				artillery = 0.05
+				cat_medium_armor = 0.05
+				cat_light_armor = 0.05
+				infantry_tech = 0.05
+			}
+			
+			modifier = {
+			    industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+	
+	}	
 }

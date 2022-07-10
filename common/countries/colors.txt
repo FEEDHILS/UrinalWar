@@ -42,10 +42,15 @@ CTB = {
 	color_ui = rgb { 150 112 91 }
 }
 
-#Outer Heaven
-MGS = { 
-	color = rgb { 55 49 68 }
-	color_ui = rgb { 55 49 68 }
+#Crimean Fort
+CRF = { 
+	color = rgb { 164 3 31 }
+	color_ui = rgb { 164 3 31 }
+}
+
+PIR = { 
+	color = rgb { 150 112 91 }
+	color_ui = rgb { 150 112 91 }
 }
 
 

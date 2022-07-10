@@ -31,21 +31,12 @@ focus_tree = {
 		y = 1
 		
 		completion_reward = {
-		    set_politics = {
-	            ruling_party = fascism
-                elections_allowed = no
-                last_election = "1935.12.17"
-                election_frequency = 48
-                }
-		    add_popularity = {
-			    ideology = fascism
-				popularity = 0.8
-			}
+		  add_country_leader_trait = popular_figurehead2
 		}
 
 	}
 	focus = {
-		id = SIB_fill_senate_with_one_people
+		id = SIB_fill_senate_with_loyal_peoples
 		icon = GFX_goal_support_democracy
 		cost = 10
 		prerequisite = {
@@ -53,6 +44,12 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
+		
+		completion_reward = {
+		    custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = SIB_Borislav_Masonov
+			show_ideas_tooltip = SIB_Andrew_Potolot
+		}
 
 	}
 	focus = {
@@ -60,7 +57,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		cost = 10
 		prerequisite = {
-			focus = SIB_fill_senate_with_one_people
+			focus = SIB_fill_senate_with_loyal_peoples
 		}
 		x = 12
 		y = 3
@@ -87,6 +84,8 @@ focus_tree = {
 		    swap_ideas = {
 			    remove_idea =  SIB_politican_political
 				add_idea = SIB_politican_stab
+		    custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = SIB_Nikita_Khruschov
 			}
 		}
 
@@ -103,7 +102,7 @@ focus_tree = {
 		
 		completion_reward = {
 		    remove_ideas = SIB_politican_stab
-			add_country_leader_trait = the_gentleman_president
+			add_country_leader_trait = the_silver_president
 		}
 
 	}
@@ -157,7 +156,6 @@ focus_tree = {
 		completion_reward = {
 		    add_stability = -0.05
 		}
-
 	}
 	focus = {
 		id = SIB_low_salary
@@ -171,6 +169,8 @@ focus_tree = {
  
         completion_reward = {
 		    add_stability = -0.05
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = SIB_Alfonso_Maxim
 		}
 	}
 	focus = {
@@ -197,6 +197,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SIB_force_people
+		}
+		prerequisite = {
+			focus = SIB_low_salary
 		}
 		x = 17
 		y = 4
@@ -370,6 +373,8 @@ focus_tree = {
 		
 		completion_reward = {
 		    add_stability = 0.1
+		    custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = SIB_Vasiliy_Cumenko
 		}
 
 	}
@@ -451,6 +456,8 @@ focus_tree = {
 		    army_experience = 25
 		    add_political_power = -50
 			add_war_support = -0.1
+		    custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = SIB_Evgeniy_Opengamer
 		}
 
 	}
@@ -466,6 +473,8 @@ focus_tree = {
 		
 		completion_reward = {
 		    air_experience = 50
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = SIB_Petka_Leopoldovic
 		}
 
 	}
@@ -506,6 +515,8 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = air_doctrine
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = SIB_Stepan_Kukuruzov_2
 			}
 		}
 
@@ -524,6 +535,8 @@ focus_tree = {
 		    swap_ideas = {
 			    remove_idea = SIB_army
 				add_idea = SIB_army_rebuild
+				custom_effect_tooltip = available_political_advisor
+		        show_ideas_tooltip = SIB_Ivan_Minor
 			}
 		}
 

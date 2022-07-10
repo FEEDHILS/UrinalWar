@@ -1,0 +1,57 @@
+ideas = {
+
+	country = {
+		pirate_under_watching = {
+			picture = great_depression
+			
+			allowed = {
+				tag = CRF
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			targeted_modifier = {
+				tag = PIR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		pirate_under_watching_2 = {
+			picture = great_depression
+			
+			allowed = {
+				tag = CRF
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			targeted_modifier = {
+				tag = PIR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+			}			
+		}
+		pirate_under_watching_3 = {
+			picture = great_depression
+			
+			allowed = {
+				tag = CRF
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			targeted_modifier = {
+				tag = PIR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+		}
+	}
+	
+}

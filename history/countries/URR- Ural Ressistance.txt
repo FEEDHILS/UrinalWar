@@ -75,11 +75,6 @@ set_popularities = {
 	neutrality = 100
 }
 
-recruit_character = URR_Andrey_Gnidov
-recruit_character = URR_Just_Semen
-recruit_character = URR_Anton_Logvinov
-
-
 create_country_leader = {
 	name = "Divanich"
 	desc = "Divanich_DESC"
@@ -91,3 +86,17 @@ create_country_leader = {
 		army_infantry_1
 	}
 }
+
+recruit_character = URR_Gregor_Bzheck
+recruit_character = URR_Jabroni
+recruit_character = URR_Isaac_Kleiner
+recruit_character = URR_Baretsk
+recruit_character = URR_Nikolay_Olegovich
+recruit_character = URR_Oleg_Nikolaich
+recruit_character = URR_Kaganovich
+recruit_character = URR_Cabinet
+recruit_character = URR_Joseph
+recruit_character = URR_Alexander
+recruit_character = URR_Maxim
+recruit_character = URR_Raiden
+recruit_character = FEC_YOURMOM

@@ -61,15 +61,15 @@ focus_tree = {
 		
 		completion_reward = {
 		    add_stability = 0.05
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = Orc_Vladimir
 			swap_ideas = {
 			    remove_idea = URL_bad_managment
 				add_idea = URL_bad_managment_2
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = URL_Desmos
+			show_ideas_tooltip = URL_Gibon
 		}
 		
-
 	}
 	focus = {
 		id = URL_put_orcs_manage_mining
@@ -100,7 +100,9 @@ focus_tree = {
 		swap_ideas = {
 			    remove_idea = URL_bad_managment_2
 				add_idea = URL_bad_managment_3
-			}	
+			}
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = URL_Tihon		
         }
 	}
 	focus = {
@@ -115,8 +117,9 @@ focus_tree = {
 		
         completion_reward = {
 		    add_ideas = URL_burecrats
-		}
-
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = URL_Orc_Vladimir
+	    }
 	}
 	focus = {
 		id = URL_start_burocratic
@@ -483,7 +486,10 @@ focus_tree = {
 		y = 1
 		
 		completion_reward = {
-		    army_experience = 10
+		   army_experience = 10
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = URL_Muchacho
+		show_ideas_tooltip = URL_Boris
 		}
 
 	}
@@ -500,6 +506,8 @@ focus_tree = {
 		completion_reward = {
 		set_country_flag = { flag = URL_mobilization value = 1 days = 180 }
 		add_ideas = URL_army_mobilization
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = URL_Orc_Pogchamp
         }
 	}
 	focus = {
@@ -538,10 +546,13 @@ focus_tree = {
 				cost_reduction = 1
 				uses = 1
 				category = land_doctrine
+				custom_effect_tooltip = available_political_advisor
+		        show_ideas_tooltip = URL_Ricardo
+		        show_ideas_tooltip = URL_Brooklyn
 			}
 		}
-
 	}
+	
 	focus = {
 		id = URL_orcs_genshtab
 		icon = GFX_focus_generic_military_mission
@@ -658,6 +669,8 @@ focus_tree = {
 				owner = URL			
 				}
 		   }
+		   custom_effect_tooltip = available_political_advisor
+		   show_ideas_tooltip = URL_Wilhelm
         }
 	}
 	focus = {
@@ -761,6 +774,8 @@ focus_tree = {
 		}
 		x = 45
 		y = 8
+		
+		completion_reward = { set_cosmetic_tag = ORC }
 
 	}
 	focus = {

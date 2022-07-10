@@ -247,7 +247,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
+	
 	face_licker = {
 		random = no
 		sprite = 10
@@ -345,7 +345,6 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
 	
 	indomitable_perseverance = { # Ground units get 4 more Morale 
 		random = no
@@ -4823,7 +4822,7 @@ leader_traits = {
 		}
 	}
 	
-	army_chief_reform_3 = { 
+	army_chief_reform_3 = {
 		sprite = 5	
 		experience_gain_army = 0.2
 		
@@ -6487,6 +6486,30 @@ leader_traits = {
 			}
 		}
 	}
-
+  
+    King_of_all_ukraine = {
+		random = no
+		stability_factor = 0.1
+		war_support_factor = 0.25		
+        drift_defence_factor = 0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    Corporative_assambley = {
+		random = no
+		stability_factor = -0.05
+		political_power_factor = -0.1
+        industrial_capacity_dockyard = 0.05
+        industrial_capacity_factory = 0.05		
+		global_building_slots_factor = 0.1
+		consumer_goods_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 
 }
