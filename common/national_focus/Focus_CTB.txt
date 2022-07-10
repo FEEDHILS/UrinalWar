@@ -187,6 +187,17 @@ focus_tree = {
 		}
 		x = 4
 		y = 5
+		
+		completion_reward = {
+		    UKR = {
+			    country_event = {
+                    id = cossacks.1
+                    days = 5
+                    random = 50
+                    random_days = 10
+                 }
+			}
+		}
 
 	}
 	focus = {
@@ -356,13 +367,28 @@ focus_tree = {
 		x = 14
 		y = 5
 		
-	   # ivent_later
+	   completion_reward = {
+		    UKR = {
+			    country_event = {
+                    id = cossacks.2
+                    days = 10
+                    random = 50
+                    random_days = 10
+                 }
+			}
+		}
 
 	}
+	
 	focus = {
 		id = ukraine_no
 		icon = GFX_focus_renounce_the_treaty_of_triannon
 		cost = 10
+		available = {
+		    hidden_trigger = {
+                NOT = { country_exists = GER }
+            }
+		}
 		prerequisite = {
 			focus = Unite_with_ukraine
 		}
@@ -373,10 +399,16 @@ focus_tree = {
 		y = 6
 
 	}
+	
 	focus = {
 		id = ukraine_yes
 		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 10
+		available = {
+		    hidden_trigger = {
+                NOT = { country_exists = GER }
+            }
+		}
 		prerequisite = {
 			focus = Unite_with_ukraine
 		}
@@ -404,6 +436,11 @@ focus_tree = {
 		}
 		x = 15
 		y = 7
+		
+		completion_reward = {
+		    add_stability = 0.05
+			add_war_support = -0.1
+		}
 
 	}
 	
@@ -422,6 +459,7 @@ focus_tree = {
 		
 		completion_reward = {
 		    add_stability = -0.2
+			add_war_support = 0.1
             create_wargoal = {
                type = puppet_wargoal_focus
                target = UKR
@@ -1753,6 +1791,11 @@ focus_tree = {
 		}
 		x = 6
 		y = 9
+		
+		completion_reward = { 
+		    set_cosmetic_tag = UKZ 
+			add_country_leader_trait = King_of_all_ukraine
+		}
 
 	}
 	focus = {
@@ -1823,6 +1866,8 @@ focus_tree = {
 		}
 		x = 17
 		y = 10
+		
+		completion_reward = { set_cosmetic_tag = UKD }
 
 	}
 	focus = {
@@ -1834,6 +1879,8 @@ focus_tree = {
 		}
 		x = 15
 		y = 8
+		
+		completion_reward = { set_cosmetic_tag = CBT }  
 
 	}
 	focus = {

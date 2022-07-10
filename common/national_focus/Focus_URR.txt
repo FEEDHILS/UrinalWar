@@ -398,7 +398,7 @@ focus_tree = {
 		y = 3
 		
 		completion_reward = {
-		    add_political_power = -50
+		    add_political_power = -100
 			add_war_support = 0.1
 		}
 
@@ -415,6 +415,7 @@ focus_tree = {
 		
 		completion_reward = {
 		    add_research_slot = 1
+			add_political_power = -150
 		}
 
 	}
@@ -430,6 +431,7 @@ focus_tree = {
 		
 		completion_reward = {
 		    add_manpower = 10000
+			add_political_power = -100
 		}
 
 	}
@@ -610,8 +612,10 @@ focus_tree = {
 				name = land_doc_bonus
 				cost_reduction = 1
 				uses = 1
-				category = land_doctrine
-			}
+				category = land_doctrine }    
+			URR = {
+			country_event = urr.1
+			} 
 		}
 	}
 	
@@ -758,6 +762,7 @@ focus_tree = {
 		
 		completion_reward = {
 		    add_country_leader_trait = the_sacred_king
+            set_cosmetic_tag = CUM
 		}
 
 	}
@@ -1077,7 +1082,6 @@ focus_tree = {
                 demote_leader = yes
             } 
 		}
-
 	}
 	focus = {
 		id = URR_ready_for_battle

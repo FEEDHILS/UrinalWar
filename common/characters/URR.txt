@@ -1,65 +1,327 @@
 characters={
-
-	URR_Andrey_Gnidov = {
-		name=URR_Andrey_Gnidov
-		advisor = {		
+    URR_Gregor_Bzheck={
+		name=URR_Gregor_Bzheck
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
 			slot = political_advisor
-			idea_token = URR_Andrey_Gnidov
-			    allowed = {
-				    original_tag = URR
-				}
-			    avaible = {
-			        has_completed_focus = URR_enpower_friends
-			    }	
-			    traits = {
-				    silent_workhorse
-				}
-			    cost = 150
-			    ai_will_do = {
-			        factor = 1.000
-				}
-	        }	
-	}
-
-	URR_Just_Semen = {
-		name=URR_Just_Semen
-		advisor = {		
+			idea_token = URR_Gregor_Bzheck
+			allowed={
+				original_tag = URR
+			}
+			available = {
+			    has_completed_focus = URR_approve_extension 
+		    }
+			traits={
+				autocratic_imperialist
+			}
+		}		
+	}	
+    URR_Jabroni={
+		name=URR_Jabroni
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
 			slot = political_advisor
-			idea_token = URR_Just_Semen
-			    allowed = {
-				    original_tag = URR
-				}
-			    avaible = {
-			        has_completed_focus = URR_enpower_friends
-			    }	
-			    traits = {
-				    devoted_trotskyist
-				}
-			    cost = 150
-			    ai_will_do = {
-			        factor = 1.000
-				}
-	        }	
+			idea_token = URR_Jabroni
+			allowed={
+				original_tag = URR
+			}
+			available = {
+			    has_completed_focus = URR_everyone_obeys
+		    }
+			traits={
+				ideological_crusader
+			}
+		}		
 	}
-
-	URR_Anton_Logvinov = {
-		name=URR_Anton_Logvinov
-		advisor = {		
+    URR_Isaac_Kleiner={
+		name=URR_Isaac_Kleiner
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
 			slot = political_advisor
-			idea_token = URR_Anton_Logvinov
-			    allowed = {
-				    original_tag = URR
-				}
-			    avaible = {
-			        has_completed_focus = URR_enpower_friends
-			    }	
-			    traits = {
-				    strict_austerity_adherent
-				}
-			    cost = 150
-			    ai_will_do = {
-			        factor = 1.000
-				}
-	        }	
+			idea_token = URR_Isaac_Kleiner
+			allowed={
+				original_tag = URR
+			}
+			available = {
+			    has_completed_focus = URR_propaganda_campaing_3
+		    }
+			traits={
+				education_reformer
+				technocrat
+			}
+		}		
 	}
-}
+    URR_Baretsk={
+		name=URR_Baretsk
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = URR_Baretsk
+			allowed={
+				original_tag = URR
+			}
+			available = {
+			    has_completed_focus = URR_enpower_friends 
+		    }
+			traits={
+				connected_citizen
+			}
+		}
+	}
+    URR_Nikolay_Olegovich={
+		name=URR_Nikolay_Olegovich
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = URR_Nikolay_Olegovich
+			allowed={
+				original_tag = URR
+			}
+			available = {
+			    has_completed_focus = URR_share_power				
+		    }
+			traits={
+				liberal_journalist
+			}
+		}		
+	}
+     URR_Oleg_Nikolaich={
+		name=URR_Oleg_Nikolaich
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = URR_Oleg_Nikolaich
+			allowed={
+				original_tag = URR
+			}
+			available = {
+			    has_completed_focus = URR_power_of_one
+		    }
+			traits={
+				nationalist_journalist
+			}
+		}		
+	}
+    URR_Kaganovich={
+		name=URR_Kaganovich
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = political_advisor
+			idea_token = URR_Kaganovich
+			allowed={ 
+				original_tag = URR
+			}
+			available = {
+			    has_completed_focus = URR_economy 
+		    }
+			traits={
+				economist
+				lieutenant_of_industry				
+			}
+		}		
+	}
+    URR_Cabinet={
+		name=URR_Cabinet
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = theorist
+			idea_token = URR_Cabinet
+			allowed={
+				original_tag = URR
+			}
+			available = {
+			    has_completed_focus = URR_rebuild_generalitet
+		    }
+			traits={
+				council_of_theorists
+			}
+		}		
+	}
+    URR_Joseph={
+		name=URR_Joseph
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = army_chief
+			idea_token = URR_Joseph
+			allowed={
+				original_tag = URR
+			}	
+			traits={
+				army_entrenchment_3
+			}
+		}		
+	}
+    URR_Alexander={
+		name=URR_Alexander
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = URR_Alexander
+			allowed={
+				original_tag = URR
+			}
+			available = {
+			    has_completed_focus = URR_army
+		    }
+			traits={
+				army_infantry_2
+			}
+		}		
+	}
+	URR_Maxim={
+		name=URR_Maxim
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = high_command
+			idea_token = URR_Maxim
+			allowed={
+				original_tag = URR
+			}
+            available = {
+			    has_completed_focus = URR_army
+		    }		
+			traits={
+					army_entrenchment_2
+			}
+		}		
+	}
+    URR_Heinrich={
+		name=URR_Heinrich
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = URR_Heinrich
+			allowed={
+				original_tag = URR
+			}
+			traits={
+				army_chief_offensive_2
+			}
+		}		
+	}
+    URR_Muller={
+		name=URR_Muller
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = URR_Muller
+			allowed={
+				original_tag = URR
+			}
+			traits={
+					army_chief_defensive_2
+					army_chief_organizational_1
+			}
+		}		
+	}
+	
+    URR_Raiden={
+		name=URR_Raiden
+		
+		portraits={
+			army={
+				small = "GFX/leaders/URR/Raizor_small.dds"
+				large = "GFX/leaders/URR/Raizor.dds"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = URR_Raiden
+			allowed={
+				original_tag = URR
+			}
+			traits={
+                army_regrouping_2
+			}
+		}
+		
+		corps_commander = {
+		    traits = { career_officer }
+            skill = 2
+            attack_skill = 4
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+
+        }
+	}
+ }

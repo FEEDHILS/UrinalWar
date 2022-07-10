@@ -16,12 +16,6 @@ set_technology = {
 set_war_support = 0.45
 set_stability = 0.65
 
-recruit_character = URL_Ork_DabDab
-recruit_character = URL_Orc_Vladimir
-recruit_character = URL_Orc_Danila
-recruit_character = URL_Orc_DaGun
-
-
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -96,3 +90,18 @@ create_country_leader = {
 		dictator
 	}
 }
+
+recruit_character = URL_Orc_Vladimir
+recruit_character = URL_Orc_Dab_Dab
+recruit_character = URL_Orc_Gibon
+recruit_character = URL_Desmos
+recruit_character = URL_Gordon
+recruit_character = URL_Tihon
+recruit_character = URL_Ricardo
+recruit_character = URL_Brooklyn
+recruit_character = URL_Boris
+recruit_character = URL_Orc_Morris
+recruit_character = URL_Orc_Pogchamp
+recruit_character = URL_Muchacho
+recruit_character = URL_Wilhelm
+recruit_character = URL_Dick

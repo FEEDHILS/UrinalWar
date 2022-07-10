@@ -14,12 +14,12 @@ characters = {
 			allowed={
 				original_tag = FEC
 			}
+			available = {
+			    has_completed_focus = FEC_1_advance_other_corp
+			}
 			traits={
 				economist,
 				technocrat
-			}
-			ai_will_do = {
-				factor = 1.000
 			}
 		}		
 	}
@@ -38,11 +38,11 @@ characters = {
 			allowed = {
 				original_tag = FEC
 			}
+			available = {
+			    not = { has_completed_focus = FEC_2_raid_corp }
+			}
 			traits = {
 				silent_workhorse 
-			}
-			ai_will_do = {
-				factor = 1.000
 			}
 		}
 	}
@@ -61,11 +61,11 @@ characters = {
 			allowed = {
 				original_tag = FEC
 			}
+			visible = {
+			    has_completed_focus = FEC_1_advance_light_prom_corp
+			}
 			traits = {
 				industry_reformer 
-			}
-			ai_will_do = {
-				factor = 1.000
 			}
 		}
 	}
@@ -84,6 +84,9 @@ characters = {
 			allowed = {
 				original_tag = FEC
 			}
+			available = {
+			    has_completed_focus = FEC_1_advance_resources_corp
+			}
 			on_add = {
 				add_resource = {
 					type = rubber
@@ -99,8 +102,75 @@ characters = {
 					state = 408
 				} 
 			}
-			ai_will_do = {
-				factor = 1.000
+		}
+	}
+	
+	FEC_Oil_Corp={
+		name=FEC_Oil_Corp
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FEC_Oil_Corp
+			allowed = {
+				original_tag = FEC
+			}
+			available = {
+			    has_completed_focus = FEC_1_advance_resources_corp
+			}
+			on_add = {
+				add_resource = {
+					type = oil
+					amount = 24
+					state = 408
+				} 
+			}
+			
+			on_remove = {
+				add_resource = {
+					type = oil
+					amount = -24
+					state = 408
+				} 
+			}
+		}
+	}
+	
+	FEC_tungsten_Corp={
+		name=FEC_tungsten_Corp
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FEC_tungsten_Corp
+			allowed = {
+				original_tag = FEC
+			}
+			available = {
+			    has_completed_focus = FEC_1_advance_resources_corp
+			}
+			on_add = {
+				add_resource = {
+					type = tungsten
+					amount = 18
+					state = 408
+				} 
+			}
+			
+			on_remove = {
+				add_resource = {
+					type = tungsten
+					amount = -18
+					state = 408
+				} 
 			}
 		}
 	}
@@ -119,14 +189,503 @@ characters = {
 			allowed = {
 				original_tag = FEC
 			}
+			visible = {
+			    has_completed_focus = FEC_2_seize_heavy
+			}
 			traits = {
 				quartermaster_general,
 				war_industrialist
 			}
-			ai_will_do = {
-				factor = 1.000
+		}
+	}
+	
+	FEC_Konrad_Verner={
+		name=FEC_Konrad_Verner
+
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FEC_Konrad_Verner
+			allowed = {
+				original_tag = FEC
+				has_country_leader = { name = "Stas McFly" rulling only = yes }
+			}
+			visible = {
+			    has_country_leader = { name = "Stas McFly" rulling only = yes }
+			}
+			available = {
+			    has_country_leader = { name = "Stas McFly" rulling only = yes }
+			}
+			traits = {
+				revolutionary_general
+				retired_officer
 			}
 		}
 	}
-}
+	
+	FEC_German_Tugrikov={
+		name=FEC_German_Tugrikov
 
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FEC_German_Tugrikov
+			allowed = {
+				original_tag = FEC
+			}
+			visible = {
+			    has_country_leader = { name = "Oleg Nikonov" rulling only = yes }
+			}
+			available = {
+			    has_country_leader = { name = "Oleg Nikonov" rulling only = yes }
+			}
+			traits = {
+				economic_reformer
+				champion_of_peace_4
+			}
+		}
+	}
+	
+    FEC_Semen_McFly={
+		name=FEC_Semen_McFly
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = army_chief
+			idea_token = FEC_Semen_McFly
+			allowed={
+				original_tag = FEC
+			}
+            available = {
+			    has_completed_focus = FEC_2_our_own_army
+		    }			
+			traits={
+				army_chief_offensive_2
+			}
+		}		
+	}
+    FEC_Alexander_Vintovkov={
+		name=FEC_Alexander_Vintovkov
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = FEC_Alexander_Vintovkov
+			allowed={
+				original_tag = FEC
+			}
+			available = {
+			    has_completed_focus = FEC_1_mercenaries 
+			}
+			traits={
+				army_infantry_3
+				army_chief_maneuver_1
+			}
+		}		
+	}
+	FEC_Bullet={
+		name=FEC_Bullet
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}	
+		
+		advisor={
+			slot = high_command
+			idea_token = FEC_Bullet
+			allowed={
+				original_tag = FEC
+			}
+			available = {
+			    has_completed_focus = FEC_2_form_guardians
+			}
+			traits={
+					army_commando_1
+			}
+		}		
+	}
+    FEC_Frank_VanBuren={
+		name=FEC_Frank_VanBuren
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = FEC_Frank_VanBuren
+			allowed={
+				original_tag = FEC
+			}
+			available = {
+			    has_completed_focus = FEC_1_mercenaries 
+			}
+			traits={
+				army_chief_defensive_1
+				army_chief_drill_2
+			}
+		}		
+	}
+    FEC_Deez_Nuts={
+		name=FEC_Deez_Nuts
+		
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = FEC_Deez_Nuts
+			allowed={
+				original_tag = FEC
+			}
+			available = {
+			   OR = {
+			        has_completed_focus = FEC_2_tank_division
+					has_completed_focus = FEC_1_buy_tanks
+			    }				
+			}
+			traits={
+					army_armored_2
+			}
+		}
+        corps_commander = {
+            traits = { armor_officer trait_reckless panzer_leader }
+            skill = 3
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 3
+            legacy_id = 420
+            visible = { has_completed_focus = FEC_new_government }
+        }		
+	}
+	
+    FEC_Kostantin_Ovechkin={
+		name=FEC_Kostantin_Ovechkin
+		
+		portraits={
+			army={
+			    small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = FEC_Kostantin_Ovechkin
+			allowed={
+				original_tag = FEC
+			}
+			traits={
+                army_regrouping_2
+		    }
+	    }
+    }	
+	
+	FEC_Gospodin_Linkor={
+		name=FEC_Gospodin_Linkor
+		
+		portraits={
+			army={
+			    small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = navy_chief
+			idea_token = FEC_Gospodin_Linkor_1
+			allowed={
+				original_tag = FEC
+			}
+			traits={
+                navy_chief_decisive_battle_3
+		    }
+     	}
+		
+		advisor={
+			slot = high_command
+			idea_token = FEC_Gospodin_Linkor_2
+			allowed={
+				original_tag = FEC
+			}
+			traits={
+                navy_capital_ship_3
+		    }
+	    }
+		
+		navy_leader = {
+		traits = { ironside big_guns_expert battleship_adherent bold trait_SPR_stalinist_loyalties }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 2
+            maneuvering_skill = 4
+            coordination_skill = 4
+            legacy_id = 69420
+		}
+		
+		country_leader = {
+            ideology = Stalinism
+            traits = { socialist_justice patriotic_socialist }
+            expire = "1953.3.1.1"
+            id = -1
+            desc = "Linkor_desc"
+        }
+    }	
+	
+	FEC_Georgiy_Zvyagincev={
+		name=FEC_Georgiy_Zvyagincev
+		
+		portraits={
+			army={
+			    small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = navy_chief
+			idea_token = FEC_Georgiy_Zvyagincev
+			allowed={
+				original_tag = FEC
+			}
+			available = {
+			    has_completed_focus = FEC_2_own_fleet
+			}
+			traits={
+                navy_chief_commerce_raiding_1
+		    }
+	    }
+		
+		navy_leader = {
+		traits = { navy_media_personality seawolf }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 1
+            maneuvering_skill = 2
+            coordination_skill = 1
+            legacy_id = 8271
+		    visible = { has_completed_focus = FEC_2_own_fleet }
+		}
+	}	
+	
+	FEC_Anton_Godvinov={
+		name=FEC_Anton_Godvinov
+		
+		portraits={
+			army={
+			    small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = air_chief
+			idea_token = FEC_Anton_Godvinov
+			allowed={
+				original_tag = FEC
+			}
+			available = {
+			    has_completed_focus = FEC_1_advance_air_production_corp
+			}
+			traits={
+                air_chief_night_operations_1
+		    }
+	    }
+	}
+	FEC_Mikola_Oomaga={
+		name=FEC_Mikola_Oomaga
+		
+		portraits={
+			army={
+			    small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = air_chief
+			idea_token = FEC_Mikola_Oomaga
+			allowed={
+				original_tag = FEC
+			}
+			traits={
+                air_chief_ground_support_2
+		    }
+	    }
+    }
+	
+	FEC_Bombila_Mudriy={
+		name=FEC_Bombila_Mudriy
+		
+		portraits={
+			army={
+			    small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = FEC_Bombila_Mudriy
+			allowed={
+				original_tag = FEC
+			}
+			available = {
+			    has_completed_focus = FEC_1_air_bomber
+			}
+			traits={
+                air_tactical_bombing_2
+		    }
+	    }
+    }
+	FEC_Big_Bobs={
+		name=FEC_Big_Bobs
+		
+		portraits={
+			army={
+			    small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = FEC_Big_Bobs
+			allowed={
+				original_tag = FEC
+			}
+			available = {
+			    has_completed_focus = FEC_2_own_air
+			}
+			traits={
+                air_pilot_training_3
+		    }
+	    }
+    }
+     
+    FEC_Nigga_Diay={
+		name=FEC_Nigga_Diay
+		
+		portraits={
+			army={
+			    small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = FEC_Nigga_Diay
+			allowed={
+				original_tag = FEC
+			}
+			traits={
+                navy_fleet_logistics_1
+		    }
+	    }
+    }
+	FEC_Tebya_Ebet={
+		name=FEC_Tebya_Ebet
+		
+		portraits={
+			army={
+			    small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = FEC_Tebya_Ebet
+			allowed={
+				original_tag = FEC
+			}
+			available = {
+			    has_completed_focus = FEC_2_fleet_submarine
+			}
+			traits={
+                navy_submarine_2
+		    }
+	    }
+    }
+     
+    FEC_Volnyet={
+		name=FEC_Volnyet
+		
+		portraits={
+			army={
+			    small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = FEC_Volnyet
+			allowed={
+				original_tag = FEC
+			}
+			traits={
+                military_theorist
+		    }
+	    }
+    }
+     
+    FEC_Interesyet={
+		name=FEC_Interesyet
+		
+		portraits={
+			army={
+			    small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = FEC_Interesyet
+			allowed={
+				original_tag = FEC
+			}
+			traits={
+                air_warfare_theorist
+		    }
+	    }
+    }
+    
+	FEC_Lubopitno={
+		name=FEC_Lubopitno
+		
+		portraits={
+			army={
+			    small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = FEC_Lubopitno
+			allowed={
+				original_tag = FEC
+			}
+			traits={
+                naval_theorist
+		    }
+	    }
+    }	
+}

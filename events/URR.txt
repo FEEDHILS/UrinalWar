@@ -1,0 +1,34 @@
+add_namespace = urr
+
+
+country_event = {
+	id = urr.1
+	title = urr.1.t # General choice
+	desc = urr.1.d
+	
+	is_triggered_only = yes
+
+	picture = GFX_report_event_generic_battle
+
+	option = {
+		name = urr.1.a # Heinrich
+		ai_chance = { factor = 50 }
+		
+		URR = {
+		    hidden_effect = {
+            recruit_character = URR_Heinrich
+            }
+		}
+	}
+	
+	option = {
+		name = urr.1.b # Muller
+		ai_chance = { factor = 50 }
+		
+		URR = {
+		    hidden_effect = {
+            recruit_character = URR_Muller
+            }
+		}
+	}
+}

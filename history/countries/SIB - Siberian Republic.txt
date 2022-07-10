@@ -80,8 +80,33 @@ add_ideas = {  SIB_politican
 			   SIB_army
 }
 
+create_country_leader = {
+	name = "Mister M"
+	desc = "Mister_DESC"
+	picture = "ooomaga.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		assassination_survivor
+		gifted_shipping_magnate
+	}
+}
+
 recruit_character = SIB_Borislav_Masonov
 recruit_character = SIB_Nikita_Khruschov
 recruit_character = SIB_Alfonso_Maxim
 recruit_character = SIB_Andrew_Potolot
+recruit_character = SIB_Vasiliy_Cumenko
+recruit_character = SIB_Ivan_Minor
+recruit_character = SIB_Lavr_Korneplodov
+recruit_character = SIB_Petka_Leopoldovic
+recruit_character = SIB_Stepan_Kukuruzov
+recruit_character = SIB_Leha_Chelyaba
+recruit_character = SIB_Admiral_Zalupa
+recruit_character = SIB_Roma_QuandleDingle
+recruit_character = SIB_Gandon_Logvinov
+recruit_character = SIB_Nikolay_Palets
+recruit_character = SIB_Evgeniy_Opengamer
+recruit_character = SIB_Dmitriy_Tupichok
+recruit_character = SIB_Genadiy_Popov
 recruit_character = FEC_YOURMOM

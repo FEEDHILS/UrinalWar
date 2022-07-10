@@ -88,7 +88,31 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
-		economist editor
+		Corporative_assambley
+	}
+}
+
+create_country_leader = {
+	name = "Stas McFly"
+	desc = "Stas_desc"
+	picture = "Marty.dds"
+	expire = "1965.1.1"
+	ideology = Rexism
+	traits = {
+		armaments_organizer
+		economist
+	}
+}
+
+create_country_leader = {
+	name = "Oleg Nikonov"
+	desc = "Oleg_desc"
+	picture = "Oleg.dds"
+	expire = "1965.1.1"
+	ideology = Liberalism
+	traits = {
+		editor
+		financial_expert
 	}
 }
 
@@ -97,4 +121,25 @@ recruit_character = FEC_Walter_White
 recruit_character = FEC_Johny_Deep
 recruit_character = FEC_Rubber_Corp
 recruit_character = FEC_Alastor_fon_Pidor
+recruit_character = FEC_Konrad_Verner
+recruit_character = FEC_German_Tugrikov
+recruit_character = FEC_Deez_Nuts
+recruit_character = FEC_Frank_VanBuren
+recruit_character = FEC_Bullet
+recruit_character = FEC_Alexander_Vintovkov
+recruit_character = FEC_Semen_McFly
+recruit_character = FEC_Kostantin_Ovechkin
+recruit_character = FEC_Gospodin_Linkor
+recruit_character = FEC_Georgiy_Zvyagincev
+recruit_character = FEC_Anton_Godvinov
+recruit_character = FEC_Mikola_Oomaga
+recruit_character = FEC_Bombila_Mudriy
+recruit_character = FEC_Big_Bobs
+recruit_character = FEC_Nigga_Diay
+recruit_character = FEC_Tebya_Ebet
+recruit_character = FEC_tungsten_Corp
+recruit_character = FEC_Oil_Corp
+recruit_character = FEC_Volnyet
+recruit_character = FEC_Interesyet
+recruit_character = FEC_Lubopitno
 recruit_character = FEC_YOURMOM

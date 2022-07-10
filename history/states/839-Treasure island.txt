@@ -2,12 +2,12 @@ state={
 	id=839
 	name="STATE_839"
         history={
-		owner = MGS
+		owner = WAS
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 
 		}
-		add_core_of = MGS
+		add_core_of = WAS
 		
         }
 	provinces={
@@ -15,6 +15,6 @@ state={
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-        state_category=rural
+        state_category=wasteland
 	local_supplies=0.000
 }
